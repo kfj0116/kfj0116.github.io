@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="LeetCode,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Record the Math topic algorithm problems.">
+<meta name="keywords" content="LeetCode">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LeetCode - Math">
+<meta property="og:url" content="http://yoursite.com/2019/11/18/leetcode3/index.html">
+<meta property="og:site_name" content="Fanjia Kong">
+<meta property="og:description" content="Record the Math topic algorithm problems.">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2020-01-20T19:41:35.810Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="LeetCode - Math">
+<meta name="twitter:description" content="Record the Math topic algorithm problems.">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/11/18/leetcode3/">
+
+
+
+
+
+  <title>LeetCode - Math | Fanjia Kong</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Fanjia Kong</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Frontend Developer</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/18/leetcode3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Fanjia Kong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Fanjia Kong">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">LeetCode - Math</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-18T16:20:45+02:00">
+                2019-11-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Algorithm/" itemprop="url" rel="index">
+                    <span itemprop="name">Algorithm</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Record the Math topic algorithm problems.</p>
+<a id="more"></a>
+
+<h2 id="0007-Reverse-Integer"><a href="#0007-Reverse-Integer" class="headerlink" title="0007. Reverse Integer"></a>0007. Reverse Integer</h2><p>Given a 32-bit signed integer, reverse digits of an integer.<br>Example 1:<br>Input: 123<br>Output: 321<br>Example 2:<br>Input: -123<br>Output: -321<br>Example 3:<br>Input: 120<br>Output: 21<br>Note:<br>Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: [−231, 231 − 1]. For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.</p>
+<h3 id="solution"><a href="#solution" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">const reverse = (x) =&gt; &#123;</span><br><span class="line">    let i = 1;</span><br><span class="line">    let array = String(x).split(&apos;&apos;).reverse()</span><br><span class="line">    if (x &lt; 0) &#123;</span><br><span class="line">        i = -1;</span><br><span class="line">        array.pop();</span><br><span class="line">    &#125;</span><br><span class="line">    let result = Number(array.join(&apos;&apos;))</span><br><span class="line">    if (result &gt; Math.pow(2, 31) - 1) &#123;</span><br><span class="line">        return 0</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        return  result * i</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 72 ms<br>Memory Usage: 36.1 MB</p>
+<h2 id="0013-Roman-to-Integer"><a href="#0013-Roman-to-Integer" class="headerlink" title="0013. Roman to Integer"></a>0013. Roman to Integer</h2><p>Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.<br>Symbol Value<br>I 1<br>V 5<br>X 10<br>L 50<br>C 100<br>D 500<br>M 1000<br>For example, two is written as II in Roman numeral, just two one’s added together. Twelve is written as, XII, which is simply X + II. The number twenty seven is written as XXVII, which is XX + V + II.<br>Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as IX. There are six instances where subtraction is used:<br>I can be placed before V (5) and X (10) to make 4 and 9.<br>X can be placed before L (50) and C (100) to make 40 and 90.<br>C can be placed before D (500) and M (1000) to make 400 and 900.<br>Given a roman numeral, convert it to an integer. Input is guaranteed to be within the range from 1 to 3999.<br>Example 1:<br>Input: “III”<br>Output: 3<br>Example 2:<br>Input: “IV”<br>Output: 4<br>Example 3:<br>Input: “IX”<br>Output: 9<br>Example 4:<br>Input: “LVIII”<br>Output: 58<br>Explanation: L = 50, V= 5, III = 3.<br>Example 5:<br>Input: “MCMXCIV”<br>Output: 1994<br>Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.</p>
+<h3 id="solution-1"><a href="#solution-1" class="headerlink" title="solution 1:"></a>solution 1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">const romanToInt = (s) =&gt;&#123;</span><br><span class="line">    if (!s || s.length === 0) &#123;</span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br><span class="line">    let str = &#123;&quot;I&quot;:1,&quot;V&quot;:5,&quot;X&quot;:10,&quot;L&quot;:50,&quot;C&quot;:100,&quot;D&quot;:500,&quot;M&quot;:1000&#125;;</span><br><span class="line">    let result = 0;</span><br><span class="line">    if(s.indexOf(&quot;IV&quot;)!== -1) result -= 2;</span><br><span class="line">    if(s.indexOf(&quot;IX&quot;)!== -1) result -= 2;</span><br><span class="line">    if(s.indexOf(&quot;XL&quot;)!== -1) result -= 20;</span><br><span class="line">    if(s.indexOf(&quot;XC&quot;)!== -1) result -= 20;</span><br><span class="line">    if(s.indexOf(&quot;CD&quot;)!== -1) result -= 200;</span><br><span class="line">    if(s.indexOf(&quot;CM&quot;)!== -1) result -= 200;</span><br><span class="line">    for(let i = 0; i &lt; s.length; i++)&#123;</span><br><span class="line">       result += str[s[i]];</span><br><span class="line">    &#125;</span><br><span class="line">    return result;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 136 ms<br>Memory Usage: 39 MB</p>
+<h3 id="solution-2"><a href="#solution-2" class="headerlink" title="solution 2:"></a>solution 2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">const romanToInt = (s) =&gt;&#123;</span><br><span class="line">    if (!s || s.length === 0) &#123;</span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br><span class="line">    const map = new Map([[&apos;I&apos;, 1], [&apos;V&apos;, 5], [&apos;X&apos;, 10], [&apos;L&apos;, 50], [&apos;C&apos;, 100], [&apos;D&apos;, 500], [&apos;M&apos;, 1000]]);</span><br><span class="line">    let i = s.length - 1;</span><br><span class="line">    let result = map.get(s[i]);</span><br><span class="line">    for (i; i &gt; 0; i--) &#123;</span><br><span class="line">        const curr = map.get(s[i]);</span><br><span class="line">        const prev = map.get(s[i - 1]);</span><br><span class="line">        if (prev &gt;= curr) &#123;</span><br><span class="line">          result += prev;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">          result -= prev;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return result;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 152 ms<br>Memory Usage: 41.6 MB</p>
+<h2 id="0069-Sqrt-x"><a href="#0069-Sqrt-x" class="headerlink" title="0069. Sqrt(x)"></a>0069. Sqrt(x)</h2><p>Implement int sqrt(int x).<br>Compute and return the square root of x, where x is guaranteed to be a non-negative integer.<br>Since the return type is an integer, the decimal digits are truncated and only the integer part of the result is returned.<br>Example 1:<br>Input: 4<br>Output: 2<br>Example 2:<br>Input: 8<br>Output: 2<br>Explanation: The square root of 8 is 2.82842…, and since<br>the decimal part is truncated, 2 is returned.</p>
+<h3 id="solution-1"><a href="#solution-1" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">const mySqrt = (x) =&gt; &#123;</span><br><span class="line">    let left = 1;</span><br><span class="line">    let right = Math.floor(x / 2) + 1;</span><br><span class="line">    let mid;</span><br><span class="line"></span><br><span class="line">    while (left &lt;= right) &#123;</span><br><span class="line">        mid = Math.floor((left + right) / 2);</span><br><span class="line"></span><br><span class="line">        if (mid * mid &gt; x) &#123;</span><br><span class="line">          right = mid - 1;</span><br><span class="line">        &#125; else if (mid * mid &lt; x) &#123;</span><br><span class="line">          left = mid + 1;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">          return mid;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return right;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 80 ms<br>Memory Usage: 35.7 MB</p>
+<h2 id="0171-Excel-Sheet-Column-Number"><a href="#0171-Excel-Sheet-Column-Number" class="headerlink" title="0171. Excel Sheet Column Number"></a>0171. Excel Sheet Column Number</h2><p>Given a column title as appear in an Excel sheet, return its corresponding column number.<br>For example:<br>A -&gt; 1<br>B -&gt; 2<br>C -&gt; 3<br>…<br>Z -&gt; 26<br>AA -&gt; 27<br>AB -&gt; 28<br>…<br>Example 1:<br>Input: “A”<br>Output: 1<br>Example 2:<br>Input: “AB”<br>Output: 28<br>Example 3:<br>Input: “ZY”<br>Output: 701</p>
+<h3 id="solution-1-1"><a href="#solution-1-1" class="headerlink" title="solution 1:"></a>solution 1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">const titleToNumber = (s) =&gt; &#123;</span><br><span class="line">    const charCodeBase = &apos;A&apos;.charCodeAt(0) - 1;</span><br><span class="line">    const n = s.length;</span><br><span class="line">    let number = 0;</span><br><span class="line"></span><br><span class="line">    /*</span><br><span class="line">     * Think of it as base 26. For example,</span><br><span class="line">     * Column number of &quot;AB&quot; = 1 * 26^1 + 2 * 26^0</span><br><span class="line">     */</span><br><span class="line">    for (let i = 0; i &lt; n; i++)</span><br><span class="line">        number += (s.charCodeAt(i) - charCodeBase) * Math.pow(26, n-i-1);</span><br><span class="line"></span><br><span class="line">    return number;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 84 ms<br>Memory Usage: 34.8 MB</p>
+<h2 id="0172-Factorial-Trailing-Zeroes"><a href="#0172-Factorial-Trailing-Zeroes" class="headerlink" title="0172. Factorial Trailing Zeroes"></a>0172. Factorial Trailing Zeroes</h2><p>Given an integer n, return the number of trailing zeroes in n!.<br>Example 1:<br>Input: 3<br>Output: 0<br>Explanation: 3! = 6, no trailing zero.<br>Example 2:<br>Input: 5<br>Output: 1<br>Explanation: 5! = 120, one trailing zero.<br>Note: Your solution should be in logarithmic time complexity.</p>
+<h3 id="solution-2"><a href="#solution-2" class="headerlink" title="solution:"></a>solution:</h3><p>We can simplify the answer to the Factorial Trailing Zeroes question to the following:<br>(n / 5) + (n / 5^2) + (n / 5^3)… (n / 5^x)<br>We continue until 5^x is greater than n.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">const trailingZeroes = function(n) &#123;</span><br><span class="line">    let numZeroes = 0;</span><br><span class="line">    for (let i = 5; i &lt;= n; i *= 5) &#123;</span><br><span class="line">        numZeroes += Math.floor(n / i);</span><br><span class="line">    &#125;</span><br><span class="line">    return numZeroes;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 44 ms<br>Memory Usage: 34 MB</p>
+<h2 id="0202-Happy-Number"><a href="#0202-Happy-Number" class="headerlink" title="0202. Happy Number"></a>0202. Happy Number</h2><p>Write an algorithm to determine if a number is “happy”.<br>A happy number is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1. Those numbers for which this process ends in 1 are happy numbers.<br>Example:<br>Input: 19<br>Output: true<br>Explanation:<br>12 + 92 = 82<br>82 + 22 = 68<br>62 + 82 = 100<br>12 + 02 + 02 = 1</p>
+<h3 id="solution-1-2"><a href="#solution-1-2" class="headerlink" title="solution 1:"></a>solution 1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">const isHappy = (n) =&gt; &#123;</span><br><span class="line">    if (n &lt; 1) &#123;</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line">    let set = new Set();</span><br><span class="line">    while (!set.has(n)) &#123;</span><br><span class="line">        set.add(n);</span><br><span class="line">        let s = n.toString();</span><br><span class="line">        n = 0;</span><br><span class="line">        for (let i = 0; i &lt; s.length; ++i) &#123;</span><br><span class="line">            n += Math.pow(parseInt(s[i]), 2);</span><br><span class="line">        &#125;</span><br><span class="line">        if (n === 1) &#123;</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return false;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 64 ms<br>Memory Usage: 35.6 MB</p>
+<h3 id="solution-2-1"><a href="#solution-2-1" class="headerlink" title="solution 2:"></a>solution 2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">const isHappy = (n) =&gt; &#123;</span><br><span class="line">    if (n &lt; 1) &#123;</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line">    const squares = &#123;&apos;0&apos;:0, &apos;1&apos;:1, &apos;2&apos;:4, &apos;3&apos;:9, &apos;4&apos;:16, &apos;5&apos;:25, &apos;6&apos;:36, &apos;7&apos;:49, &apos;8&apos;:64, &apos;9&apos;:81&#125;</span><br><span class="line">    let set = new Set();</span><br><span class="line">    while (!set.has(n)) &#123;</span><br><span class="line">        set.add(n);</span><br><span class="line">        let s = n.toString();</span><br><span class="line">        n = 0;</span><br><span class="line">        for (let i = 0; i &lt; s.length; ++i) &#123;</span><br><span class="line">            n += squares[s[i]];</span><br><span class="line">        &#125;</span><br><span class="line">        if (n === 1) &#123;</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return false;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 56 ms<br>Memory Usage: 35.9 MB</p>
+<h2 id="0204-Count-Primes"><a href="#0204-Count-Primes" class="headerlink" title="0204. Count Primes"></a>0204. Count Primes</h2><p>Count the number of prime numbers less than a non-negative number, n.<br>Example:<br>Input: 10<br>Output: 4<br>Explanation: There are 4 prime numbers less than 10, they are 2, 3, 5, 7.</p>
+<h3 id="solution-3"><a href="#solution-3" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">const countPrimes = (n) =&gt; &#123;</span><br><span class="line">    if (n &lt; 2) &#123;</span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br><span class="line">    let arr = new Array(n).fill(true);</span><br><span class="line">    const m = Math.sqrt(n);</span><br><span class="line">    arr[0] = false;</span><br><span class="line">    arr[1] = false;</span><br><span class="line">    for(let i = 2; i &lt; m; i++)&#123;</span><br><span class="line">        if(arr[i])&#123;</span><br><span class="line">            for(let j = i; j * i &lt; n; j++)&#123;</span><br><span class="line">                arr[i * j] = false;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return arr.filter( n =&gt; n === true).length;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 120 ms<br>Memory Usage: 63.4 MB</p>
+<h2 id="0279-Perfect-Squares"><a href="#0279-Perfect-Squares" class="headerlink" title="0279. Perfect Squares"></a>0279. Perfect Squares</h2><p>Given a positive integer n, find the least number of perfect square numbers (for example, 1, 4, 9, 16, …) which sum to n.<br>Example 1:<br>Input: n = 12<br>Output: 3<br>Explanation: 12 = 4 + 4 + 4.<br>Example 2:<br>Input: n = 13<br>Output: 2<br>Explanation: 13 = 4 + 9.</p>
+<h3 id="solution-4"><a href="#solution-4" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">const numSquares = (n) =&gt; &#123;</span><br><span class="line">    let isSquare = x=&gt; Math.floor(Math.sqrt(x))**2 === x</span><br><span class="line">    if (isSquare(n)) &#123;</span><br><span class="line">        return 1;</span><br><span class="line">    &#125;</span><br><span class="line">    // that would be the fact that its equal to itself</span><br><span class="line">    // Legendre&apos;s three square theorem: A natural number n can be represented as</span><br><span class="line">	// the sum of three squares of integers if and only if : n!= 4^x ( 8*m+7)</span><br><span class="line">    while (n % 4 === 0) &#123;</span><br><span class="line">        n /= 4;</span><br><span class="line">    &#125;</span><br><span class="line">    if (n % 8 === 7) &#123;</span><br><span class="line">        return 4;</span><br><span class="line">    &#125;</span><br><span class="line">    // if n%8!==7 that means that my number can be written</span><br><span class="line">	// as a sum  at of at most 3 squares</span><br><span class="line">	// , otherwise the answer is definitely 4 because of Lagrange&apos;s theorem.</span><br><span class="line">    // ok, we ruled out the possibility of result 4</span><br><span class="line">    // there are only 2 results remaining, 2 and 3</span><br><span class="line"></span><br><span class="line">    // Manually checking for result 2</span><br><span class="line">    for (let i = 0; i &lt;= n ; i++) &#123;</span><br><span class="line">        // if x=n-i*i   and x is a valid square then OBVIOUSLY</span><br><span class="line">        // n=i^2 +sqrt(x)^2  ,so n is a square of two numbers</span><br><span class="line">        if(isSquare(n - i * i)) &#123;</span><br><span class="line">            return 2;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    // otherwise</span><br><span class="line">    return 3;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 56 ms<br>Memory Usage: 35.1 MB</p>
+<h2 id="0326-Power-of-Three"><a href="#0326-Power-of-Three" class="headerlink" title="0326. Power of Three"></a>0326. Power of Three</h2><p>Given an integer, write a function to determine if it is a power of three.<br>Example 1:<br>Input: 27<br>Output: true<br>Example 2:<br>Input: 0<br>Output: false<br>Example 3:<br>Input: 9<br>Output: true<br>Example 4:<br>Input: 45<br>Output: false<br>Follow up:<br>Could you do it without using any loop / recursion?</p>
+<h3 id="solution-1-3"><a href="#solution-1-3" class="headerlink" title="solution 1:"></a>solution 1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const isPowerOfThree = (n) =&gt; &#123;</span><br><span class="line">    return n.toString(3).split(&quot;&quot;).reduce((prev,curr) =&gt; parseInt(prev) + parseInt(curr)) == 1;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 252 ms<br>Memory Usage: 48.9 MB</p>
+<h3 id="solution-2-2"><a href="#solution-2-2" class="headerlink" title="solution 2:"></a>solution 2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const isPowerOfThree = (n) =&gt; &#123;</span><br><span class="line">    return /^10*$/.test(n.toString(3));</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 244 ms<br>Memory Usage: 46.8 MB</p>
+<h3 id="solution-3"><a href="#solution-3" class="headerlink" title="solution 3:"></a>solution 3:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const isPowerOfThree = (n) =&gt; &#123;</span><br><span class="line">    return Number.isInteger(Math.log10(n) / Math.log10(3))</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 228 ms<br>Memory Usage: 47.8 MB</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/LeetCode/" rel="tag"><i class="fa fa-tag"></i> LeetCode</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/11/17/leetcode2/" rel="next" title="LeetCode - Dynamic Programming">
+                <i class="fa fa-chevron-left"></i> LeetCode - Dynamic Programming
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/11/19/leetcode4/" rel="prev" title="LeetCode - String">
+                LeetCode - String <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Fanjia Kong</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:kfj0116@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i></a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#0007-Reverse-Integer"><span class="nav-number">1.</span> <span class="nav-text">0007. Reverse Integer</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution"><span class="nav-number">1.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0013-Roman-to-Integer"><span class="nav-number">2.</span> <span class="nav-text">0013. Roman to Integer</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1"><span class="nav-number">2.1.</span> <span class="nav-text">solution 1:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2"><span class="nav-number">2.2.</span> <span class="nav-text">solution 2:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0069-Sqrt-x"><span class="nav-number">3.</span> <span class="nav-text">0069. Sqrt(x)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1"><span class="nav-number">3.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0171-Excel-Sheet-Column-Number"><span class="nav-number">4.</span> <span class="nav-text">0171. Excel Sheet Column Number</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1-1"><span class="nav-number">4.1.</span> <span class="nav-text">solution 1:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0172-Factorial-Trailing-Zeroes"><span class="nav-number">5.</span> <span class="nav-text">0172. Factorial Trailing Zeroes</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2"><span class="nav-number">5.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0202-Happy-Number"><span class="nav-number">6.</span> <span class="nav-text">0202. Happy Number</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1-2"><span class="nav-number">6.1.</span> <span class="nav-text">solution 1:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2-1"><span class="nav-number">6.2.</span> <span class="nav-text">solution 2:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0204-Count-Primes"><span class="nav-number">7.</span> <span class="nav-text">0204. Count Primes</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-3"><span class="nav-number">7.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0279-Perfect-Squares"><span class="nav-number">8.</span> <span class="nav-text">0279. Perfect Squares</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-4"><span class="nav-number">8.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0326-Power-of-Three"><span class="nav-number">9.</span> <span class="nav-text">0326. Power of Three</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1-3"><span class="nav-number">9.1.</span> <span class="nav-text">solution 1:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2-2"><span class="nav-number">9.2.</span> <span class="nav-text">solution 2:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-3"><span class="nav-number">9.3.</span> <span class="nav-text">solution 3:</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Fanjia Kong</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

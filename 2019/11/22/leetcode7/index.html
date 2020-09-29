@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="LeetCode,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Record the Others topic algorithm problems.">
+<meta name="keywords" content="LeetCode">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LeetCode - Others">
+<meta property="og:url" content="http://yoursite.com/2019/11/22/leetcode7/index.html">
+<meta property="og:site_name" content="Fanjia Kong">
+<meta property="og:description" content="Record the Others topic algorithm problems.">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2020-02-08T08:40:13.390Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="LeetCode - Others">
+<meta name="twitter:description" content="Record the Others topic algorithm problems.">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/11/22/leetcode7/">
+
+
+
+
+
+  <title>LeetCode - Others | Fanjia Kong</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Fanjia Kong</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Frontend Developer</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/22/leetcode7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Fanjia Kong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Fanjia Kong">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">LeetCode - Others</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-22T12:51:48+02:00">
+                2019-11-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Algorithm/" itemprop="url" rel="index">
+                    <span itemprop="name">Algorithm</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Record the Others topic algorithm problems.</p>
+<a id="more"></a>
+
+<h2 id="0046-Permutations"><a href="#0046-Permutations" class="headerlink" title="0046. Permutations"></a>0046. Permutations</h2><p>Given a collection of distinct integers, return all possible permutations.<br>Example:<br>Input: [1,2,3]<br>Output:<br>[<br>[1,2,3],<br>[1,3,2],<br>[2,1,3],<br>[2,3,1],<br>[3,1,2],<br>[3,2,1]<br>]</p>
+<h3 id="solution"><a href="#solution" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">const permute = (nums) =&gt; &#123;</span><br><span class="line">    let results = [];</span><br><span class="line"></span><br><span class="line">    let permutations = (current, remaining) =&gt; &#123;</span><br><span class="line">        if(remaining.length &lt;= 0) &#123;</span><br><span class="line">            results.push(current);</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            for(let i = 0; i &lt; remaining.length; i++) &#123;</span><br><span class="line">                permutations([...current,remaining[i]], [...remaining.slice(0, i),...remaining.slice(i+1)]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    permutations([], nums);</span><br><span class="line">    return results;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 60 ms<br>Memory Usage: 37.2 MB</p>
+<h2 id="0136-Single-Number"><a href="#0136-Single-Number" class="headerlink" title="0136. Single Number"></a>0136. Single Number</h2><p>Given a non-empty array of integers, every element appears twice except for one. Find that single one.<br>Example 1:<br>Input: [2,2,1]<br>Output: 1<br>Example 2:<br>Input: [4,1,2,1,2]<br>Output: 4</p>
+<h3 id="solution-1"><a href="#solution-1" class="headerlink" title="solution 1:"></a>solution 1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">const singleNumber = (nums) =&gt; &#123;</span><br><span class="line">    if(nums.length === 1) &#123;</span><br><span class="line">        return nums[0]</span><br><span class="line">    &#125;</span><br><span class="line">    for(let i = 0; i &lt; nums.length; i++) &#123;</span><br><span class="line">        if(nums.indexOf(nums[i]) === nums.lastIndexOf(nums[i])) &#123;</span><br><span class="line">            return nums[i];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return null</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 356 ms<br>Memory Usage: 35.4 MB</p>
+<h3 id="solution-2"><a href="#solution-2" class="headerlink" title="solution 2:"></a>solution 2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">const singleNumber = (nums) =&gt; &#123;</span><br><span class="line">    if(nums.length === 1) &#123;</span><br><span class="line">        return nums[0]</span><br><span class="line">    &#125;</span><br><span class="line">    nums.sort();</span><br><span class="line">    for (let i = 0; i &lt; nums.length; i += 2) &#123;</span><br><span class="line">        if (nums[i] !== nums[i + 1]) &#123;</span><br><span class="line">            return nums[i];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 84 ms<br>Memory Usage: 36.7 MB</p>
+<h3 id="solution-3"><a href="#solution-3" class="headerlink" title="solution 3:"></a>solution 3:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">const singleNumber = (nums) =&gt; &#123;</span><br><span class="line">    if(nums.length === 1) &#123;</span><br><span class="line">        return nums[0]</span><br><span class="line">    &#125;</span><br><span class="line">    return nums.reduce((prev, curr) =&gt; prev ^ curr, 0);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 48 ms<br>Memory Usage: 35.5 MB</p>
+<h2 id="0146-LRU-Cache"><a href="#0146-LRU-Cache" class="headerlink" title="0146. LRU Cache"></a>0146. LRU Cache</h2><p>Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and put.<br>get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1.<br>put(key, value) - Set or insert the value if the key is not already present. When the cache reached its capacity, it should invalidate the least recently used item before inserting a new item.<br>The cache is initialized with a positive capacity.<br>Example:<br>LRUCache cache = new LRUCache( 2 /_ capacity _/ );<br>cache.put(1, 1);<br>cache.put(2, 2);<br>cache.get(1); // returns 1<br>cache.put(3, 3); // evicts key 2<br>cache.get(2); // returns -1 (not found)<br>cache.put(4, 4); // evicts key 1<br>cache.get(1); // returns -1 (not found)<br>cache.get(3); // returns 3<br>cache.get(4); // returns 4</p>
+<h3 id="solution-1"><a href="#solution-1" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">class LRUCache &#123;</span><br><span class="line">  constructor(capacity) &#123;</span><br><span class="line">    this.cache = new Map();</span><br><span class="line">    this.capacity = capacity;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  get(key) &#123;</span><br><span class="line">    if (!this.cache.has(key)) &#123;</span><br><span class="line">        return -1;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    const v = this.cache.get(key);</span><br><span class="line">    this.cache.delete(key);</span><br><span class="line">    this.cache.set(key, v);</span><br><span class="line">    return this.cache.get(key);</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  put(key, value) &#123;</span><br><span class="line">    if (this.cache.has(key)) &#123;</span><br><span class="line">      this.cache.delete(key);</span><br><span class="line">    &#125;</span><br><span class="line">    this.cache.set(key, value);</span><br><span class="line">    if (this.cache.size &gt; this.capacity) &#123;</span><br><span class="line">      this.cache.delete(this.cache.keys().next().value);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 208 ms<br>Memory Usage: 58.5 MB</p>
+<h2 id="0155-Min-Stack"><a href="#0155-Min-Stack" class="headerlink" title="0155. Min Stack"></a>0155. Min Stack</h2><p>Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.<br>push(x) – Push element x onto stack.<br>pop() – Removes the element on top of the stack.<br>top() – Get the top element.<br>getMin() – Retrieve the minimum element in the stack.<br>Example:<br>MinStack minStack = new MinStack();<br>minStack.push(-2);<br>minStack.push(0);<br>minStack.push(-3);<br>minStack.getMin(); –&gt; Returns -3.<br>minStack.pop();<br>minStack.top(); –&gt; Returns 0.<br>minStack.getMin(); –&gt; Returns -2.</p>
+<h3 id="solution-2"><a href="#solution-2" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * initialize your data structure here.</span><br><span class="line"> */</span><br><span class="line">var MinStack = function() &#123;</span><br><span class="line">    this.stack = [];</span><br><span class="line">    this.min = [];</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * @param &#123;number&#125; x</span><br><span class="line"> * @return &#123;void&#125;</span><br><span class="line"> */</span><br><span class="line">MinStack.prototype.push = function(x) &#123;</span><br><span class="line">    this.stack.push(x);</span><br><span class="line">    var min = this.getMin();</span><br><span class="line">    if (min !== undefined) &#123;</span><br><span class="line">        this.min.push(Math.min(x, min));</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        this.min.push(x);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * @return &#123;void&#125;</span><br><span class="line"> */</span><br><span class="line">MinStack.prototype.pop = function() &#123;</span><br><span class="line">    this.stack.pop();</span><br><span class="line">    this.min.pop();</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * @return &#123;number&#125;</span><br><span class="line"> */</span><br><span class="line">MinStack.prototype.top = function() &#123;</span><br><span class="line">    if (this.stack.length) &#123;</span><br><span class="line">        return this.stack[this.stack.length - 1];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * @return &#123;number&#125;</span><br><span class="line"> */</span><br><span class="line">MinStack.prototype.getMin = function() &#123;</span><br><span class="line">    if (this.min.length) &#123;</span><br><span class="line">        return this.min[this.min.length - 1];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * Your MinStack object will be instantiated and called as such:</span><br><span class="line"> * var obj = new MinStack()</span><br><span class="line"> * obj.push(x)</span><br><span class="line"> * obj.pop()</span><br><span class="line"> * var param_3 = obj.top()</span><br><span class="line"> * var param_4 = obj.getMin()</span><br><span class="line"> */</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 96 ms<br>Memory Usage: 44.5 MB</p>
+<h2 id="0190-Reverse-Bits"><a href="#0190-Reverse-Bits" class="headerlink" title="0190. Reverse Bits"></a>0190. Reverse Bits</h2><p>Reverse bits of a given 32 bits unsigned integer.<br>Example 1:<br>Input: 00000010100101000001111010011100<br>Output: 00111001011110000010100101000000<br>Explanation: The input binary string 00000010100101000001111010011100 represents the unsigned integer 43261596, so return 964176192 which its binary representation is 00111001011110000010100101000000.<br>Example 2:<br>Input: 11111111111111111111111111111101<br>Output: 10111111111111111111111111111111<br>Explanation: The input binary string 11111111111111111111111111111101 represents the unsigned integer 4294967293, so return 3221225471 which its binary representation is 10111111111111111111111111111111.</p>
+<h3 id="solution-1-1"><a href="#solution-1-1" class="headerlink" title="solution 1:"></a>solution 1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">const reverseBits = (n) =&gt; &#123;</span><br><span class="line">    let result = 0;</span><br><span class="line">    let count = 32;</span><br><span class="line"></span><br><span class="line">    while (count--) &#123;</span><br><span class="line">        result *= 2;</span><br><span class="line">        result += n &amp; 1;</span><br><span class="line">        n = n &gt;&gt; 1;</span><br><span class="line">    &#125;</span><br><span class="line">    return result;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 64 ms<br>Memory Usage: 35.9 MB</p>
+<h3 id="solution-2-1"><a href="#solution-2-1" class="headerlink" title="solution 2:"></a>solution 2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">const reverseBits = (n) =&gt; &#123;</span><br><span class="line">    const str = n.toString(2).padStart(32, &apos;0&apos;);</span><br><span class="line">    return parseInt(str.split(&apos;&apos;).reverse().join(&apos;&apos;), 2)</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 84 ms<br>Memory Usage: 35.8 MB</p>
+<h2 id="0191-Number-of-1-Bits"><a href="#0191-Number-of-1-Bits" class="headerlink" title="0191. Number of 1 Bits"></a>0191. Number of 1 Bits</h2><p>Write a function that takes an unsigned integer and return the number of ‘1’ bits it has (also known as the Hamming weight).<br>Example 1:<br>Input: 00000000000000000000000000001011<br>Output: 3<br>Explanation: The input binary string 00000000000000000000000000001011 has a total of three ‘1’ bits.<br>Example 2:<br>Input: 00000000000000000000000010000000<br>Output: 1<br>Explanation: The input binary string 00000000000000000000000010000000 has a total of one ‘1’ bit.<br>Example 3:<br>Input: 11111111111111111111111111111101<br>Output: 31<br>Explanation: The input binary string 11111111111111111111111111111101 has a total of thirty one ‘1’ bits.</p>
+<h3 id="solution-1-2"><a href="#solution-1-2" class="headerlink" title="solution 1:"></a>solution 1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">const hammingWeight = (n) =&gt; &#123;</span><br><span class="line">    let answer = 0</span><br><span class="line">    while (n) &#123;</span><br><span class="line">        answer += n &amp; 1</span><br><span class="line">        n = n &gt;&gt;&gt; 1</span><br><span class="line">    &#125;</span><br><span class="line">    return answer</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 60 ms<br>Memory Usage: 34.8 MB</p>
+<h3 id="solution-2-2"><a href="#solution-2-2" class="headerlink" title="solution 2:"></a>solution 2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">const hammingWeight = (n) =&gt; &#123;</span><br><span class="line">    let count = 0;</span><br><span class="line">    while (n) &#123;</span><br><span class="line">      n &amp;= (n-1) ;</span><br><span class="line">      count++;</span><br><span class="line">    &#125;</span><br><span class="line">    return count;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 64 ms<br>Memory Usage: 34.3 MB</p>
+<h3 id="solution-3-1"><a href="#solution-3-1" class="headerlink" title="solution 3:"></a>solution 3:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const hammingWeight = (n) =&gt; &#123;</span><br><span class="line">    return n.toString(2).split(&quot;0&quot;).join(&quot;&quot;).length;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 60 ms<br>Memory Usage: 34.3 MB</p>
+<h3 id="solution-4"><a href="#solution-4" class="headerlink" title="solution 4:"></a>solution 4:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const hammingWeight = (n) =&gt; &#123;</span><br><span class="line">    return n.toString(2).replace(/0/g, &apos;&apos;).length;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 88 ms<br>Memory Usage: 34.3 MB</p>
+<h3 id="solution-5"><a href="#solution-5" class="headerlink" title="solution 5:"></a>solution 5:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const hammingWeight = (n) =&gt; &#123;</span><br><span class="line">    return n.toString(2).split(&quot;&quot;).filter(item =&gt; item === &apos;1&apos;).length;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 60 ms<br>Memory Usage: 34.7 MB</p>
+<h2 id="0200-Number-of-Islands"><a href="#0200-Number-of-Islands" class="headerlink" title="0200. Number of Islands"></a>0200. Number of Islands</h2><p>Given a 2d grid map of ‘1’s (land) and ‘0’s (water), count the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.<br>Example 1:<br>Input:<br>11110<br>11010<br>11000<br>00000<br>Output: 1<br>Example 2:<br>Input:<br>11000<br>11000<br>00100<br>00011<br>Output: 3</p>
+<h3 id="solution-3"><a href="#solution-3" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">const numIslands = (grid) =&gt; &#123;</span><br><span class="line">  let count = 0;</span><br><span class="line">  function dfs(grid, row, col) &#123;</span><br><span class="line">    // bound check</span><br><span class="line">    if (row &lt; 0 || row &gt;= grid.length || col &lt; 0 || col &gt;= grid[0].length) &#123;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">    const value = grid[row][col];</span><br><span class="line">    if (value === &apos;1&apos;) &#123;</span><br><span class="line">        grid[row][col] = &apos;#&apos;;</span><br><span class="line">        dfs(grid, row + 1, col);</span><br><span class="line">        dfs(grid, row - 1, col);</span><br><span class="line">        dfs(grid, row, col + 1);</span><br><span class="line">        dfs(grid, row, col - 1);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  for (let i = 0; i &lt; grid.length; i++) &#123;</span><br><span class="line">    for (let j = 0; j &lt; grid[0].length; j++) &#123;</span><br><span class="line">      if (grid[i][j] === &apos;1&apos;) &#123;</span><br><span class="line">        count++;</span><br><span class="line">        dfs(grid, i,j);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  return count;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 72 ms<br>Memory Usage: 37.4 MB</p>
+<h2 id="0207-Course-Schedule"><a href="#0207-Course-Schedule" class="headerlink" title="0207. Course Schedule"></a>0207. Course Schedule</h2><p>There are a total of n courses you have to take, labeled from 0 to n-1.<br>Some courses may have prerequisites, for example to take course 0 you have to first take course 1, which is expressed as a pair: [0,1]<br>Given the total number of courses and a list of prerequisite pairs, is it possible for you to finish all courses?<br>Example 1:<br>Input: 2, [[1,0]]<br>Output: true<br>Explanation: There are a total of 2 courses to take.<br>To take course 1 you should have finished course 0. So it is possible.<br>Example 2:<br>Input: 2, [[1,0],[0,1]]<br>Output: false<br>Explanation: There are a total of 2 courses to take.<br>To take course 1 you should have finished course 0, and to take course 0 you should<br>also have finished course 1. So it is impossible.<br>Note:<br>The input prerequisites is a graph represented by a list of edges, not adjacency matrices. Read more about how a graph is represented.<br>You may assume that there are no duplicate edges in the input prerequisites.</p>
+<h3 id="solution-4"><a href="#solution-4" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">const canFinish = (numCourses, prerequisites) =&gt; &#123;</span><br><span class="line">  const seen = new Set();</span><br><span class="line">  const seeing = new Set();</span><br><span class="line">  const adj = [...Array(numCourses)].map(r =&gt; []);</span><br><span class="line"></span><br><span class="line">  for (let [u, v] of prerequisites) &#123;</span><br><span class="line">    adj[v].push(u);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  for (let c = 0; c &lt; numCourses; c++) &#123;</span><br><span class="line">    if (!dfs(c)) &#123;</span><br><span class="line">      return false;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  return true;</span><br><span class="line"></span><br><span class="line">  function dfs(v) &#123;</span><br><span class="line">    if (seen.has(v)) &#123;</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">    if (seeing.has(v)) &#123;</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    seeing.add(v);</span><br><span class="line">    for (let nv of adj[v]) &#123;</span><br><span class="line">      if (!dfs(nv)) &#123;</span><br><span class="line">        return false;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    seeing.delete(v);</span><br><span class="line">    seen.add(v);</span><br><span class="line">    return true;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 68 ms<br>Memory Usage: 38.7 MB</p>
+<h2 id="0208-Implement-Trie-Prefix-Tree"><a href="#0208-Implement-Trie-Prefix-Tree" class="headerlink" title="0208. Implement Trie (Prefix Tree)"></a>0208. Implement Trie (Prefix Tree)</h2><p>Implement a trie with insert, search, and startsWith methods.<br>Example:<br>Trie trie = new Trie();<br>trie.insert(“apple”);<br>trie.search(“apple”); // returns true<br>trie.search(“app”); // returns false<br>trie.startsWith(“app”); // returns true<br>trie.insert(“app”);<br>trie.search(“app”); // returns true<br>Note:<br>You may assume that all inputs are consist of lowercase letters a-z.<br>All inputs are guaranteed to be non-empty strings.</p>
+<h3 id="solution-5"><a href="#solution-5" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">function Trie() &#123;</span><br><span class="line">    const root = &#123;&#125;;</span><br><span class="line">	return &#123; insert, search, startsWith &#125;;</span><br><span class="line"></span><br><span class="line">	function insert(word) &#123;</span><br><span class="line">		let curr = root;</span><br><span class="line">		word.split(&apos;&apos;).forEach(ch =&gt; curr = curr[ch] = curr[ch] || &#123;&#125;);</span><br><span class="line">		curr.isWord = true;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	function traverse(word) &#123;</span><br><span class="line">		let curr = root;</span><br><span class="line">		for (var i = 0; i &lt; word.length; i++) &#123;</span><br><span class="line">			if (!curr) return null;</span><br><span class="line">			curr = curr[word[i]];</span><br><span class="line">		&#125;</span><br><span class="line">		return curr;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	function search(word) &#123;</span><br><span class="line">		let node = traverse(word);</span><br><span class="line">		return !!node &amp;&amp; !!node.isWord;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	function startsWith(word) &#123;</span><br><span class="line">		return !!traverse(word);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * Your Trie object will be instantiated and called as such:</span><br><span class="line"> * var obj = new Trie()</span><br><span class="line"> * obj.insert(word)</span><br><span class="line"> * var param_2 = obj.search(word)</span><br><span class="line"> * var param_3 = obj.startsWith(prefix)</span><br><span class="line"> */</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 172 ms<br>Memory Usage: 53.9 MB</p>
+<h2 id="0215-Kth-Largest-Element-in-an-Array"><a href="#0215-Kth-Largest-Element-in-an-Array" class="headerlink" title="0215. Kth Largest Element in an Array"></a>0215. Kth Largest Element in an Array</h2><p>Find the kth largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not the kth distinct element.<br>Example 1:<br>Input: [3,2,1,5,6,4] and k = 2<br>Output: 5<br>Example 2:<br>Input: [3,2,3,1,2,4,5,5,6] and k = 4<br>Output: 4<br>Note:<br>You may assume k is always valid, 1 ≤ k ≤ array’s length.</p>
+<h3 id="solution-6"><a href="#solution-6" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">const findKthLargest = (nums, k) =&gt; &#123;</span><br><span class="line">    return quickSelect(nums)</span><br><span class="line"></span><br><span class="line">    function quickSelect(nums, lo = 0, hi = nums.length - 1) &#123;</span><br><span class="line">      if (lo &gt;= hi) &#123;</span><br><span class="line">          return nums[hi];</span><br><span class="line">      &#125;</span><br><span class="line">      // We arbitrarily pick the last num</span><br><span class="line">      let pivot = nums[hi]</span><br><span class="line"></span><br><span class="line">      // i is the position that that the pivot should be in</span><br><span class="line">      // j is the current num</span><br><span class="line">      let i = lo,</span><br><span class="line">          j = lo</span><br><span class="line">      // for every num between lo and hi</span><br><span class="line">      for (; j &lt; hi; j++) &#123;</span><br><span class="line">        // if the current num is less than or equal to the pivot, swap</span><br><span class="line">        if (nums[j] &lt;= pivot) &#123;</span><br><span class="line">            [nums[i], nums[j]] = [nums[j], nums[i]];</span><br><span class="line">            i++</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      [nums[i], nums[j]] = [nums[j], nums[i]]</span><br><span class="line">      if (i === nums.length - k) &#123;</span><br><span class="line">        return nums[i]</span><br><span class="line">      &#125; else if (i &lt; nums.length - k) &#123;</span><br><span class="line">        return quickSelect(nums, i + 1, hi);</span><br><span class="line">      &#125; else &#123;</span><br><span class="line">        return quickSelect(nums, lo, i - 1);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 124 ms<br>Memory Usage: 37.6 MB</p>
+<h2 id="0240-Search-a-2D-Matrix-II"><a href="#0240-Search-a-2D-Matrix-II" class="headerlink" title="0240. Search a 2D Matrix II"></a>0240. Search a 2D Matrix II</h2><p>Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties:<br>Integers in each row are sorted in ascending from left to right.<br>Integers in each column are sorted in ascending from top to bottom.<br>Example:<br>Consider the following matrix:<br>[<br>[1, 4, 7, 11, 15],<br>[2, 5, 8, 12, 19],<br>[3, 6, 9, 16, 22],<br>[10, 13, 14, 17, 24],<br>[18, 21, 23, 26, 30]<br>]<br>Given target = 5, return true.<br>Given target = 20, return false.</p>
+<h3 id="solution-7"><a href="#solution-7" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">const searchMatrix = (matrix, target) =&gt; &#123;</span><br><span class="line">  if (matrix.length === 0 || matrix[0].length === 0) &#123;</span><br><span class="line">      return false;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  let i = 0;</span><br><span class="line">  let j = matrix[0].length - 1;</span><br><span class="line"></span><br><span class="line">  while (j &gt;= 0 &amp;&amp; i &lt; matrix.length) &#123;</span><br><span class="line">    if (matrix[i][j] === target) &#123;</span><br><span class="line">        return true;</span><br><span class="line">    &#125; else if (matrix[i][j] &gt; target) &#123;</span><br><span class="line">        j--;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        i++;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  return false;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 68 ms<br>Memory Usage: 37.2 MB</p>
+<h2 id="0242-Valid-Anagram"><a href="#0242-Valid-Anagram" class="headerlink" title="0242. Valid Anagram"></a>0242. Valid Anagram</h2><p>Given two strings s and t , write a function to determine if t is an anagram of s.<br>Example 1:<br>Input: s = “anagram”, t = “nagaram”<br>Output: true<br>Example 2:<br>Input: s = “rat”, t = “car”<br>Output: false<br>Note:<br>You may assume the string contains only lowercase alphabets.</p>
+<h3 id="solution-1-3"><a href="#solution-1-3" class="headerlink" title="solution 1:"></a>solution 1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">const isAnagram = (s, t) =&gt; &#123;</span><br><span class="line">    if (s.length !== t.length) &#123;</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line">    const map = &#123;&#125;;</span><br><span class="line">    for (let i = 0; i &lt; s.length; i++) &#123;</span><br><span class="line">        map[s[i]] ? map[s[i]]++ : map[s[i]] = 1;</span><br><span class="line">    &#125;</span><br><span class="line">    for (let i = 0; i &lt; t.length; i++) &#123;</span><br><span class="line">        if (map[t[i]]) &#123;</span><br><span class="line">            map[t[i]]--;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            return false;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return true;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 60 ms<br>Memory Usage: 36.1 MB</p>
+<h3 id="solution-2-3"><a href="#solution-2-3" class="headerlink" title="solution 2:"></a>solution 2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">const isAnagram = (s, t) =&gt; &#123;</span><br><span class="line">    if (s.length !== t.length) &#123;</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line">    return s.split(&apos;&apos;).sort().toString() === t.split(&apos;&apos;).sort().toString()</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 112 ms<br>Memory Usage: 39.9 MB</p>
+<h2 id="0347-Top-K-Frequent-Elements"><a href="#0347-Top-K-Frequent-Elements" class="headerlink" title="0347. Top K Frequent Elements"></a>0347. Top K Frequent Elements</h2><p>Given a non-empty array of integers, return the k most frequent elements.<br>Example 1:<br>Input: nums = [1,1,1,2,2,3], k = 2<br>Output: [1,2]<br>Example 2:<br>Input: nums = [1], k = 1<br>Output: [1]<br>Note:<br>You may assume k is always valid, 1 ≤ k ≤ number of unique elements.<br>Your algorithm’s time complexity must be better than O(n log n), where n is the array’s size.</p>
+<h3 id="solution-1-4"><a href="#solution-1-4" class="headerlink" title="solution 1:"></a>solution 1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">const topKFrequent = (nums, k) =&gt; &#123;</span><br><span class="line">    const map = &#123;&#125;;</span><br><span class="line">    const result = [];</span><br><span class="line">    const bucket = Array(nums.length + 1).fill().map(() =&gt; []);</span><br><span class="line">    for (let num of nums) &#123;</span><br><span class="line">        map[num] = ~~map[num] + 1;</span><br><span class="line">    &#125;</span><br><span class="line">    for (let num in map) &#123;</span><br><span class="line">        bucket[map[num]].push(parseInt(num));</span><br><span class="line">    &#125;</span><br><span class="line">    for (let i = nums.length; i &gt;= 0 &amp;&amp; k &gt; 0; k--) &#123;</span><br><span class="line">        while (bucket[i].length === 0) i--;</span><br><span class="line">        result.push(bucket[i].shift());</span><br><span class="line">    &#125;</span><br><span class="line">    return result;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 92 ms<br>Memory Usage: 45.9 MB</p>
+<h3 id="solution-2-4"><a href="#solution-2-4" class="headerlink" title="solution 2:"></a>solution 2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">const topKFrequent = (nums, k) =&gt; &#123;</span><br><span class="line">    let res = [], map = new Map();</span><br><span class="line">    nums.forEach(n =&gt; map.set(n, map.get(n) + 1 || 1));</span><br><span class="line">    let sortedArray = [...map.entries()].sort((a, b) =&gt; b[1] - a[1]);</span><br><span class="line">    for(let i = 0; i &lt; k; i++) &#123;</span><br><span class="line">        res.push(sortedArray[i][0]);</span><br><span class="line">    &#125;</span><br><span class="line">    return res;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 100 ms<br>Memory Usage: 37.1 MB</p>
+<h2 id="0350-Intersection-of-Two-Arrays-II"><a href="#0350-Intersection-of-Two-Arrays-II" class="headerlink" title="0350. Intersection of Two Arrays II"></a>0350. Intersection of Two Arrays II</h2><p>Given two arrays, write a function to compute their intersection.<br>Example 1:<br>Input: nums1 = [1,2,2,1], nums2 = [2,2]<br>Output: [2,2]<br>Example 2:<br>Input: nums1 = [4,9,5], nums2 = [9,4,9,8,4]<br>Output: [4,9]<br>Note:<br>Each element in the result should appear as many times as it shows in both arrays.<br>The result can be in any order.</p>
+<h3 id="solution-8"><a href="#solution-8" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">const intersect = (nums1, nums2) =&gt; &#123;</span><br><span class="line">    // track how often each number occurs in first list</span><br><span class="line">    let store = nums1.reduce((map, n) =&gt; &#123;</span><br><span class="line">        map[n] = (map[n] + 1) || 1;</span><br><span class="line">        return map;</span><br><span class="line">    &#125;, &#123;&#125;);</span><br><span class="line"></span><br><span class="line">    // filter out numbers from second list based on</span><br><span class="line">    // how often they occurred in the first list</span><br><span class="line">    return nums2.filter(n =&gt; &#123;</span><br><span class="line">        if (store[n]) &#123;</span><br><span class="line">            store[n]--;</span><br><span class="line">            return true;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            return false;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 56 ms<br>Memory Usage: 34.8 MB</p>
+<h2 id="0371-Sum-of-Two-Integers"><a href="#0371-Sum-of-Two-Integers" class="headerlink" title="0371. Sum of Two Integers"></a>0371. Sum of Two Integers</h2><p>Calculate the sum of two integers a and b, but you are not allowed to use the operator + and -.<br>Example 1:<br>Input: a = 1, b = 2<br>Output: 3<br>Example 2:<br>Input: a = -2, b = 3<br>Output: 1</p>
+<h3 id="solution-9"><a href="#solution-9" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">const getSum = (a, b) =&gt; &#123;</span><br><span class="line">    const sum = a ^ b; // XOR derives the sum bits, without carry</span><br><span class="line">    const carry = (a &amp; b) &lt;&lt; 1; // AND derives the carry bits</span><br><span class="line">    if (!carry) &#123;</span><br><span class="line">        return sum;</span><br><span class="line">    &#125;</span><br><span class="line">    return getSum(sum, carry);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 72 ms<br>Memory Usage: 33.9 MB</p>
+<h2 id="0394-Decode-String"><a href="#0394-Decode-String" class="headerlink" title="0394. Decode String"></a>0394. Decode String</h2><p>Given an encoded string, return its decoded string.<br>The encoding rule is: k[encoded_string], where the encoded_string inside the square brackets is being repeated exactly k times. Note that k is guaranteed to be a positive integer.<br>You may assume that the input string is always valid; No extra white spaces, square brackets are well-formed, etc.<br>Furthermore, you may assume that the original data does not contain any digits and that digits are only for those repeat numbers, k. For example, there won’t be input like 3a or 2[4].<br>Examples:<br>s = “3[a]2[bc]”, return “aaabcbc”.<br>s = “3[a2[c]]”, return “accaccacc”.<br>s = “2[abc]3[cd]ef”, return “abcabccdcdcdef”.</p>
+<h3 id="solution-10"><a href="#solution-10" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">const decodeString = (s) =&gt;&#123;</span><br><span class="line">    let multiply = [];</span><br><span class="line">    let tempMult = &apos;&apos;;</span><br><span class="line">    let repeatStr = [];</span><br><span class="line">    let solution = &apos;&apos;;</span><br><span class="line">    for (let char of s) &#123;</span><br><span class="line">        if(!isNaN(char)) &#123;</span><br><span class="line">            tempMult = `$&#123;tempMult&#125;$&#123;char&#125;`;</span><br><span class="line">        &#125; else if (char === &apos;[&apos;) &#123;</span><br><span class="line">            multiply.push(tempMult);</span><br><span class="line">            tempMult = &apos;&apos;;</span><br><span class="line">            repeatStr.push(solution);</span><br><span class="line">            solution = &apos;&apos;;</span><br><span class="line">        &#125; else if (char === &apos;]&apos;)&#123;</span><br><span class="line">            solution = repeatStr.pop() + solution.repeat(multiply.pop())</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            solution += char;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return solution;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 48 ms<br>Memory Usage: 34 MB</p>
+<h2 id="0406-Queue-Reconstruction-by-Height"><a href="#0406-Queue-Reconstruction-by-Height" class="headerlink" title="0406. Queue Reconstruction by Height"></a>0406. Queue Reconstruction by Height</h2><p>Suppose you have a random list of people standing in a queue. Each person is described by a pair of integers (h, k), where h is the height of the person and k is the number of people in front of this person who have a height greater than or equal to h. Write an algorithm to reconstruct the queue.<br>Note:<br>The number of people is less than 1,100.<br>Example<br>Input:<br>[[7,0], [4,4], [7,1], [5,0], [6,1], [5,2]]<br>Output:<br>[[5,0], [7,0], [5,2], [6,1], [4,4], [7,1]]</p>
+<h3 id="solution-11"><a href="#solution-11" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">const reconstructQueue = (people) =&gt; &#123;</span><br><span class="line">    people.sort((a,b) =&gt; a[0] !== b[0] ? b[0] - a[0] : a[1] - b[1]);</span><br><span class="line">    let res = [];</span><br><span class="line">    for(let i = 0; i &lt; people.length; i++) &#123;</span><br><span class="line">        res.splice(people[i][1], 0, people[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    return res;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 80 ms<br>Memory Usage: 39.4 MB</p>
+<h2 id="0412-Fizz-Buzz"><a href="#0412-Fizz-Buzz" class="headerlink" title="0412. Fizz Buzz"></a>0412. Fizz Buzz</h2><p>Write a program that outputs the string representation of numbers from 1 to n.<br>But for multiples of three it should output “Fizz” instead of the number and for the multiples of five output “Buzz”. For numbers which are multiples of both three and five output “FizzBuzz”.</p>
+<p>Example:<br>n = 15,<br>Return:<br>[<br>“1”,<br>“2”,<br>“Fizz”,<br>“4”,<br>“Buzz”,<br>“Fizz”,<br>“7”,<br>“8”,<br>“Fizz”,<br>“Buzz”,<br>“11”,<br>“Fizz”,<br>“13”,<br>“14”,<br>“FizzBuzz”<br>]</p>
+<h3 id="solution-1-5"><a href="#solution-1-5" class="headerlink" title="solution 1:"></a>solution 1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">const fizzBuzz = (n) =&gt; &#123;</span><br><span class="line">    let results = [];</span><br><span class="line">    for (let i = 1; i &lt;= n; i++) &#123;</span><br><span class="line">        let str = &apos;&apos;;</span><br><span class="line">        if (i % 3 === 0) &#123;</span><br><span class="line">            str += &apos;Fizz&apos;;</span><br><span class="line">        &#125;</span><br><span class="line">        if (i % 5 === 0) &#123;</span><br><span class="line">            str += &apos;Buzz&apos;;</span><br><span class="line">        &#125;</span><br><span class="line">        if (str === &apos;&apos;) &#123;</span><br><span class="line">            results.push(&quot;&quot; + i);</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            results.push(str);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return results;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 64 ms<br>Memory Usage: 37.6 MB</p>
+<h3 id="solution-2-5"><a href="#solution-2-5" class="headerlink" title="solution 2:"></a>solution 2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const fizzBuzz = (n) =&gt; &#123;</span><br><span class="line">    return new Array(n).fill(0).map((a, i) =&gt; (++i % 3 ? &apos;&apos; : &apos;Fizz&apos;) + (i % 5 ? &apos;&apos; : &apos;Buzz&apos;) || &apos;&apos; + i);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 64 ms<br>Memory Usage: 37.1 MB</p>
+<h2 id="0438-Find-All-Anagrams-in-a-String"><a href="#0438-Find-All-Anagrams-in-a-String" class="headerlink" title="0438. Find All Anagrams in a String"></a>0438. Find All Anagrams in a String</h2><p>Given a string s and a non-empty string p, find all the start indices of p’s anagrams in s.<br>Strings consists of lowercase English letters only and the length of both strings s and p will not be larger than 20,100.<br>The order of output does not matter.<br>Example 1:<br>Input:<br>s: “cbaebabacd” p: “abc”<br>Output:<br>[0, 6]<br>Explanation:<br>The substring with start index = 0 is “cba”, which is an anagram of “abc”.<br>The substring with start index = 6 is “bac”, which is an anagram of “abc”.<br>Example 2:<br>Input:<br>s: “abab” p: “ab”<br>Output:<br>[0, 1, 2]<br>Explanation:<br>The substring with start index = 0 is “ab”, which is an anagram of “ab”.<br>The substring with start index = 1 is “ba”, which is an anagram of “ab”.<br>The substring with start index = 2 is “ab”, which is an anagram of “ab”.</p>
+<h3 id="solution-12"><a href="#solution-12" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">const findAnagrams = (s, p) =&gt; &#123;</span><br><span class="line">    const resultArray = [];</span><br><span class="line">    const pLength = p.length;</span><br><span class="line">    const sLength = s.length;</span><br><span class="line"></span><br><span class="line">    // create two empty arrays with 0 inside</span><br><span class="line">    const pWindow = new Array(26).fill(0);</span><br><span class="line">    const sWindow = new Array(26).fill(0);</span><br><span class="line"></span><br><span class="line">    //assume only a-z</span><br><span class="line">    [...p].forEach(character =&gt; &#123;</span><br><span class="line">        // charCodeAt returns a--&gt; 97, b --&gt; 98, c--&gt; 99, etc</span><br><span class="line">        pWindow[character.charCodeAt(0) - 97]++;</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    [...s].forEach((character, index) =&gt; &#123;</span><br><span class="line">        //jump into next position, and minus the previous chart from window</span><br><span class="line">        if (index &gt;= pLength) &#123;</span><br><span class="line">            sWindow[s.charCodeAt(index-pLength) - 97]--;</span><br><span class="line">        &#125;</span><br><span class="line">        sWindow[character.charCodeAt(0) - 97]++;</span><br><span class="line">        // compare two strings</span><br><span class="line">        if (pWindow.join() === sWindow.join()) &#123;</span><br><span class="line">            resultArray.push(index+1-pLength);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    return resultArray</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 252 ms<br>Memory Usage: 43.8 MB</p>
+<h2 id="0739-Daily-Temperatures"><a href="#0739-Daily-Temperatures" class="headerlink" title="0739. Daily Temperatures"></a>0739. Daily Temperatures</h2><p>Given a list of daily temperatures T, return a list such that, for each day in the input, tells you how many days you would have to wait until a warmer temperature. If there is no future day for which this is possible, put 0 instead.<br>For example, given the list of temperatures T = [73, 74, 75, 71, 69, 72, 76, 73], your output should be [1, 1, 4, 2, 1, 1, 0, 0].<br>Note: The length of temperatures will be in the range [1, 30000]. Each temperature will be an integer in the range [30, 100].</p>
+<h3 id="solution-13"><a href="#solution-13" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">const dailyTemperatures = (T) =&gt; &#123;</span><br><span class="line">    let res = Array.from(&#123;length:T.length&#125;,x=&gt;0);</span><br><span class="line">    let stack = [];</span><br><span class="line">    for(let i = 0; i &lt; T.length; i++)&#123;</span><br><span class="line">    	while(stack.length &gt; 0 &amp;&amp; T[stack[stack.length - 1]] &lt; T[i])&#123;</span><br><span class="line">    		let j = stack.pop();</span><br><span class="line">    		res[j] = i - j;</span><br><span class="line">    	&#125;</span><br><span class="line">    	stack.push(i);</span><br><span class="line">    &#125;</span><br><span class="line">    return res;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 168 ms<br>Memory Usage: 42.4 MB</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/LeetCode/" rel="tag"><i class="fa fa-tag"></i> LeetCode</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/11/21/leetcode6/" rel="next" title="LeetCode - Linked List">
+                <i class="fa fa-chevron-left"></i> LeetCode - Linked List
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/11/23/es6/" rel="prev" title="ES6 in Depth">
+                ES6 in Depth <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Fanjia Kong</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:kfj0116@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i></a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#0046-Permutations"><span class="nav-number">1.</span> <span class="nav-text">0046. Permutations</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution"><span class="nav-number">1.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0136-Single-Number"><span class="nav-number">2.</span> <span class="nav-text">0136. Single Number</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1"><span class="nav-number">2.1.</span> <span class="nav-text">solution 1:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2"><span class="nav-number">2.2.</span> <span class="nav-text">solution 2:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-3"><span class="nav-number">2.3.</span> <span class="nav-text">solution 3:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0146-LRU-Cache"><span class="nav-number">3.</span> <span class="nav-text">0146. LRU Cache</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1"><span class="nav-number">3.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0155-Min-Stack"><span class="nav-number">4.</span> <span class="nav-text">0155. Min Stack</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2"><span class="nav-number">4.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0190-Reverse-Bits"><span class="nav-number">5.</span> <span class="nav-text">0190. Reverse Bits</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1-1"><span class="nav-number">5.1.</span> <span class="nav-text">solution 1:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2-1"><span class="nav-number">5.2.</span> <span class="nav-text">solution 2:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0191-Number-of-1-Bits"><span class="nav-number">6.</span> <span class="nav-text">0191. Number of 1 Bits</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1-2"><span class="nav-number">6.1.</span> <span class="nav-text">solution 1:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2-2"><span class="nav-number">6.2.</span> <span class="nav-text">solution 2:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-3-1"><span class="nav-number">6.3.</span> <span class="nav-text">solution 3:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-4"><span class="nav-number">6.4.</span> <span class="nav-text">solution 4:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-5"><span class="nav-number">6.5.</span> <span class="nav-text">solution 5:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0200-Number-of-Islands"><span class="nav-number">7.</span> <span class="nav-text">0200. Number of Islands</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-3"><span class="nav-number">7.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0207-Course-Schedule"><span class="nav-number">8.</span> <span class="nav-text">0207. Course Schedule</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-4"><span class="nav-number">8.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0208-Implement-Trie-Prefix-Tree"><span class="nav-number">9.</span> <span class="nav-text">0208. Implement Trie (Prefix Tree)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-5"><span class="nav-number">9.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0215-Kth-Largest-Element-in-an-Array"><span class="nav-number">10.</span> <span class="nav-text">0215. Kth Largest Element in an Array</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-6"><span class="nav-number">10.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0240-Search-a-2D-Matrix-II"><span class="nav-number">11.</span> <span class="nav-text">0240. Search a 2D Matrix II</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-7"><span class="nav-number">11.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0242-Valid-Anagram"><span class="nav-number">12.</span> <span class="nav-text">0242. Valid Anagram</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1-3"><span class="nav-number">12.1.</span> <span class="nav-text">solution 1:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2-3"><span class="nav-number">12.2.</span> <span class="nav-text">solution 2:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0347-Top-K-Frequent-Elements"><span class="nav-number">13.</span> <span class="nav-text">0347. Top K Frequent Elements</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1-4"><span class="nav-number">13.1.</span> <span class="nav-text">solution 1:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2-4"><span class="nav-number">13.2.</span> <span class="nav-text">solution 2:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0350-Intersection-of-Two-Arrays-II"><span class="nav-number">14.</span> <span class="nav-text">0350. Intersection of Two Arrays II</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-8"><span class="nav-number">14.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0371-Sum-of-Two-Integers"><span class="nav-number">15.</span> <span class="nav-text">0371. Sum of Two Integers</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-9"><span class="nav-number">15.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0394-Decode-String"><span class="nav-number">16.</span> <span class="nav-text">0394. Decode String</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-10"><span class="nav-number">16.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0406-Queue-Reconstruction-by-Height"><span class="nav-number">17.</span> <span class="nav-text">0406. Queue Reconstruction by Height</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-11"><span class="nav-number">17.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0412-Fizz-Buzz"><span class="nav-number">18.</span> <span class="nav-text">0412. Fizz Buzz</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1-5"><span class="nav-number">18.1.</span> <span class="nav-text">solution 1:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2-5"><span class="nav-number">18.2.</span> <span class="nav-text">solution 2:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0438-Find-All-Anagrams-in-a-String"><span class="nav-number">19.</span> <span class="nav-text">0438. Find All Anagrams in a String</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-12"><span class="nav-number">19.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0739-Daily-Temperatures"><span class="nav-number">20.</span> <span class="nav-text">0739. Daily Temperatures</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-13"><span class="nav-number">20.1.</span> <span class="nav-text">solution:</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Fanjia Kong</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

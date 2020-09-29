@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Questions,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Record some HTML questions.">
+<meta name="keywords" content="Questions">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Questions - HTML">
+<meta property="og:url" content="http://yoursite.com/2019/11/02/html-questions/index.html">
+<meta property="og:site_name" content="Fanjia Kong">
+<meta property="og:description" content="Record some HTML questions.">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-12-04T20:06:48.080Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Questions - HTML">
+<meta name="twitter:description" content="Record some HTML questions.">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/11/02/html-questions/">
+
+
+
+
+
+  <title>Questions - HTML | Fanjia Kong</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Fanjia Kong</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Frontend Developer</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/02/html-questions/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Fanjia Kong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Fanjia Kong">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Questions - HTML</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-02T22:39:37+02:00">
+                2019-11-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/HTML/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Record some HTML questions.</p>
+<a id="more"></a>
+
+<h2 id="What-does-a-DOCTYPE-do"><a href="#What-does-a-DOCTYPE-do" class="headerlink" title="What does a DOCTYPE do?"></a>What does a DOCTYPE do?</h2><p>DOCTYPE means DOCument TYPE. A DOCTYPE is always associated with a Document Type Definition.A DTD defines how documents of a certain type should be structured, whereas a DOCTYPE declares what DTD a document supposedly respects.<br>For webpages, the DOCTYPE declaration is required. It is used to tell user agents what version of the HTML specifications your document respects. Once a user agent has recognized a correct DOCTYPE, it will trigger the no-quirks mode matching this DOCTYPE for reading the document. Otherwise, it will trigger the quirks mode.<br>The DOCTYPE declaration for the HTML5 standards is <code>&lt;!DOCTYPE html&gt;</code>.</p>
+<h2 id="Describe-the-difference-between-a-cookie-sessionStorage-and-localStorage"><a href="#Describe-the-difference-between-a-cookie-sessionStorage-and-localStorage" class="headerlink" title="Describe the difference between a cookie, sessionStorage and localStorage."></a>Describe the difference between a cookie, sessionStorage and localStorage.</h2><p>They are key-value storage mechanisms on the client-side. They are only able to store values as strings.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>cookie</th>
+<th>localStorage</th>
+<th>sessionStorage</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Initiator</td>
+<td>Client or server. Server can use <code>Set-cookie</code> header</td>
+<td>Client</td>
+<td>Client</td>
+</tr>
+<tr>
+<td>Expiry</td>
+<td>Manually set</td>
+<td>Forever</td>
+<td>On tab close</td>
+</tr>
+<tr>
+<td>Persistent across browser sessions</td>
+<td>Depends on whether expiration is set</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sent to server with every HTTP request</td>
+<td>Cookies are automatically being sent via cookie header</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Capacity (per domain)</td>
+<td>4kb</td>
+<td>5MB</td>
+<td>5MB</td>
+</tr>
+<tr>
+<td>Accessibility</td>
+<td>Any window</td>
+<td>Any window</td>
+<td>Same tab</td>
+</tr>
+</tbody></table>
+<p>Note: If the user decides to clear browsing data via whatever mechanism provided by the browser, this will clear out any cookie, localStorage, or sessionStorage stored. It’s important to keep this in mind when designing for local persistence, especially when comparing to alternatives such as server-side storing in a database or similar.</p>
+<h2 id="What-are-data-attributes-good-for"><a href="#What-are-data-attributes-good-for" class="headerlink" title="What are data- attributes good for?"></a>What are data- attributes good for?</h2><p>Before JavaScript frameworks became popular, front end developers used data- attributes to store extra data within the DOM itself. It is intended to store custom data private to the page or application, for which there are no more appropriate attributes or elements.<br>These days, using data- attributes is generally not encouraged. One reason is that users can modify the data attribute easily by using inspect element in the browser. The data model is better stored within JavaScript itself and stay updated with the DOM via data binding possibly through a library or a framework.</p>
+<h2 id="What-is-progressive-rendering"><a href="#What-is-progressive-rendering" class="headerlink" title="What is progressive rendering?"></a>What is progressive rendering?</h2><p>Progressive rendering is the name given to techniques used to improve the performance of a webpage to render content for display as quickly as possible.<br>Examples of such techniques:</p>
+<ul>
+<li>Lazy loading of images - Images on the page are not loaded all at once. JavaScript will be used to load an image when the user scrolls into the part of the page that displays the image.</li>
+<li>Prioritizing visible content - Include only the minimum CSS/content/scripts necessary for the amount of page that would be rendered in the user’s browser first to display as quickly as possible, you can then use deferred scripts or listen for the DOMContentLoaded/load event to load in other resources and content.</li>
+<li>Async HTML fragments - Flushing parts of the HTML to the browser as the page is constructed on the back end.</li>
+</ul>
+<h2 id="Explain-meta-tags-in-HTML"><a href="#Explain-meta-tags-in-HTML" class="headerlink" title="Explain meta tags in HTML"></a>Explain meta tags in HTML</h2><ul>
+<li>Meta tags always go inside head tag of the HTML page</li>
+<li>Meta tags are always passed as name/value pairs</li>
+<li>Meta tags are not displayed on the page but intended for the browser</li>
+<li>Meta tags can contain information about character encoding, description, title of the document etc.</li>
+</ul>
+<h2 id="What-is-the-difference-between-span-and-div"><a href="#What-is-the-difference-between-span-and-div" class="headerlink" title="What is the difference between span and div?"></a>What is the difference between span and div?</h2><p>Div is a block element and span is an inline element.<br>It’s illegal to place a block element inside an inline element, and that while div can have a p tag, and a p tag can have a span, but span can’t have a div or p tag inside.</p>
+<h2 id="What-is-the-difference-between-title-and-h1-b-and-strong-i-and-em-？"><a href="#What-is-the-difference-between-title-and-h1-b-and-strong-i-and-em-？" class="headerlink" title="What is the difference between title and h1, b and strong, i and em ？"></a>What is the difference between title and h1, b and strong, i and em ？</h2><ul>
+<li>The title attribute has no clear meaning only to indicate a title, and H1 means a clear-cut title, which also has a great influence on the crawling of the page information;</li>
+<li>Strong is the key content, with the meaning of tone enhancement, when using reading devices: strong will enhance, and b is to emphasize content.</li>
+<li>i content is shown in italics, and em indicates emphasized text;</li>
+</ul>
+<h2 id="What’s-new-in-HTML-5"><a href="#What’s-new-in-HTML-5" class="headerlink" title="What’s new in HTML 5?"></a>What’s new in HTML 5?</h2><h3 id="New-Doctype"><a href="#New-Doctype" class="headerlink" title="New Doctype"></a>New Doctype</h3><p><code>&lt;!DOCTYPE html&gt;</code></p>
+<h3 id="New-Structure"><a href="#New-Structure" class="headerlink" title="New Structure"></a>New Structure</h3><ul>
+<li><code>&lt;section&gt;</code> - to define sections of pages</li>
+<li><code>&lt;header&gt;</code> - defines the header of a page</li>
+<li><code>&lt;footer&gt;</code> - defines the footer of a page</li>
+<li><code>&lt;nav&gt;</code> - defines the navigation on a page</li>
+<li><code>&lt;article&gt;</code> - defines the article or primary content on a page</li>
+<li><code>&lt;aside&gt;</code> - defines extra content like a sidebar on a page</li>
+<li><code>&lt;figure&gt;</code> - defines images that annotate an article</li>
+</ul>
+<h3 id="New-Inline-Elements"><a href="#New-Inline-Elements" class="headerlink" title="New Inline Elements"></a>New Inline Elements</h3><p>These inline elements define some basic concepts and keep them semantically marked up, mostly to do with time:</p>
+<ul>
+<li><code>&lt;mark&gt;</code> - to indicate content that is marked in some fashion</li>
+<li><code>&lt;time&gt;</code> - to indicate content that is a time or date</li>
+<li><code>&lt;meter&gt;</code> - to indicate content that is a fraction of a known range - such as disk usage</li>
+<li><code>&lt;progress&gt;</code> - to indicate the progress of a task towards completion</li>
+</ul>
+<h3 id="New-Form-Types"><a href="#New-Form-Types" class="headerlink" title="New Form Types"></a>New Form Types</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=&quot;datetime&quot;&gt;</span><br><span class="line">&lt;input type=&quot;datetime-local&quot;&gt;</span><br><span class="line">&lt;input type=&quot;date&quot;&gt;</span><br><span class="line">&lt;input type=&quot;month&quot;&gt;</span><br><span class="line">&lt;input type=&quot;week&quot;&gt;</span><br><span class="line">&lt;input type=&quot;time&quot;&gt;</span><br><span class="line">&lt;input type=&quot;number&quot;&gt;</span><br><span class="line">&lt;input type=&quot;range&quot;&gt;</span><br><span class="line">&lt;input type=&quot;email&quot;&gt;</span><br><span class="line">&lt;input type=&quot;url&quot;&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="New-Elements"><a href="#New-Elements" class="headerlink" title="New Elements"></a>New Elements</h3><p>There are a few exciting new elements in HTML 5:</p>
+<ul>
+<li><code>&lt;canvas&gt;</code> - an element to give you a drawing space in JavaScript on your Web pages. It can let you add images or graphs to tool tips or just create dynamic graphs on your Web pages, built on the fly.</li>
+<li><code>&lt;video&gt;</code> - add video to your Web pages with this simple tag.</li>
+<li><code>&lt;audio&gt;</code> - add sound to your Web pages with this simple tag.</li>
+</ul>
+<h3 id="No-More-Types-for-Scripts-and-Links"><a href="#No-More-Types-for-Scripts-and-Links" class="headerlink" title="No More Types for Scripts and Links"></a>No More Types for Scripts and Links</h3><p>You possibly still add the type attribute to your link and script tags.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/stylesheet.css&quot; type=&quot;text/css&quot; /&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;path/to/script.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>This is no longer necessary. It’s implied that both of these tags refer to stylesheets and scripts, respectively. As such, we can remove the type attribute all together.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/stylesheet.css&quot; /&gt;</span><br><span class="line">&lt;script src=&quot;path/to/script.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Make-your-content-editable"><a href="#Make-your-content-editable" class="headerlink" title="Make your content editable"></a>Make your content editable</h3><p>The new browsers have a nifty new attribute that can be applied to elements, called <code>contenteditable</code>. As the name implies, this allows the user to edit any of the text contained within the element, including its children. There are a variety of uses for something like this, including an app as simple as a to-do list, which also takes advantage of local storage.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;h2&gt; To-Do List &lt;/h2&gt;</span><br><span class="line">&lt;ul contenteditable=&quot;true&quot;&gt;</span><br><span class="line">  &lt;li&gt; Break mechanical cab driver. &lt;/li&gt;</span><br><span class="line">  &lt;li&gt; Drive to abandoned factory</span><br><span class="line">  &lt;li&gt; Watch video of self &lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="How-to-use-Page-Visibility-API"><a href="#How-to-use-Page-Visibility-API" class="headerlink" title="How to use Page Visibility API"></a>How to use Page Visibility API</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">document.addEventListener(&apos;visibilitychange&apos;, function () &#123;</span><br><span class="line">  // user leave current page</span><br><span class="line">  if (document.visibilityState === &apos;hidden&apos;) &#123;</span><br><span class="line">    document.title = &apos;the page is invisible&apos;;</span><br><span class="line">  &#125;</span><br><span class="line">  // user open or come back</span><br><span class="line">  if (document.visibilityState === &apos;visible&apos;) &#123;</span><br><span class="line">    document.title = &apos;the page is visible&apos;;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h2 id="What-kind-of-things-must-you-be-wary-of-when-designing-or-developing-for-multilingual-sites"><a href="#What-kind-of-things-must-you-be-wary-of-when-designing-or-developing-for-multilingual-sites" class="headerlink" title="What kind of things must you be wary of when designing or developing for multilingual sites?"></a>What kind of things must you be wary of when designing or developing for multilingual sites?</h2><ul>
+<li>Use lang attribute in your HTML.</li>
+<li>Directing users to their native language - Allow a user to change his country/language easily without hassle.</li>
+<li>Text in images is not a scalable approach</li>
+<li>Restrictive words/sentence length - Some content can be longer when written in another language. Be wary of layout or overflow issues in the design. It’s best to avoid designing where the amount of text would make or break a design.</li>
+<li>Be mindful of how colors are perceived - Colors are perceived differently across languages and cultures.</li>
+<li>Formatting dates and currencies - Calendar dates are sometimes presented in different ways.</li>
+<li>Do not concatenate translated strings - Use a template string with parameters substitution for each language. Note that the position of the variable is different due to the grammar rules of the language.</li>
+<li>Language reading direction - In English, we read from left-to-right, top-to-bottom, in traditional Japanese, text is read up-to-down, right-to-left.</li>
+</ul>
+<h2 id="Why-is-it-generally-a-good-idea-to-position-CSS-lt-link-gt-between-lt-head-gt-lt-head-gt-and-JS-lt-script-gt-just-before-lt-body-gt-Do-you-know-any-exceptions"><a href="#Why-is-it-generally-a-good-idea-to-position-CSS-lt-link-gt-between-lt-head-gt-lt-head-gt-and-JS-lt-script-gt-just-before-lt-body-gt-Do-you-know-any-exceptions" class="headerlink" title="Why is it generally a good idea to position CSS &lt;link&gt; between &lt;head&gt;&lt;/head&gt; and JS &lt;script&gt; just before &lt;/body&gt;? Do you know any exceptions?"></a>Why is it generally a good idea to position CSS <code>&lt;link&gt;</code> between <code>&lt;head&gt;&lt;/head&gt;</code> and JS <code>&lt;script&gt;</code> just before <code>&lt;/body&gt;</code>? Do you know any exceptions?</h2><h3 id="Placing-lt-link-gt-in-the-lt-head-gt"><a href="#Placing-lt-link-gt-in-the-lt-head-gt" class="headerlink" title="Placing &lt;link&gt; in the &lt;head&gt;"></a>Placing <code>&lt;link&gt;</code> in the <code>&lt;head&gt;</code></h3><p>Putting <code>&lt;link&gt;</code> in the head is part of proper specification in building an optimized website. When a page first loads, HTML and CSS are being parsed simultaneously; HTML creates the DOM and CSS creates the CSSOM. Both are needed to create the visuals in a website, allowing for a quick “first meaningful paint” timing. This progressive rendering is a category optimization sites are measured in their performance scores. Putting stylesheets near the bottom of the document is what prohibits progressive rendering in many browsers. Some browsers block rendering to avoid having to repaint elements of the page if their styles change. The user is then stuck viewing a blank white page. Other times there can be flashes of unstyled content, which can show a webpage with no styling applied.</p>
+<h3 id="Placing-lt-script-gt-just-before-lt-body-gt"><a href="#Placing-lt-script-gt-just-before-lt-body-gt" class="headerlink" title="Placing &lt;script&gt; just before &lt;/body&gt;"></a>Placing <code>&lt;script&gt;</code> just before <code>&lt;/body&gt;</code></h3><p><code>&lt;script&gt;</code> block HTML parsing while they are being downloaded and executed. Placing the scripts at the bottom will allow the HTML to be parsed and displayed to the user first.<br>An exception for positioning of <code>&lt;script&gt;</code> at the bottom is when your script contains <code>document.write()</code>, but these days it’s not a good practice to use <code>document.write()</code>. Also, placing <code>&lt;script&gt;</code> at the bottom means that the browser cannot start downloading the scripts until the entire document is parsed. This ensures your code that needs to manipulate DOM elements will not throw and error and halt the entire script. If you need to put <code>&lt;script&gt;</code> in the <code>&lt;head&gt;</code>, use the defer attribute, which will achieve the same effect of downloading and running the script only after the HTML is parsed.</p>
+<h3 id="What-are-defer-and-async-attributes-on-a-lt-script-gt-tag"><a href="#What-are-defer-and-async-attributes-on-a-lt-script-gt-tag" class="headerlink" title="What are defer and async attributes on a &lt;script&gt; tag?"></a>What are defer and async attributes on a <code>&lt;script&gt;</code> tag?</h3><p>If neither attribute is present, the script is downloaded and executed synchronously and will halt parsing of the document until it has finished executing. Scripts are downloaded and executed in the order they are encountered.<br>The defer attribute downloads the script while the document is still parsing but waits until the document has finished parsing before executing it, equivalent to executing inside a DOMContentLoaded event listener. defer scripts will execute in order.<br>The async attribute downloads the script during parsing the document but will pause the parser to execute the script before it has fully finished parsing. async scripts will not necessarily execute in order.<br>Note: both attributes must only be used if the script has a src attribute.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;myscript.js&quot; defer&gt;&lt;/script&gt;</span><br><span class="line"> &lt;script src=&quot;myscript.js&quot; async&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Consider-HTML5-as-an-open-web-platform-What-are-the-building-blocks-of-HTML5"><a href="#Consider-HTML5-as-an-open-web-platform-What-are-the-building-blocks-of-HTML5" class="headerlink" title="Consider HTML5 as an open web platform. What are the building blocks of HTML5?"></a>Consider HTML5 as an open web platform. What are the building blocks of HTML5?</h2><ul>
+<li>Semantics - Allowing you to describe more precisely what your content is.</li>
+<li>Connectivity - Allowing you to communicate with the server in new and innovative ways.</li>
+<li>Offline and storage - Allowing webpages to store data on the client-side locally and operate offline more efficiently.</li>
+<li>Multimedia - Making video and audio first-class citizens in the Open Web.</li>
+<li>2D/3D graphics and effects - Allowing a much more diverse range of presentation options.</li>
+<li>Performance and integration - Providing greater speed optimization and better usage of computer hardware.</li>
+<li>Device access - Allowing for the usage of various input and output devices.</li>
+<li>Styling - Letting authors write more sophisticated themes.</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Questions/" rel="tag"><i class="fa fa-tag"></i> Questions</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/10/19/channel-page/" rel="next" title="Project - Channel Page">
+                <i class="fa fa-chevron-left"></i> Project - Channel Page
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/11/03/css-questions/" rel="prev" title="Questions - CSS">
+                Questions - CSS <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Fanjia Kong</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:kfj0116@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i></a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#What-does-a-DOCTYPE-do"><span class="nav-number">1.</span> <span class="nav-text">What does a DOCTYPE do?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Describe-the-difference-between-a-cookie-sessionStorage-and-localStorage"><span class="nav-number">2.</span> <span class="nav-text">Describe the difference between a cookie, sessionStorage and localStorage.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-are-data-attributes-good-for"><span class="nav-number">3.</span> <span class="nav-text">What are data- attributes good for?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-is-progressive-rendering"><span class="nav-number">4.</span> <span class="nav-text">What is progressive rendering?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Explain-meta-tags-in-HTML"><span class="nav-number">5.</span> <span class="nav-text">Explain meta tags in HTML</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-is-the-difference-between-span-and-div"><span class="nav-number">6.</span> <span class="nav-text">What is the difference between span and div?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-is-the-difference-between-title-and-h1-b-and-strong-i-and-em-？"><span class="nav-number">7.</span> <span class="nav-text">What is the difference between title and h1, b and strong, i and em ？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What’s-new-in-HTML-5"><span class="nav-number">8.</span> <span class="nav-text">What’s new in HTML 5?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#New-Doctype"><span class="nav-number">8.1.</span> <span class="nav-text">New Doctype</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#New-Structure"><span class="nav-number">8.2.</span> <span class="nav-text">New Structure</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#New-Inline-Elements"><span class="nav-number">8.3.</span> <span class="nav-text">New Inline Elements</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#New-Form-Types"><span class="nav-number">8.4.</span> <span class="nav-text">New Form Types</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#New-Elements"><span class="nav-number">8.5.</span> <span class="nav-text">New Elements</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#No-More-Types-for-Scripts-and-Links"><span class="nav-number">8.6.</span> <span class="nav-text">No More Types for Scripts and Links</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Make-your-content-editable"><span class="nav-number">8.7.</span> <span class="nav-text">Make your content editable</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#How-to-use-Page-Visibility-API"><span class="nav-number">9.</span> <span class="nav-text">How to use Page Visibility API</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-kind-of-things-must-you-be-wary-of-when-designing-or-developing-for-multilingual-sites"><span class="nav-number">10.</span> <span class="nav-text">What kind of things must you be wary of when designing or developing for multilingual sites?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Why-is-it-generally-a-good-idea-to-position-CSS-lt-link-gt-between-lt-head-gt-lt-head-gt-and-JS-lt-script-gt-just-before-lt-body-gt-Do-you-know-any-exceptions"><span class="nav-number">11.</span> <span class="nav-text">Why is it generally a good idea to position CSS &lt;link&gt; between &lt;head&gt;&lt;/head&gt; and JS &lt;script&gt; just before &lt;/body&gt;? Do you know any exceptions?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Placing-lt-link-gt-in-the-lt-head-gt"><span class="nav-number">11.1.</span> <span class="nav-text">Placing &lt;link&gt; in the &lt;head&gt;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Placing-lt-script-gt-just-before-lt-body-gt"><span class="nav-number">11.2.</span> <span class="nav-text">Placing &lt;script&gt; just before &lt;/body&gt;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#What-are-defer-and-async-attributes-on-a-lt-script-gt-tag"><span class="nav-number">11.3.</span> <span class="nav-text">What are defer and async attributes on a &lt;script&gt; tag?</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Consider-HTML5-as-an-open-web-platform-What-are-the-building-blocks-of-HTML5"><span class="nav-number">12.</span> <span class="nav-text">Consider HTML5 as an open web platform. What are the building blocks of HTML5?</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Fanjia Kong</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

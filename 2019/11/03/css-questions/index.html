@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Questions,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Record some CSS questions.">
+<meta name="keywords" content="Questions">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Questions - CSS">
+<meta property="og:url" content="http://yoursite.com/2019/11/03/css-questions/index.html">
+<meta property="og:site_name" content="Fanjia Kong">
+<meta property="og:description" content="Record some CSS questions.">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://yoursite.com/2019/11/03/css-questions/ball.png">
+<meta property="og:updated_time" content="2019-12-05T17:11:52.180Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Questions - CSS">
+<meta name="twitter:description" content="Record some CSS questions.">
+<meta name="twitter:image" content="http://yoursite.com/2019/11/03/css-questions/ball.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/11/03/css-questions/">
+
+
+
+
+
+  <title>Questions - CSS | Fanjia Kong</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Fanjia Kong</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Frontend Developer</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/03/css-questions/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Fanjia Kong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Fanjia Kong">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Questions - CSS</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-03T22:39:37+02:00">
+                2019-11-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CSS/" itemprop="url" rel="index">
+                    <span itemprop="name">CSS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Record some CSS questions.</p>
+<a id="more"></a>
+
+<h2 id="Describe-float-and-how-they-work"><a href="#Describe-float-and-how-they-work" class="headerlink" title="Describe float and how they work."></a>Describe <code>float</code> and how they work.</h2><p>Float is a CSS positioning property. Floated elements remain a part of the flow of the page, and will affect the positioning of other elements, unlike position: absolute elements, which are removed from the flow of the page.<br>The CSS clear property can be used to be positioned below left/right/both floated elements.<br>If a parent element contains nothing but floated elements, its height will be collapsed to nothing. It can be fixed by clearing the float after the floated elements in the container but before the close of the container.</p>
+<h2 id="What-are-the-various-clearing-techniques-and-which-is-appropriate-for-what-context"><a href="#What-are-the-various-clearing-techniques-and-which-is-appropriate-for-what-context" class="headerlink" title="What are the various clearing techniques and which is appropriate for what context?"></a>What are the various clearing techniques and which is appropriate for what context?</h2><ul>
+<li><p>Empty div method - <code>&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;</code></p>
+</li>
+<li><p>Clearfix method</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.clearfix:after &#123;</span><br><span class="line">  content: &apos; &apos;;</span><br><span class="line">  visibility: hidden;</span><br><span class="line">  display: block;</span><br><span class="line">  height: 0;</span><br><span class="line">  clear: both;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>overflow: auto or overflow: hidden method - Parent will establish a new block formatting context and expand to contains its floated children.</p>
+</li>
+</ul>
+<p>In projects, I would write a utility <code>.clearfix</code> class and use them in places where I need it. <code>overflow: hidden</code> might clip children if the children are taller than the parent and are not very ideal.</p>
+<h2 id="Describe-z-index-and-how-stacking-context-is-formed"><a href="#Describe-z-index-and-how-stacking-context-is-formed" class="headerlink" title="Describe z-index and how stacking context is formed."></a>Describe <code>z-index</code> and how stacking context is formed.</h2><p>The z-index property in CSS controls the vertical stacking order of elements that overlap.<br>z-index only effects elements that have a position value which is not static.<br>Without any z-index value, elements stack in the order that they appear in the DOM. Elements with non-static positioning will always appear on top of elements with default static positioning.<br>A stacking context is an element that contains a set of layers. Within a local stacking context, the z-index values of its children are set relative to that element rather than to the document root. If an element B sits on top of element A, a child element of element A, element C, can never be higher than element B even if element C has a higher z-index than element B.<br>Each stacking context is self-contained - after the element’s contents are stacked, the whole element is considered in the stacking order of the parent stacking context. A handful of CSS properties trigger a new stacking context, such as opacity less than 1, filter that is not none, and transform that is not none.<br>In addition to opacity, several newer CSS properties also create stacking contexts. These include transforms, filters, css-regions, paged media, and possibly others. As a general rule, it seems that if a CSS property requires rendering in an offscreen context, it must create a new stacking context.</p>
+<h2 id="Describe-Block-Formatting-Context-BFC-and-how-it-works"><a href="#Describe-Block-Formatting-Context-BFC-and-how-it-works" class="headerlink" title="Describe Block Formatting Context (BFC) and how it works."></a>Describe Block Formatting Context (BFC) and how it works.</h2><p>A BFC is part of the visual CSS rendering of a web page in which block boxes are laid out. Floats, absolutely positioned elements, inline-blocks, table-cells, table-captions, and elements with overflow other than visible establish new block formatting contexts.<br>Without establishing a block formatting context, the containing box will not contain floated children.<br>A BFC is an HTML box that satisfies at least one of the following conditions:</p>
+<ul>
+<li>The value of float is not none.</li>
+<li>The value of position is absolute or fixed.</li>
+<li>The value of display is table-cell, table-caption, inline-block, flow-root(not supported by IE, iOS Safari), flex, or inline-flex, grid or inline-grid.</li>
+<li>The value of block element overflow is not visible.</li>
+</ul>
+<p>In a BFC, each box’s left outer edge touches the left edge of the containing block. Vertical margins between adjacent block-level boxes in a BFC collapse.</p>
+<h2 id="Explain-your-understanding-of-the-box-model-and-how-you-would-tell-the-browser-in-CSS-to-render-your-layout-in-different-box-models"><a href="#Explain-your-understanding-of-the-box-model-and-how-you-would-tell-the-browser-in-CSS-to-render-your-layout-in-different-box-models" class="headerlink" title="Explain your understanding of the box model and how you would tell the browser in CSS to render your layout in different box models."></a>Explain your understanding of the box model and how you would tell the browser in CSS to render your layout in different box models.</h2><p>The CSS box model describes the rectangular boxes that are generated for elements in the document tree and laid out according to the visual formatting model. Each box has a content area and optional surrounding padding, border, and margin areas.<br>IE box model and W3C box model.<br>The CSS box model is responsible for calculating:</p>
+<ul>
+<li>How much space a block element takes up.</li>
+<li>Whether or not borders and/or margins overlap, or collapse.</li>
+<li>A box’s size.<br>The box model has the following rules:</li>
+<li>The size of a block element is calculated by width, height, padding, borders, and margins.</li>
+<li>If no height is specified, a block element will be as high as the content it contains, plus padding.</li>
+<li>If no width is specified, a non-floated block element will expand to fit the width of its parent minus padding.</li>
+<li>The height of an element is calculated by the content’s height.</li>
+<li>The width of an element is calculated by the content’s width.</li>
+<li>By default, paddings and borders are not part of the width and height of an element.</li>
+</ul>
+<h3 id="What-does-box-sizing-border-box-do"><a href="#What-does-box-sizing-border-box-do" class="headerlink" title="What does * { box-sizing: border-box; } do?"></a>What does <code>* { box-sizing: border-box; }</code> do?</h3><p>By default, elements have <code>box-sizing: content-box</code> applied, and only the content size is being accounted for.<code>box-sizing: border-box</code> changes how the width and height of elements are being calculated, border and padding are also being included in the calculation.</p>
+<ul>
+<li>The height of an element is now calculated by the content’s height + vertical padding + vertical border width.</li>
+<li>The width of an element is now calculated by the content’s width + horizontal padding + horizontal border width.</li>
+</ul>
+<p>Taking into account paddings and borders as part of our box model resonates better with how designers actually imagine content in grids.</p>
+<h2 id="What’s-the-difference-between-block-inline-and-inline-block"><a href="#What’s-the-difference-between-block-inline-and-inline-block" class="headerlink" title="What’s the difference between block, inline and inline-block?"></a>What’s the difference between block, inline and inline-block?</h2><table>
+<thead>
+<tr>
+<th></th>
+<th>block</th>
+<th>inline-block</th>
+<th>inline</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Size</td>
+<td>Fills up the width of its parent container.</td>
+<td>Depends on content.</td>
+<td>Depends on content.</td>
+</tr>
+<tr>
+<td>Positioning</td>
+<td>Start on a new line and tolerates no HTML elements next to it (except when you add float)</td>
+<td>Flows along with other content and allows other elements beside it.</td>
+<td>Flows along with other content and allows other elements beside it.</td>
+</tr>
+<tr>
+<td>Can specify width and height</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No. Will ignore if being set.</td>
+</tr>
+<tr>
+<td>Can be aligned with vertical-align</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Margins and paddings</td>
+<td>All sides respected.</td>
+<td>All sides respected.</td>
+<td>Only horizontal sides respected. Vertical sides, if specified, do not affect layout. Vertical space it takes up depends on line-height, even though the border and padding appear visually around the content.</td>
+</tr>
+<tr>
+<td>Float</td>
+<td>-</td>
+<td>-</td>
+<td>Becomes like a block element where you can set vertical margins and paddings.</td>
+</tr>
+</tbody></table>
+<h2 id="What’s-the-difference-between-a-relative-fixed-absolute-and-static-positioned-element"><a href="#What’s-the-difference-between-a-relative-fixed-absolute-and-static-positioned-element" class="headerlink" title="What’s the difference between a relative, fixed, absolute and static positioned element?"></a>What’s the difference between a relative, fixed, absolute and static positioned element?</h2><ul>
+<li>static - The default position; the element will flow into the page as it normally would. The top, right, bottom, left and z-index properties do not apply.</li>
+<li>relative - The element’s position is adjusted relative to itself, without changing layout.</li>
+<li>absolute - The element is removed from the flow of the page and positioned at a specified position relative to its closest positioned ancestor if any, or otherwise relative to the initial containing block. Absolutely positioned boxes can have margins, and they do not collapse with any other margins. These elements do not affect the position of other elements.</li>
+<li>fixed - The element is removed from the flow of the page and positioned at a specified position relative to the viewport and doesn’t move when scrolled.</li>
+<li>sticky - Sticky positioning is a hybrid of relative and fixed positioning. The element is treated as relative positioned until it crosses a specified threshold, at which point it is treated as fixed positioned.（IE not support）</li>
+</ul>
+<h2 id="Center"><a href="#Center" class="headerlink" title="Center"></a>Center</h2><h3 id="horizontal"><a href="#horizontal" class="headerlink" title="horizontal"></a>horizontal</h3><ul>
+<li>inline element: <code>text-align: center</code></li>
+<li>block element has width: <code>margin: 0 auto</code></li>
+<li><code>display: flex;justify-content: center;</code></li>
+</ul>
+<h3 id="vertical"><a href="#vertical" class="headerlink" title="vertical"></a>vertical</h3><ul>
+<li><p>single line: <code>line-height = height</code></p>
+</li>
+<li><p>block element has size:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">width: 80px;</span><br><span class="line">height: 40px;</span><br><span class="line">position: absolute;</span><br><span class="line">left: 50%;</span><br><span class="line">top: 50%;</span><br><span class="line">margin-top: -20px;</span><br><span class="line">margin-left: -40px;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">position: absolute;</span><br><span class="line">left: 0;</span><br><span class="line">top: 0;</span><br><span class="line">right: 0;</span><br><span class="line">bottom: 0;</span><br><span class="line">margin: auto;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">width: 100px;</span><br><span class="line">height: 100px;</span><br><span class="line">position: absolute;;</span><br><span class="line">top: calc(50% - 50px);</span><br><span class="line">left: calc(50% - 50px);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>block element no size:</p>
+<p>transform</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">position: absolute;</span><br><span class="line">left: 50%;</span><br><span class="line">top: 50%;</span><br><span class="line">transform: translate(-50%, -50%);</span><br></pre></td></tr></table></figure>
+
+<p>table</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.parent &#123;</span><br><span class="line">  display: table-cell;</span><br><span class="line">  text-align: center;</span><br><span class="line">  vertical-align: middle;</span><br><span class="line">&#125;</span><br><span class="line">.child &#123;</span><br><span class="line">  display: inline-block;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>flex</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.parent &#123;</span><br><span class="line">  display: flex;</span><br><span class="line">  align-items: center;</span><br><span class="line">  justify-content: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>grid</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.parent &#123;</span><br><span class="line">  display: grid;</span><br><span class="line">&#125;</span><br><span class="line">.child &#123;</span><br><span class="line">  align-self: center;</span><br><span class="line">  justify-self: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="transition-animation"><a href="#transition-animation" class="headerlink" title="transition animation"></a>transition animation</h2><h3 id="transition"><a href="#transition" class="headerlink" title="transition:"></a>transition:</h3><ul>
+<li>transition-property: none|all|property;</li>
+<li>transition-duration: time;</li>
+<li>transition-timing-function: linear|ease|ease-in|ease-out|ease-in-out|cubic-bezier(n,n,n,n);</li>
+<li>transition-delay: time;</li>
+</ul>
+<h3 id="animation-keyframes"><a href="#animation-keyframes" class="headerlink" title="animation / keyframes"></a>animation / keyframes</h3><ul>
+<li>animation-name: keyframe name|none;</li>
+<li>animation-duration: time;</li>
+<li>animation-timing-function: linear|ease|ease-in|ease-out|ease-in-out|cubic-bezier(n,n,n,n);</li>
+<li>animation-delay: time;</li>
+<li>animation-iteration-count: n|infinite;</li>
+<li>animation-direction: normal|reverse|alternate|alternate-reverse</li>
+<li>animation-fill-mode: forwards|backwards|both</li>
+</ul>
+<h3 id="example"><a href="#example" class="headerlink" title="example"></a>example</h3><img src="ball.png" alt="img" width="50%">
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">div&#123;</span><br><span class="line">  width: 40px;</span><br><span class="line">  height: 40px;</span><br><span class="line">  border-radius: 50%;</span><br><span class="line">  background: #0ff;</span><br><span class="line">  animation: move 2s linear 3 alternate both;</span><br><span class="line">&#125;</span><br><span class="line">@keyframes move&#123;</span><br><span class="line">  0%&#123;</span><br><span class="line">    transform: translate(0,0);</span><br><span class="line">  &#125;</span><br><span class="line">  100%&#123;</span><br><span class="line">    transform: translate(200px,0);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">div&#123;</span><br><span class="line">  width: 40px;</span><br><span class="line">  height: 40px;</span><br><span class="line">  border-radius: 50%;</span><br><span class="line">  background: #0ff;</span><br><span class="line">  animation: move 6s linear both;</span><br><span class="line">&#125;</span><br><span class="line">@keyframes move&#123;</span><br><span class="line">  0%, 66%&#123;</span><br><span class="line">    transform: translate(0,0);</span><br><span class="line">  &#125;</span><br><span class="line">  33%,100%&#123;</span><br><span class="line">    transform: translate(200px,0);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Difference-between-import-and-lt-link-gt"><a href="#Difference-between-import-and-lt-link-gt" class="headerlink" title="Difference between @import and &lt;link&gt;"></a>Difference between <code>@import</code> and <code>&lt;link&gt;</code></h2><ul>
+<li><code>@import</code> is the CSS mechanism to include a style sheet and <code>&lt;link&gt;</code> the HTML mechanism, can define RSS, rel</li>
+<li><code>&lt;link&gt;</code> load css when the page is loading, <code>@import</code> load after the page</li>
+<li><code>@import</code> need IE5+</li>
+<li><code>&lt;link&gt;</code> can be added by JS</li>
+</ul>
+<h2 id="How-do-you-serve-your-pages-for-feature-constrained-browsers-What-techniques-processes-do-you-use"><a href="#How-do-you-serve-your-pages-for-feature-constrained-browsers-What-techniques-processes-do-you-use" class="headerlink" title="How do you serve your pages for feature-constrained browsers? What techniques/processes do you use?"></a>How do you serve your pages for feature-constrained browsers? What techniques/processes do you use?</h2><ul>
+<li>Graceful degradation - The practice of building an application for modern browsers while ensuring it remains functional in older browsers.</li>
+<li>Progressive enhancement - The practice of building an application for a base level of user experience, but adding functional enhancements when a browser supports it.</li>
+<li>Use caniuse.com to check for feature support.</li>
+<li>Autoprefixer for automatic vendor prefix insertion.</li>
+<li>Use CSS Feature queries @support</li>
+</ul>
+<h2 id="Explain-CSS-sprites-and-how-you-would-implement-them-on-a-page-or-site"><a href="#Explain-CSS-sprites-and-how-you-would-implement-them-on-a-page-or-site" class="headerlink" title="Explain CSS sprites, and how you would implement them on a page or site."></a>Explain CSS sprites, and how you would implement them on a page or site.</h2><p>CSS sprites combine multiple images into one single larger image. It is a commonly-used technique for icons.</p>
+<h3 id="How-to-implement-it"><a href="#How-to-implement-it" class="headerlink" title="How to implement it:"></a>How to implement it:</h3><ul>
+<li>Use a sprite generator (webpack-spritesmith) that packs multiple images into one and generate the appropriate CSS for it.</li>
+<li>Each image would have a corresponding CSS class with background-image, background-position and background-size properties defined.</li>
+<li>To use that image, add the corresponding class to your element.</li>
+</ul>
+<h3 id="Advantages"><a href="#Advantages" class="headerlink" title="Advantages:"></a>Advantages:</h3><ul>
+<li>Reduce the number of HTTP requests for multiple images. But with HTTP2, loading multiple images is no longer much of an issue.</li>
+<li>Advance downloading of assets that won’t be downloaded until needed, such as images that only appear upon :hover pseudo-states. Blinking wouldn’t be seen.</li>
+</ul>
+<h3 id="Alternatives"><a href="#Alternatives" class="headerlink" title="Alternatives:"></a>Alternatives:</h3><ul>
+<li>Data URIs (base64)<br>Data URIs allow you to embed the image data directly into a stylesheet. This avoids additional HTTP requests for images, making it essentially the same thing as a sprite, without the fancy positioning.</li>
+<li>Icon Fonts<br>Icon fonts are similar to sprites in that they achieve the same thing: combining multiple images into a single request.</li>
+<li>SVG<br>SVG images can be combined into a sprite as well and used as an icon system.</li>
+</ul>
+<h2 id="Are-you-familiar-with-styling-SVG"><a href="#Are-you-familiar-with-styling-SVG" class="headerlink" title="Are you familiar with styling SVG?"></a>Are you familiar with styling SVG?</h2><p>There are several ways to color shapes using inline CSS, an embedded CSS section, or an external CSS file.<br>Basic coloring can be done by setting two attributes on the node: fill and stroke. fill sets the color inside the object and stroke sets the color of the line drawn around the object. You can use the same CSS color naming schemes that you use in HTML, whether that’s color names (that is red), RGB values (that is rgb(255,0,0)), Hex values, RGBA values, etc.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;rect x=&quot;10&quot; y=&quot;10&quot; width=&quot;100&quot; height=&quot;100&quot; stroke=&quot;blue&quot;</span><br><span class="line">fill=&quot;purple&quot; fill-opacity=&quot;0.5&quot; stroke-opacity=&quot;0.8&quot;/&gt;</span><br></pre></td></tr></table></figure>
+
+<p>The above <code>fill=&quot;purple&quot;</code> is an example of a presentational attribute. Presentational attributes can be overridden by CSS styles defined in a stylesheet. So, if you did something like <code>svg { fill: blue; }</code> it would override the purple fill we’ve defined.</p>
+<h2 id="Can-you-give-an-example-of-an-media-property"><a href="#Can-you-give-an-example-of-an-media-property" class="headerlink" title="Can you give an example of an @media property?"></a>Can you give an example of an @media property?</h2><p>There are four types of @media properties:</p>
+<ul>
+<li>all - for all media type devices</li>
+<li>print - for printers</li>
+<li>speech - for screenreaders that “reads” the page out loud</li>
+<li>screen - for computer screens, tablets, smart-phones etc.<br>Here is an example of print media type’s usage:</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@media print and (mim-width: 300px) &#123;</span><br><span class="line">  body &#123;</span><br><span class="line">    color: black;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="What-are-the-advantages-disadvantages-of-using-CSS-preprocessors"><a href="#What-are-the-advantages-disadvantages-of-using-CSS-preprocessors" class="headerlink" title="What are the advantages/disadvantages of using CSS preprocessors?"></a>What are the advantages/disadvantages of using CSS preprocessors?</h2><h3 id="Advantages-1"><a href="#Advantages-1" class="headerlink" title="Advantages:"></a>Advantages:</h3><ul>
+<li>CSS is made more maintainable.</li>
+<li>Easy to write nested selectors.</li>
+<li>Variables for consistent theming. Can share theme files across different projects.</li>
+<li>Mixins to generate repeated CSS.</li>
+<li>Sass features like loops, lists, and maps can make configuration easier and less verbose.</li>
+<li>Splitting your code into multiple files. CSS files can be split up too but doing so will require an HTTP request to download each CSS file.</li>
+</ul>
+<h3 id="Disadvantages"><a href="#Disadvantages" class="headerlink" title="Disadvantages:"></a>Disadvantages:</h3><ul>
+<li>Not writing currently and potentially usable CSS. For example, by using something like postcss-loader with webpack, you can write potentially future-compatible CSS, allowing you to use things like CSS variables instead of Sass variables. Thus, you’re learning new skills that could pay off if when they become standardized.</li>
+</ul>
+<h3 id="What-is-Sass"><a href="#What-is-Sass" class="headerlink" title="What is Sass?"></a>What is Sass?</h3><p>Sass or Syntactically Awesome StyleSheets is a CSS preprocessor that adds power and elegance to the basic language. It allows you to use variables, nested rules, mixins, inline imports, and more, all with a fully CSS-compatible syntax. Sass helps keep large stylesheets well-organized, and get small stylesheets up and running quickly.<br>A CSS preprocessor is a scripting language that extends CSS by allowing developers to write code in one language and then compile it into CSS.</p>
+<h3 id="What-is-a-Mixin-and-how-to-use"><a href="#What-is-a-Mixin-and-how-to-use" class="headerlink" title="What is a Mixin and how to use?"></a>What is a Mixin and how to use?</h3><p>A Mixin is a block of code that lets us group CSS declarations we may reuse throughout our site.<br>To define mixin:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@mixin grid($flex: true /* default argument */) &#123;</span><br><span class="line">  @if $flex &#123;</span><br><span class="line">    @include flex;</span><br><span class="line">    &#125;</span><br><span class="line">  @else &#123;</span><br><span class="line">    display: block;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<p>To use a Mixin, we simply use @include followed by the name of the Mixin and a semi-colon.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">/* scss */</span><br><span class="line">.row &#123;</span><br><span class="line">  @include grid(true);</span><br><span class="line">&#125;</span><br><span class="line">/* css */</span><br><span class="line">.row &#123;</span><br><span class="line">  display: -webkit-flex;</span><br><span class="line">  display: flex;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Describe-pseudo-elements-and-discuss-what-they-are-used-for"><a href="#Describe-pseudo-elements-and-discuss-what-they-are-used-for" class="headerlink" title="Describe pseudo-elements and discuss what they are used for."></a>Describe pseudo-elements and discuss what they are used for.</h2><p>A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element. They can be used for decoration (<code>:first-line</code>, <code>:first-letter</code>) or adding elements to the markup (<code>:before</code>, <code>:after</code> combined with <code>content: ...</code>) without having to modify the markup. <code>:first-line</code> and <code>:first-letter</code> can be used to decorate the text. Used in the <code>.clearfix</code> hack as shown above to add a zero-space element with <code>clear: both</code>. Triangular arrows in tooltips use <code>:before</code> and <code>:after</code>.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">.left-ang&#123;</span><br><span class="line">  position: relative;</span><br><span class="line">&#125;</span><br><span class="line">.left-ang:after &#123;</span><br><span class="line">  border: 10px solid transparent;</span><br><span class="line">  border-left: 10px solid #f00;</span><br><span class="line">  width: 0;</span><br><span class="line">  height: 0;</span><br><span class="line">  position: absolute;</span><br><span class="line">  content: &apos; &apos;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="How-is-responsive-design-different-from-adaptive-design"><a href="#How-is-responsive-design-different-from-adaptive-design" class="headerlink" title="How is responsive design different from adaptive design?"></a>How is responsive design different from adaptive design?</h2><p>Both responsive and adaptive design attempt to optimize the user experience across different devices, adjusting for different viewport sizes, resolutions, usage contexts, control mechanisms, and so on.</p>
+<ul>
+<li>Responsive design works on the principle of flexibility - a single fluid website that can look good on any device. Responsive websites use media queries, flexible grids, and responsive images to create a user experience that flexes and changes based on a multitude of factors. Like a single ball growing or shrinking to fit through several different hoops.</li>
+<li>Adaptive design is more like the modern definition of progressive enhancement. Instead of one flexible design, adaptive design detects the device and other features and then provides the appropriate feature and layout based on a predefined set of viewport sizes and other characteristics. The site detects the type of device used and delivers the pre-set layout for that device. Instead of a single ball going through several different-sized hoops, you’d have several different balls to use depending on the hoop size.</li>
+</ul>
+<p>Both have these methods have some issues that need to be weighed:</p>
+<ul>
+<li>Responsive design can be quite challenging, as you’re essentially using a single albeit responsive layout to fit all situations. How to set the media query breakpoints is one such challenge. Do you use standardized breakpoint values? Or, do you use breakpoints that make sense to your particular layout? What if that layout changes?</li>
+<li>Adaptive design generally requires user agent sniffing, or DPI detection, etc., all of which can prove unreliable.</li>
+</ul>
+<h2 id="Is-there-any-reason-you’d-want-to-use-translate-instead-of-absolute-positioning"><a href="#Is-there-any-reason-you’d-want-to-use-translate-instead-of-absolute-positioning" class="headerlink" title="Is there any reason you’d want to use translate() instead of absolute positioning?"></a>Is there any reason you’d want to use translate() instead of absolute positioning?</h2><p>translate() is a value of CSS transform. Changing transform or opacity does not trigger browser reflow or repaint but does trigger compositions; whereas changing the absolute positioning triggers reflow. transform causes the browser to create a GPU layer for the element but changing absolute positioning properties uses the CPU. Hence translate() is more efficient and will result in shorter paint times for smoother animations. When using translate(), the element still occupies its original space (sort of like <code>position: relative</code>), unlike in changing the absolute positioning.</p>
+<h2 id="What’s-the-difference-between-“resetting”-and-“normalizing”-CSS-Which-would-you-choose-and-why"><a href="#What’s-the-difference-between-“resetting”-and-“normalizing”-CSS-Which-would-you-choose-and-why" class="headerlink" title="What’s the difference between “resetting” and “normalizing” CSS? Which would you choose, and why?"></a>What’s the difference between “resetting” and “normalizing” CSS? Which would you choose, and why?</h2><ul>
+<li>Resetting — is meant to strip all default browser styling on elements. E.g. margins, paddings, font-sizes of all elements are reset to be the same. You will have to redeclare styling for common typographic elements.</li>
+<li>Normalizing — preserves useful default styles rather than “unstyling” everything. It also corrects bugs for common browser dependencies.</li>
+</ul>
+<p>It’s a good idea to choose resetting when you have very a customized or unconventional site design such that I need to do a lot of my own styling do not need any default styling to be preserved.</p>
+<h2 id="What-is-a-Grid-System-in-CSS"><a href="#What-is-a-Grid-System-in-CSS" class="headerlink" title="What is a Grid System in CSS?"></a>What is a Grid System in CSS?</h2><p>A grid system is a structure that allows for content to be stacked both vertically and horizontally in a consistent and easily manageable fashion. Grid systems include two key components: rows and columns.<br>Some Grid Systems:</p>
+<ul>
+<li>Simple Grid</li>
+<li>Pure</li>
+<li>Flexbox Grid</li>
+<li>Bootstrap</li>
+<li>Foundation</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Questions/" rel="tag"><i class="fa fa-tag"></i> Questions</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/11/02/html-questions/" rel="next" title="Questions - HTML">
+                <i class="fa fa-chevron-left"></i> Questions - HTML
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/11/04/javascript-questions/" rel="prev" title="Questions - JavaScript">
+                Questions - JavaScript <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Fanjia Kong</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:kfj0116@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i></a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Describe-float-and-how-they-work"><span class="nav-number">1.</span> <span class="nav-text">Describe float and how they work.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-are-the-various-clearing-techniques-and-which-is-appropriate-for-what-context"><span class="nav-number">2.</span> <span class="nav-text">What are the various clearing techniques and which is appropriate for what context?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Describe-z-index-and-how-stacking-context-is-formed"><span class="nav-number">3.</span> <span class="nav-text">Describe z-index and how stacking context is formed.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Describe-Block-Formatting-Context-BFC-and-how-it-works"><span class="nav-number">4.</span> <span class="nav-text">Describe Block Formatting Context (BFC) and how it works.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Explain-your-understanding-of-the-box-model-and-how-you-would-tell-the-browser-in-CSS-to-render-your-layout-in-different-box-models"><span class="nav-number">5.</span> <span class="nav-text">Explain your understanding of the box model and how you would tell the browser in CSS to render your layout in different box models.</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#What-does-box-sizing-border-box-do"><span class="nav-number">5.1.</span> <span class="nav-text">What does * { box-sizing: border-box; } do?</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What’s-the-difference-between-block-inline-and-inline-block"><span class="nav-number">6.</span> <span class="nav-text">What’s the difference between block, inline and inline-block?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What’s-the-difference-between-a-relative-fixed-absolute-and-static-positioned-element"><span class="nav-number">7.</span> <span class="nav-text">What’s the difference between a relative, fixed, absolute and static positioned element?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Center"><span class="nav-number">8.</span> <span class="nav-text">Center</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#horizontal"><span class="nav-number">8.1.</span> <span class="nav-text">horizontal</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#vertical"><span class="nav-number">8.2.</span> <span class="nav-text">vertical</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#transition-animation"><span class="nav-number">9.</span> <span class="nav-text">transition animation</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#transition"><span class="nav-number">9.1.</span> <span class="nav-text">transition:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#animation-keyframes"><span class="nav-number">9.2.</span> <span class="nav-text">animation / keyframes</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#example"><span class="nav-number">9.3.</span> <span class="nav-text">example</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Difference-between-import-and-lt-link-gt"><span class="nav-number">10.</span> <span class="nav-text">Difference between @import and &lt;link&gt;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#How-do-you-serve-your-pages-for-feature-constrained-browsers-What-techniques-processes-do-you-use"><span class="nav-number">11.</span> <span class="nav-text">How do you serve your pages for feature-constrained browsers? What techniques/processes do you use?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Explain-CSS-sprites-and-how-you-would-implement-them-on-a-page-or-site"><span class="nav-number">12.</span> <span class="nav-text">Explain CSS sprites, and how you would implement them on a page or site.</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#How-to-implement-it"><span class="nav-number">12.1.</span> <span class="nav-text">How to implement it:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Advantages"><span class="nav-number">12.2.</span> <span class="nav-text">Advantages:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Alternatives"><span class="nav-number">12.3.</span> <span class="nav-text">Alternatives:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Are-you-familiar-with-styling-SVG"><span class="nav-number">13.</span> <span class="nav-text">Are you familiar with styling SVG?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Can-you-give-an-example-of-an-media-property"><span class="nav-number">14.</span> <span class="nav-text">Can you give an example of an @media property?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-are-the-advantages-disadvantages-of-using-CSS-preprocessors"><span class="nav-number">15.</span> <span class="nav-text">What are the advantages/disadvantages of using CSS preprocessors?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Advantages-1"><span class="nav-number">15.1.</span> <span class="nav-text">Advantages:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Disadvantages"><span class="nav-number">15.2.</span> <span class="nav-text">Disadvantages:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#What-is-Sass"><span class="nav-number">15.3.</span> <span class="nav-text">What is Sass?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#What-is-a-Mixin-and-how-to-use"><span class="nav-number">15.4.</span> <span class="nav-text">What is a Mixin and how to use?</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Describe-pseudo-elements-and-discuss-what-they-are-used-for"><span class="nav-number">16.</span> <span class="nav-text">Describe pseudo-elements and discuss what they are used for.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#How-is-responsive-design-different-from-adaptive-design"><span class="nav-number">17.</span> <span class="nav-text">How is responsive design different from adaptive design?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Is-there-any-reason-you’d-want-to-use-translate-instead-of-absolute-positioning"><span class="nav-number">18.</span> <span class="nav-text">Is there any reason you’d want to use translate() instead of absolute positioning?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What’s-the-difference-between-“resetting”-and-“normalizing”-CSS-Which-would-you-choose-and-why"><span class="nav-number">19.</span> <span class="nav-text">What’s the difference between “resetting” and “normalizing” CSS? Which would you choose, and why?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-is-a-Grid-System-in-CSS"><span class="nav-number">20.</span> <span class="nav-text">What is a Grid System in CSS?</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Fanjia Kong</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

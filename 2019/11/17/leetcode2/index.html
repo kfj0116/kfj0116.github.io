@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="LeetCode,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Record the Dynamic Programming topic algorithm problems.">
+<meta name="keywords" content="LeetCode">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LeetCode - Dynamic Programming">
+<meta property="og:url" content="http://yoursite.com/2019/11/17/leetcode2/index.html">
+<meta property="og:site_name" content="Fanjia Kong">
+<meta property="og:description" content="Record the Dynamic Programming topic algorithm problems.">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2020-02-04T09:05:35.820Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="LeetCode - Dynamic Programming">
+<meta name="twitter:description" content="Record the Dynamic Programming topic algorithm problems.">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/11/17/leetcode2/">
+
+
+
+
+
+  <title>LeetCode - Dynamic Programming | Fanjia Kong</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Fanjia Kong</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Frontend Developer</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/17/leetcode2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Fanjia Kong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Fanjia Kong">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">LeetCode - Dynamic Programming</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-17T12:11:13+02:00">
+                2019-11-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Algorithm/" itemprop="url" rel="index">
+                    <span itemprop="name">Algorithm</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Record the Dynamic Programming topic algorithm problems.</p>
+<a id="more"></a>
+
+<h2 id="0005-Longest-Palindromic-Substring"><a href="#0005-Longest-Palindromic-Substring" class="headerlink" title="0005. Longest Palindromic Substring"></a>0005. Longest Palindromic Substring</h2><p>Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.<br>Example 1:<br>Input: “babad”<br>Output: “bab”<br>Note: “aba” is also a valid answer.<br>Example 2:<br>Input: “cbbd”<br>Output: “bb”</p>
+<h3 id="solution"><a href="#solution" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">const longestPalindrome = function(s) &#123;</span><br><span class="line">    let max = &apos;&apos;;</span><br><span class="line">    for (let i = 0; i &lt; s.length; i++) &#123;</span><br><span class="line">        for (let j = 0; j &lt; 2; j++) &#123;</span><br><span class="line">            let left = i;</span><br><span class="line">            let right = i + j;</span><br><span class="line">            while (s[left] &amp;&amp; s[left] === s[right]) &#123;</span><br><span class="line">                left--;</span><br><span class="line">                right++;</span><br><span class="line">            &#125;</span><br><span class="line">            if ((right - left - 1) &gt; max.length) &#123;</span><br><span class="line">                max = s.substring(left + 1, right);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return max;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 144 ms<br>Memory Usage: 36.2 MB</p>
+<h2 id="0062-Unique-Paths"><a href="#0062-Unique-Paths" class="headerlink" title="0062. Unique Paths"></a>0062. Unique Paths</h2><p>A robot is located at the top-left corner of a m x n grid.The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid. How many possible unique paths are there?<br>Note: m and n will be at most 100.<br>Example 1:<br>Input: m = 3, n = 2<br>Output: 3<br>Explanation:<br>From the top-left corner, there are a total of 3 ways to reach the bottom-right corner:</p>
+<ol>
+<li>Right -&gt; Right -&gt; Down</li>
+<li>Right -&gt; Down -&gt; Right</li>
+<li>Down -&gt; Right -&gt; Right<br>Example 2:<br>Input: m = 7, n = 3<br>Output: 28</li>
+</ol>
+<h3 id="solution-1"><a href="#solution-1" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">const uniquePaths = (m, n) =&gt; &#123;</span><br><span class="line">    let currentRow = new Array(n);</span><br><span class="line">    for (let i = 0; i &lt; n; i++) &#123;</span><br><span class="line">        currentRow[i] = 1;</span><br><span class="line">    &#125;</span><br><span class="line">    for (let row = 1; row &lt; m; row++) &#123;</span><br><span class="line">        for (let j = 1; j &lt; n; j++) &#123;</span><br><span class="line">            currentRow[j] += currentRow[j - 1];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return currentRow[n - 1];</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 64 ms<br>Memory Usage: 34 MB</p>
+<p>For context, here’s an example for how to fill out a 3x6 grid in the more traditional DP regime:<br>0 | 1 | 1 | 1 | 1 | 1<br>1 | 2 | 3 | 4 | 5 | 6<br>1 | 3 | 6 | 10 | 15 | 21<br>Notice that for every i and j, matrix[i][j] is the total number of ways of getting to (i, j).</p>
+<h2 id="0064-Minimum-Path-Sum"><a href="#0064-Minimum-Path-Sum" class="headerlink" title="0064. Minimum Path Sum"></a>0064. Minimum Path Sum</h2><p>Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right which minimizes the sum of all numbers along its path.<br>Note: You can only move either down or right at any point in time.<br>Example:<br>Input:<br>[<br>[1,3,1],<br>[1,5,1],<br>[4,2,1]<br>]<br>Output: 7<br>Explanation: Because the path 1→3→1→1→1 minimizes the sum.</p>
+<h3 id="solution-2"><a href="#solution-2" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">const minPathSum = (grid) =&gt; &#123;</span><br><span class="line">    let m = grid.length;</span><br><span class="line">    let n = grid[0].length;</span><br><span class="line">    for (let i = 0; i &lt; m; i++) &#123;</span><br><span class="line">        for (let j = 0; j &lt; n; j++) &#123;</span><br><span class="line">            if (i === 0 &amp;&amp; j === 0) &#123;</span><br><span class="line">                continue;</span><br><span class="line">            &#125; else if (i === 0) &#123;</span><br><span class="line">                grid[i][j] = grid[i][j] + grid[i][j - 1];</span><br><span class="line">            &#125; else if (j === 0) &#123;</span><br><span class="line">                grid[i][j] = grid[i][j] + grid[i - 1][j];</span><br><span class="line">            &#125; else &#123;</span><br><span class="line">                grid[i][j] =  grid[i][j] + Math.min(grid[i - 1][j],  grid[i][j - 1]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return grid[m - 1][n - 1];</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 72 ms<br>Memory Usage: 35.6 MB</p>
+<h2 id="0070-Climbing-Stairs"><a href="#0070-Climbing-Stairs" class="headerlink" title="0070. Climbing Stairs"></a>0070. Climbing Stairs</h2><p>You are climbing a stair case. It takes n steps to reach to the top.<br>Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?<br>Note: Given n will be a positive integer.<br>Example 1:<br>Input: 2<br>Output: 2<br>Explanation: There are two ways to climb to the top.</p>
+<ol>
+<li>1 step + 1 step</li>
+<li>2 steps<br>Example 2:<br>Input: 3<br>Output: 3<br>Explanation: There are three ways to climb to the top.</li>
+<li>1 step + 1 step + 1 step</li>
+<li>1 step + 2 steps</li>
+<li>2 steps + 1 step</li>
+</ol>
+<h3 id="solution-3"><a href="#solution-3" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">const climbStairs = (n) =&gt; &#123;</span><br><span class="line">    // fibonacci</span><br><span class="line">    if(n &lt;= 2) &#123;</span><br><span class="line">        return n;</span><br><span class="line">    &#125;</span><br><span class="line">    let one_step_before = 2;</span><br><span class="line">    let two_steps_before = 1;</span><br><span class="line">    let all_ways = 0;</span><br><span class="line">    for(let i = 2; i &lt; n; i++)&#123;</span><br><span class="line">    all_ways = one_step_before + two_steps_before;</span><br><span class="line">    two_steps_before = one_step_before;</span><br><span class="line">        one_step_before = all_ways;</span><br><span class="line">    &#125;</span><br><span class="line">    return all_ways;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 64 ms<br>Memory Usage: 33.9 MB</p>
+<h2 id="0096-Unique-Binary-Search-Trees"><a href="#0096-Unique-Binary-Search-Trees" class="headerlink" title="0096. Unique Binary Search Trees"></a>0096. Unique Binary Search Trees</h2><p>Given n, how many structurally unique BST’s (binary search trees) that store values 1 … n?<br>Example:<br>Input: 3<br>Output: 5<br>Explanation:<br>Given n = 3, there are a total of 5 unique BST’s</p>
+<h3 id="solution-4"><a href="#solution-4" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">const numTrees = (n) =&gt; &#123;</span><br><span class="line">    function factorial( num )&#123;</span><br><span class="line">        if( num &lt;= 0 )</span><br><span class="line">            return 1;</span><br><span class="line">        else</span><br><span class="line">            return num * factorial( num - 1 );</span><br><span class="line">    &#125;</span><br><span class="line">    return factorial( 2 * n ) / ( factorial( n + 1 ) * factorial( n ) );</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 48 ms<br>Memory Usage: 33.9 MB</p>
+<h2 id="0139-Word-Break"><a href="#0139-Word-Break" class="headerlink" title="0139. Word Break"></a>0139. Word Break</h2><p>Given a non-empty string s and a dictionary wordDict containing a list of non-empty words, determine if s can be segmented into a space-separated sequence of one or more dictionary words.<br>Note:<br>The same word in the dictionary may be reused multiple times in the segmentation.<br>You may assume the dictionary does not contain duplicate words.<br>Example 1:<br>Input: s = “leetcode”, wordDict = [“leet”, “code”]<br>Output: true<br>Explanation: Return true because “leetcode” can be segmented as “leet code”.<br>Example 2:<br>Input: s = “applepenapple”, wordDict = [“apple”, “pen”]<br>Output: true<br>Explanation: Return true because “applepenapple” can be segmented as “apple pen apple”.<br>Note that you are allowed to reuse a dictionary word.<br>Example 3:<br>Input: s = “catsandog”, wordDict = [“cats”, “dog”, “sand”, “and”, “cat”]<br>Output: false</p>
+<h3 id="solution-1"><a href="#solution-1" class="headerlink" title="solution 1:"></a>solution 1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">const wordBreak = (s, wordDict) =&gt; &#123;</span><br><span class="line">  if (wordDict.length === 0) &#123;</span><br><span class="line">      return false;</span><br><span class="line">  &#125;</span><br><span class="line">  const dict = new Set(wordDict);</span><br><span class="line">  const visited = new Set();</span><br><span class="line">  const q = [0];</span><br><span class="line"></span><br><span class="line">  while (q.length) &#123;</span><br><span class="line">    const start = q.shift();</span><br><span class="line"></span><br><span class="line">    if (!visited.has(start)) &#123;</span><br><span class="line">      for (let end = start + 1; end &lt;= s.length; end++) &#123;</span><br><span class="line">        if (dict.has(s.slice(start, end))) &#123;</span><br><span class="line">          if (end === s.length) return true;</span><br><span class="line">          q.push(end);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      visited.add(start);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  return false;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 68 ms<br>Memory Usage: 36.9 MB</p>
+<h3 id="solution-2"><a href="#solution-2" class="headerlink" title="solution 2:"></a>solution 2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">const wordBreak = (s, wordDict) =&gt; &#123;</span><br><span class="line">  if (wordDict.length === 0) &#123;</span><br><span class="line">      return false;</span><br><span class="line">  &#125;</span><br><span class="line">  const dp = new Array(s.length + 1).fill(false);</span><br><span class="line">  dp[0] = true;</span><br><span class="line"></span><br><span class="line">  for (let i = 1; i &lt;= s.length; i++) &#123;</span><br><span class="line">    for (let j = 0; j &lt; i; j++) &#123;</span><br><span class="line">      const word = s.slice(j, i);</span><br><span class="line">      if (dp[j] === true &amp;&amp; wordDict.includes(word)) &#123;</span><br><span class="line">        dp[i] = true;</span><br><span class="line">        break;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  return dp[s.length];</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 60 ms<br>Memory Usage: 36.7 MB</p>
+<h2 id="0152-Maximum-Product-Subarray"><a href="#0152-Maximum-Product-Subarray" class="headerlink" title="0152. Maximum Product Subarray"></a>0152. Maximum Product Subarray</h2><p>Given an integer array nums, find the contiguous subarray within an array (containing at least one number) which has the largest product.<br>Example 1:<br>Input: [2,3,-2,4]<br>Output: 6<br>Explanation: [2,3] has the largest product 6.<br>Example 2:<br>Input: [-2,0,-1]<br>Output: 0<br>Explanation: The result cannot be 2, because [-2,-1] is not a subarray.</p>
+<h3 id="solution-5"><a href="#solution-5" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">const maxProduct = (nums) =&gt; &#123;</span><br><span class="line">  let res = -Number.MAX_VALUE;</span><br><span class="line">  let min = 1;</span><br><span class="line">  let max = 1;</span><br><span class="line">  for (let num of nums) &#123;</span><br><span class="line">    [min, max] = [</span><br><span class="line">      Math.min(num, min * num, max * num),</span><br><span class="line">      Math.max(num, min * num, max * num),</span><br><span class="line">    ];</span><br><span class="line">    res = Math.max(res, max);</span><br><span class="line">  &#125;</span><br><span class="line">  return res;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 64 ms<br>Memory Usage: 37.6 MB</p>
+<h2 id="0198-House-Robber"><a href="#0198-House-Robber" class="headerlink" title="0198. House Robber"></a>0198. House Robber</h2><p>You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security system connected and it will automatically contact the police if two adjacent houses were broken into on the same night.<br>Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount of money you can rob tonight without alerting the police.<br>Example 1:<br>Input: [1,2,3,1]<br>Output: 4<br>Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3).<br>Total amount you can rob = 1 + 3 = 4.<br>Example 2:<br>Input: [2,7,9,3,1]<br>Output: 12<br>Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1).<br>Total amount you can rob = 2 + 9 + 1 = 12.</p>
+<h3 id="solution-6"><a href="#solution-6" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">const rob = (nums) =&gt; &#123;</span><br><span class="line">    const len = nums.length;</span><br><span class="line">    if(len === 0) &#123;</span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br><span class="line">    if(len === 1) &#123;</span><br><span class="line">        return nums[0];</span><br><span class="line">    &#125;</span><br><span class="line">    let totals = [nums[0], Math.max(nums[0], nums[1])];</span><br><span class="line">    for(let i = 2; i &lt; len; i ++)&#123;</span><br><span class="line">        totals[i] = Math.max(totals[i - 1], totals[i - 2] + nums[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    return totals[totals.length - 1];</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 76 ms<br>Memory Usage: 33.9 MB</p>
+<h2 id="0221-Maximal-Square"><a href="#0221-Maximal-Square" class="headerlink" title="0221. Maximal Square"></a>0221. Maximal Square</h2><p>Given a 2D binary matrix filled with 0’s and 1’s, find the largest square containing only 1’s and return its area.<br>Example:<br>Input:<br>1 0 1 0 0<br>1 0 1 1 1<br>1 1 1 1 1<br>1 0 0 1 0<br>Output: 4</p>
+<h3 id="solution-7"><a href="#solution-7" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">const maximalSquare = (matrix) =&gt; &#123;</span><br><span class="line">    if (!matrix.length) &#123;</span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br><span class="line">    let dp = new Array(matrix.length+1).fill(0).map(()=&gt;new Array(matrix[0].length+1).fill(0));</span><br><span class="line">    let max = 0;</span><br><span class="line">    for (let r = 1; r &lt; dp.length; r++) &#123;</span><br><span class="line">        for (let c = 1;c &lt; dp[0].length; c++) &#123;</span><br><span class="line">            if (matrix[r-1][c-1] != 0) &#123;</span><br><span class="line">                dp[r][c] = Math.min(dp[r][c-1], dp[r-1][c], dp[r-1][c-1]) + 1;</span><br><span class="line">                max = Math.max(dp[r][c], max);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return max**2;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 76 ms<br>Memory Usage: 40.5 MB</p>
+<h2 id="0300-Longest-Increasing-Subsequence"><a href="#0300-Longest-Increasing-Subsequence" class="headerlink" title="0300. Longest Increasing Subsequence"></a>0300. Longest Increasing Subsequence</h2><p>Given an unsorted array of integers, find the length of longest increasing subsequence.<br>Example:<br>Input: [10,9,2,5,3,7,101,18]<br>Output: 4<br>Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4.<br>Note:<br>There may be more than one LIS combination, it is only necessary for you to return the length.<br>Your algorithm should run in O(n2) complexity.<br>Follow up: Could you improve it to O(n log n) time complexity?</p>
+<h3 id="solution-1-1"><a href="#solution-1-1" class="headerlink" title="solution 1:"></a>solution 1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">const lengthOfLIS = (nums) =&gt; &#123;</span><br><span class="line">    if (!nums.length) &#123;</span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br><span class="line">    const lis = [];</span><br><span class="line">	for (let i = 0; i &lt; nums.length; i++) &#123;</span><br><span class="line">		lis.push(1);</span><br><span class="line">		for (let j = 0; j &lt; i; j++) &#123;</span><br><span class="line">			if (nums[j] &lt; nums[i]) &#123;</span><br><span class="line">                lis[i] = Math.max(lis[i], lis[j] + 1);</span><br><span class="line">            &#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	return Math.max.apply(null, lis);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 88 ms<br>Memory Usage: 34.7 MB</p>
+<h3 id="solution-2-1"><a href="#solution-2-1" class="headerlink" title="solution 2:"></a>solution 2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">const lengthOfLIS = (nums) =&gt; &#123;</span><br><span class="line">    if (!nums.length) &#123;</span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br><span class="line">    const tails = [];</span><br><span class="line">    tails[0] = nums[0];</span><br><span class="line">    for(let i = 1; i &lt; nums.length; i++) &#123;</span><br><span class="line">        // replace current nums[i] with head if it&apos;s smaller</span><br><span class="line">        if(nums[i] &lt; tails[0]) &#123;</span><br><span class="line">            tails[0] = nums[i];</span><br><span class="line">        // if current nums[i] is bigger than the largest value we&apos;ve recorded</span><br><span class="line">        // we can extend our tails by current nums[i]</span><br><span class="line">        &#125; else if(nums[i] &gt; tails[tails.length-1]) &#123;</span><br><span class="line">            tails.push(nums[i]);</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            // using binary search to find the insertion point of current nums[i]</span><br><span class="line">            // return r because we&apos;re looking to replace index of tail that&apos;s greater than nums[i]</span><br><span class="line">            let l = 0;</span><br><span class="line">            let r = tails.length-1;</span><br><span class="line">            while(l &lt; r) &#123;</span><br><span class="line">                const mid = (l+r)/2 &gt;&gt; 0;</span><br><span class="line">                if(tails[mid] &gt;= nums[i]) &#123;</span><br><span class="line">                    r = mid</span><br><span class="line">                &#125; else &#123;</span><br><span class="line">                    l = mid + 1;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            tails[r] = nums[i];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return tails.length;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 56 ms<br>Memory Usage: 34.6 MB</p>
+<h2 id="0309-Best-Time-to-Buy-and-Sell-Stock-with-Cooldown"><a href="#0309-Best-Time-to-Buy-and-Sell-Stock-with-Cooldown" class="headerlink" title="0309. Best Time to Buy and Sell Stock with Cooldown"></a>0309. Best Time to Buy and Sell Stock with Cooldown</h2><p>Say you have an array for which the ith element is the price of a given stock on day i.<br>Design an algorithm to find the maximum profit. You may complete as many transactions as you like (ie, buy one and sell one share of the stock multiple times) with the following restrictions:<br>You may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).<br>After you sell your stock, you cannot buy stock on next day. (ie, cooldown 1 day)<br>Example:<br>Input: [1,2,3,0,2]<br>Output: 3<br>Explanation: transactions = [buy, sell, cooldown, buy, sell]</p>
+<h3 id="solution-1-2"><a href="#solution-1-2" class="headerlink" title="solution 1:"></a>solution 1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">const maxProfit = (prices) =&gt; &#123;</span><br><span class="line">    let buy = -Number.MAX_VALUE;</span><br><span class="line">    let cooldown = 0;</span><br><span class="line"></span><br><span class="line">    return prices.reduce((sell, price) =&gt; &#123;</span><br><span class="line">       buy = Math.max(buy, cooldown - price);</span><br><span class="line">       cooldown = Math.max(cooldown, sell);</span><br><span class="line">       return Math.max(sell, buy + price);</span><br><span class="line">    &#125;, 0);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 80 ms<br>Memory Usage: 34.7 MB</p>
+<h3 id="solution2"><a href="#solution2" class="headerlink" title="solution2:"></a>solution2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">const maxProfit = (prices) =&gt; &#123;</span><br><span class="line">  let n = prices.length;</span><br><span class="line">  let dpi0 = -Infinity, dpi1 = 0, dpi2 = 0;</span><br><span class="line">  for (let i = 0; i &lt; n; i++) &#123;</span><br><span class="line">      let tmp = dpi0;</span><br><span class="line">      dpi0 = Math.max(dpi0, dpi2 - prices[i]);</span><br><span class="line">      dpi2 = dpi1;</span><br><span class="line">      dpi1 = Math.max(dpi1, tmp + prices[i]);</span><br><span class="line">  &#125;</span><br><span class="line">  return dpi1;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 72 ms<br>Memory Usage: 33.7 MB</p>
+<h2 id="0322-Coin-Change"><a href="#0322-Coin-Change" class="headerlink" title="0322. Coin Change"></a>0322. Coin Change</h2><p>You are given coins of different denominations and a total amount of money amount. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.<br>Example 1:<br>Input: coins = [1, 2, 5], amount = 11<br>Output: 3<br>Explanation: 11 = 5 + 5 + 1<br>Example 2:<br>Input: coins = [2], amount = 3<br>Output: -1<br>Note:<br>You may assume that you have an infinite number of each kind of coin.</p>
+<h3 id="solution-8"><a href="#solution-8" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">const coinChange = (coins, amount) =&gt; &#123;</span><br><span class="line">    const dp = new Array(amount + 1);</span><br><span class="line">    dp.fill(Number.MAX_VALUE);</span><br><span class="line">    dp[0] = 0;</span><br><span class="line">    for (let i = 1; i &lt;= amount; i++) &#123;</span><br><span class="line">        for (let j = 0; j &lt; coins.length; j++) &#123;</span><br><span class="line">            if (i - coins[j] &gt;= 0) &#123;</span><br><span class="line">                dp[i] = Math.min(dp[i - coins[j]] + 1, dp[i]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return dp[amount] === Number.MAX_VALUE ? -1 : dp[amount];</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 92 ms<br>Memory Usage: 36.9 MB</p>
+<h2 id="0338-Counting-Bits"><a href="#0338-Counting-Bits" class="headerlink" title="0338. Counting Bits"></a>0338. Counting Bits</h2><p>Given a non negative integer number num. For every numbers i in the range 0 ≤ i ≤ num calculate the number of 1’s in their binary representation and return them as an array.<br>Example 1:<br>Input: 2<br>Output: [0,1,1]<br>Example 2:<br>Input: 5<br>Output: [0,1,1,2,1,2]</p>
+<h3 id="solution-9"><a href="#solution-9" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">const countBits = (num) =&gt; &#123;</span><br><span class="line">  let arr = [0, 1, 1];</span><br><span class="line">  for (let i = 3; i &lt;= num; i++)&#123;</span><br><span class="line">    let even = 0;</span><br><span class="line">    let temp = i;</span><br><span class="line">    let odd = 0;</span><br><span class="line">    if((i/2) !== Math.floor(i/2)) &#123;</span><br><span class="line">      even += 1;</span><br><span class="line">      temp = i - 1;</span><br><span class="line">    &#125;</span><br><span class="line">    odd = arr[temp/2];</span><br><span class="line">    arr.push(even + odd);</span><br><span class="line">  &#125;</span><br><span class="line">  return arr.slice(0, num+1);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 92 ms<br>Memory Usage: 40.8 MB</p>
+<h2 id="0416-Partition-Equal-Subset-Sum"><a href="#0416-Partition-Equal-Subset-Sum" class="headerlink" title="0416. Partition Equal Subset Sum"></a>0416. Partition Equal Subset Sum</h2><p>Given a non-empty array containing only positive integers, find if the array can be partitioned into two subsets such that the sum of elements in both subsets is equal.<br>Note:<br>Each of the array element will not exceed 100.<br>The array size will not exceed 200.<br>Example 1:<br>Input: [1, 5, 11, 5]<br>Output: true<br>Explanation: The array can be partitioned as [1, 5, 5] and [11].<br>Example 2:<br>Input: [1, 2, 3, 5]<br>Output: false<br>Explanation: The array cannot be partitioned into equal sum subsets.</p>
+<h3 id="solution-10"><a href="#solution-10" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">const canPartition = (nums) =&gt; &#123;</span><br><span class="line">   let sum = 0;</span><br><span class="line">   for(let num of nums)&#123;</span><br><span class="line">       sum += num;</span><br><span class="line">   &#125;</span><br><span class="line">   if(sum %2 !== 0) &#123;</span><br><span class="line">       return false;</span><br><span class="line">   &#125;</span><br><span class="line">   let half= sum / 2;</span><br><span class="line">   let dp = new Array(half + 1).fill(false);</span><br><span class="line">   dp[0] = true;</span><br><span class="line">   for(let num of nums)&#123;</span><br><span class="line">       for(let i = half; i &gt;= num; i--)&#123;</span><br><span class="line">           dp[i] = dp[i] || dp[i-num];</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   return dp[half];</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 96 ms<br>Memory Usage: 35.6 MB</p>
+<h2 id="0494-Target-Sum"><a href="#0494-Target-Sum" class="headerlink" title="0494. Target Sum"></a>0494. Target Sum</h2><p>You are given a list of non-negative integers, a1, a2, …, an, and a target, S. Now you have 2 symbols + and -. For each integer, you should choose one from + and - as its new symbol.<br>Find out how many ways to assign symbols to make sum of integers equal to target S.<br>Example 1:<br>Input: nums is [1, 1, 1, 1, 1], S is 3.<br>Output: 5<br>Explanation:<br>-1+1+1+1+1 = 3<br>+1-1+1+1+1 = 3<br>+1+1-1+1+1 = 3<br>+1+1+1-1+1 = 3<br>+1+1+1+1-1 = 3<br>There are 5 ways to assign symbols to make the sum of nums be target 3.<br>Note:<br>The length of the given array is positive and will not exceed 20.<br>The sum of elements in the given array will not exceed 1000.<br>Your output answer is guaranteed to be fitted in a 32-bit integer.</p>
+<h3 id="solution-11"><a href="#solution-11" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">const findTargetSumWays = (nums, S) =&gt; &#123;</span><br><span class="line">    if (!nums || nums.length === 0) &#123;</span><br><span class="line">        return count;</span><br><span class="line">    &#125;</span><br><span class="line">    function helper(pos, sum, hash, nums, S) &#123;</span><br><span class="line">        let key = `$&#123;pos&#125;-&gt;$&#123;sum&#125;`;</span><br><span class="line">        if (hash.hasOwnProperty(key)) &#123;</span><br><span class="line">            return hash[key];</span><br><span class="line">        &#125;</span><br><span class="line">        if (pos === nums.length) &#123;</span><br><span class="line">            return sum === S ? 1 : 0;</span><br><span class="line">        &#125;</span><br><span class="line">        let add = helper(pos + 1, sum + nums[pos], hash, nums, S);</span><br><span class="line">        let minus = helper(pos + 1, sum - nums[pos], hash, nums, S);</span><br><span class="line">        hash[key] = add + minus;</span><br><span class="line">        return hash[key];</span><br><span class="line">    &#125;;</span><br><span class="line">    return helper(0, 0, &#123;&#125;, nums, S);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 272 ms<br>Memory Usage: 42.8 MB</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/LeetCode/" rel="tag"><i class="fa fa-tag"></i> LeetCode</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/11/15/leetcode/" rel="next" title="LeetCode - Array">
+                <i class="fa fa-chevron-left"></i> LeetCode - Array
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/11/18/leetcode3/" rel="prev" title="LeetCode - Math">
+                LeetCode - Math <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Fanjia Kong</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:kfj0116@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i></a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#0005-Longest-Palindromic-Substring"><span class="nav-number">1.</span> <span class="nav-text">0005. Longest Palindromic Substring</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution"><span class="nav-number">1.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0062-Unique-Paths"><span class="nav-number">2.</span> <span class="nav-text">0062. Unique Paths</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1"><span class="nav-number">2.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0064-Minimum-Path-Sum"><span class="nav-number">3.</span> <span class="nav-text">0064. Minimum Path Sum</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2"><span class="nav-number">3.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0070-Climbing-Stairs"><span class="nav-number">4.</span> <span class="nav-text">0070. Climbing Stairs</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-3"><span class="nav-number">4.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0096-Unique-Binary-Search-Trees"><span class="nav-number">5.</span> <span class="nav-text">0096. Unique Binary Search Trees</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-4"><span class="nav-number">5.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0139-Word-Break"><span class="nav-number">6.</span> <span class="nav-text">0139. Word Break</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1"><span class="nav-number">6.1.</span> <span class="nav-text">solution 1:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2"><span class="nav-number">6.2.</span> <span class="nav-text">solution 2:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0152-Maximum-Product-Subarray"><span class="nav-number">7.</span> <span class="nav-text">0152. Maximum Product Subarray</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-5"><span class="nav-number">7.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0198-House-Robber"><span class="nav-number">8.</span> <span class="nav-text">0198. House Robber</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-6"><span class="nav-number">8.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0221-Maximal-Square"><span class="nav-number">9.</span> <span class="nav-text">0221. Maximal Square</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-7"><span class="nav-number">9.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0300-Longest-Increasing-Subsequence"><span class="nav-number">10.</span> <span class="nav-text">0300. Longest Increasing Subsequence</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1-1"><span class="nav-number">10.1.</span> <span class="nav-text">solution 1:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2-1"><span class="nav-number">10.2.</span> <span class="nav-text">solution 2:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0309-Best-Time-to-Buy-and-Sell-Stock-with-Cooldown"><span class="nav-number">11.</span> <span class="nav-text">0309. Best Time to Buy and Sell Stock with Cooldown</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1-2"><span class="nav-number">11.1.</span> <span class="nav-text">solution 1:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution2"><span class="nav-number">11.2.</span> <span class="nav-text">solution2:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0322-Coin-Change"><span class="nav-number">12.</span> <span class="nav-text">0322. Coin Change</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-8"><span class="nav-number">12.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0338-Counting-Bits"><span class="nav-number">13.</span> <span class="nav-text">0338. Counting Bits</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-9"><span class="nav-number">13.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0416-Partition-Equal-Subset-Sum"><span class="nav-number">14.</span> <span class="nav-text">0416. Partition Equal Subset Sum</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-10"><span class="nav-number">14.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0494-Target-Sum"><span class="nav-number">15.</span> <span class="nav-text">0494. Target Sum</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-11"><span class="nav-number">15.1.</span> <span class="nav-text">solution:</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Fanjia Kong</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Relearn,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Record some useful points after reading ES6 in Depth.">
+<meta name="keywords" content="Relearn">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ES6 in Depth">
+<meta property="og:url" content="http://yoursite.com/2019/11/23/es6/index.html">
+<meta property="og:site_name" content="Fanjia Kong">
+<meta property="og:description" content="Record some useful points after reading ES6 in Depth.">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-12-17T14:53:07.610Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ES6 in Depth">
+<meta name="twitter:description" content="Record some useful points after reading ES6 in Depth.">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/11/23/es6/">
+
+
+
+
+
+  <title>ES6 in Depth | Fanjia Kong</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Fanjia Kong</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Frontend Developer</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/23/es6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Fanjia Kong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Fanjia Kong">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">ES6 in Depth</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-23T20:32:09+02:00">
+                2019-11-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ES6/" itemprop="url" rel="index">
+                    <span itemprop="name">ES6</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Record some useful points after reading <a href="https://ponyfoo.com/articles/tagged/es6-in-depth" target="_blank" rel="noopener">ES6 in Depth</a>.</p>
+<a id="more"></a>
+
+<h2 id="Assignment-Destructuring"><a href="#Assignment-Destructuring" class="headerlink" title="Assignment Destructuring"></a>Assignment Destructuring</h2><p>By default, properties that aren’t found will be undefined</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var &#123;foo&#125; = &#123;bar: &apos;baz&apos;&#125;</span><br><span class="line">console.log(foo)</span><br><span class="line">// &lt;- undefined</span><br></pre></td></tr></table></figure>
+
+<p>If you’re trying to access a deeply nested property of a parent that doesn’t exist, then you’ll get an exception</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var &#123;foo:&#123;bar&#125;&#125; = &#123;baz: &apos;ouch&apos;&#125;</span><br><span class="line">// &lt;- Exception</span><br></pre></td></tr></table></figure>
+
+<p>A great fit for destructuring are things like regular expressions, where you would just love to name parameters without having to resort to index numbers.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">function getUrlParts (url) &#123;</span><br><span class="line">  var magic = /^(https?):\/\/(ponyfoo\.com)(\/articles\/([a-z0-9-]+))$/</span><br><span class="line">  return magic.exec(url)</span><br><span class="line">&#125;</span><br><span class="line">var parts = getUrlParts(&apos;http://ponyfoo.com/articles/es6-destructuring-in-depth&apos;)</span><br><span class="line">var [,protocol,host,pathname,slug] = parts</span><br><span class="line">console.log(protocol)</span><br><span class="line">// &lt;- &apos;http&apos;</span><br><span class="line">console.log(host)</span><br><span class="line">// &lt;- &apos;ponyfoo.com&apos;</span><br><span class="line">console.log(pathname)</span><br><span class="line">// &lt;- &apos;/articles/es6-destructuring-in-depth&apos;</span><br><span class="line">console.log(slug)</span><br><span class="line">// &lt;- &apos;es6-destructuring-in-depth&apos;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Spread-Operator-and-Rest-Parameters"><a href="#Spread-Operator-and-Rest-Parameters" class="headerlink" title="Spread Operator and Rest Parameters"></a>Spread Operator and Rest Parameters</h2><p><code>...rest</code> must be the last parameter in the list</p>
+<table>
+<thead>
+<tr>
+<th>Use Case</th>
+<th>ES5</th>
+<th>ES6</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Concatenation</td>
+<td>[1, 2].concat(more)</td>
+<td>[1, 2, …more]</td>
+</tr>
+<tr>
+<td>Push onto list</td>
+<td>list.push.apply(list, [3, 4])</td>
+<td>list.push(…[3, 4])</td>
+</tr>
+<tr>
+<td>Destructuring</td>
+<td>a = list[0], rest = list.slice(1)</td>
+<td>[a, …rest] = list</td>
+</tr>
+<tr>
+<td>new + apply</td>
+<td>new (Date.bind.apply(Date, [null,2015,8,1]))</td>
+<td>new Date(…[2015,8,1])</td>
+</tr>
+</tbody></table>
+<h2 id="Arrow-Functions"><a href="#Arrow-Functions" class="headerlink" title="Arrow Functions"></a>Arrow Functions</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">[1, 2, 3].map(n =&gt; &#123; number: n &#125;)</span><br><span class="line">// [undefined, undefined, undefined]</span><br><span class="line">[1, 2, 3].map(n =&gt; &#123; number: n, something: &apos;else&apos; &#125;)</span><br><span class="line">// &lt;- SyntaxError</span><br><span class="line">[1, 2, 3].map(n =&gt; (&#123; number: n &#125;))</span><br><span class="line">// &lt;- [&#123; number: 1 &#125;, &#123; number: 2 &#125;, &#123; number: 3 &#125;]</span><br><span class="line">[1, 2, 3].map(n =&gt; (&#123; number: n, something: &apos;else&apos; &#125;))</span><br><span class="line">/* &lt;- [</span><br><span class="line">  &#123; number: 1, something: &apos;else&apos; &#125;,</span><br><span class="line">  &#123; number: 2, something: &apos;else&apos; &#125;,</span><br><span class="line">  &#123; number: 3, something: &apos;else&apos; &#125;]</span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
+
+<h2 id="Let-Const-and-the-“Temporal-Dead-Zone”-TDZ"><a href="#Let-Const-and-the-“Temporal-Dead-Zone”-TDZ" class="headerlink" title="Let, Const and the “Temporal Dead Zone” (TDZ)"></a>Let, Const and the “Temporal Dead Zone” (TDZ)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">there = &apos;far away&apos;</span><br><span class="line">// &lt;- ReferenceError: there is not defined</span><br><span class="line">let there = &apos;dragons&apos;</span><br></pre></td></tr></table></figure>
+
+<p>Declaring a method that references there before it’s defined is okay, as long as the method doesn’t get executed while there is in the TDZ, and there will be in the TDZ for as long as the let there statement isn’t reached (while the scope has been entered).</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function readThere () &#123;</span><br><span class="line">  return there</span><br><span class="line">&#125;</span><br><span class="line">let there = &apos;dragons&apos;</span><br><span class="line">console.log(readThere())</span><br><span class="line">// &lt;- &apos;dragons&apos;</span><br></pre></td></tr></table></figure>
+
+<p>But this snippet will, because access to there occurs before leaving the TDZ for there.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function readThere () &#123;</span><br><span class="line">  return there</span><br><span class="line">&#125;</span><br><span class="line">console.log(readThere())</span><br><span class="line">// ReferenceError: there is not defined</span><br><span class="line">let there = &apos;dragons&apos;</span><br></pre></td></tr></table></figure>
+
+<p>This snippet still works because it still leaves the TDZ before accessing there in any way.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function readThere () &#123;</span><br><span class="line">  return there</span><br><span class="line">&#125;</span><br><span class="line">let there</span><br><span class="line">console.log(readThere())</span><br><span class="line">// &lt;- undefined</span><br></pre></td></tr></table></figure>
+
+<h2 id="Symbols"><a href="#Symbols" class="headerlink" title="Symbols"></a>Symbols</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var mystery = Symbol(&apos;this is a descriptive description&apos;)</span><br></pre></td></tr></table></figure>
+
+<p>Symbols are immutable and unique.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">console.log(Symbol() === Symbol())</span><br><span class="line">// &lt;- false</span><br><span class="line">console.log(Symbol(&apos;foo&apos;) === Symbol(&apos;foo&apos;))</span><br><span class="line">// &lt;- false</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Symbol.for(&apos;foo&apos;) === Symbol.for(&apos;foo&apos;)</span><br><span class="line">// &lt;- true</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var symbol = Symbol.for(&apos;foo&apos;)</span><br><span class="line">console.log(Symbol.keyFor(symbol))</span><br><span class="line">// &lt;- &apos;foo&apos;</span><br></pre></td></tr></table></figure>
+
+<p>Why Would I Want Symbols?</p>
+<ul>
+<li>You can use symbols to avoid name clashes in property keys.</li>
+<li>They’re useful in situations where you want to define metadata that shouldn’t be part of iterable sequences for arrays or any iterable objects.</li>
+<li>Defining protocols – just like there’s Symbol.iterator which allows you to define how an object can be iterated.</li>
+</ul>
+<h2 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h2><p>One of the important differences is that you’re able to use anything for the keys.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var map = new Map()</span><br><span class="line">map.set(new Date(), function today () &#123;&#125;)</span><br><span class="line">map.set(() =&gt; &apos;key&apos;, &#123; pony: &apos;foo&apos; &#125;)</span><br><span class="line">map.set(Symbol(&apos;items&apos;), [1, 2])</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Use <code>map.set(key, value)</code> to add entries</li>
+<li>Use <code>map.get(key)</code> to get an entry</li>
+<li>Check for a key using <code>map.has(key)</code></li>
+<li>Remove entries with <code>map.delete(key)</code></li>
+</ul>
+<h3 id="WeakMaps"><a href="#WeakMaps" class="headerlink" title="WeakMaps"></a>WeakMaps</h3><ul>
+<li>WeakMap isn’t iterable, so you don’t get enumeration methods like <code>.forEach</code>, <code>.clear</code>, and others you had in Map</li>
+<li>WeakMap keys must be reference types. You can’t use value types like symbols, numbers, or strings as keys</li>
+<li>That last point means WeakMap is great at keeping around metadata for objects, while those objects are still in use</li>
+<li>You avoid memory leaks, without manual reference counting</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var date = new Date()</span><br><span class="line">var map = new WeakMap([[date, &apos;foo&apos;], [() =&gt; &apos;bar&apos;, &apos;baz&apos;]])</span><br><span class="line">console.log(map.has(date))</span><br><span class="line">// &lt;- true</span><br><span class="line">console.log(map.get(date))</span><br><span class="line">// &lt;- &apos;foo&apos;</span><br><span class="line">map.delete(date)</span><br><span class="line">console.log(map.has(date))</span><br><span class="line">// &lt;- false</span><br></pre></td></tr></table></figure>
+
+<h2 id="Sets"><a href="#Sets" class="headerlink" title="Sets"></a>Sets</h2><ul>
+<li>Set doesn’t have keys, there’s only values</li>
+<li><code>set.set(value)</code> doesn’t look right, so we have <code>set.add(value)</code> instead</li>
+<li>Sets can’t have duplicate values because the values are also used as keys</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">var set = new Set([1, 2, 3, 4, 4])</span><br><span class="line">console.log([...set])</span><br><span class="line">// &lt;- [1, 2, 3, 4]</span><br></pre></td></tr></table></figure>
+
+<h3 id="WeakSets"><a href="#WeakSets" class="headerlink" title="WeakSets"></a>WeakSets</h3><p>Its values must be unique object references.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var set = new WeakSet()</span><br><span class="line">set.add(&#123;&#125;)</span><br><span class="line">set.add(new Date())</span><br></pre></td></tr></table></figure>
+
+<h2 id="Number"><a href="#Number" class="headerlink" title="Number"></a>Number</h2><ul>
+<li>Number.isInteger checks if input is a Number value that doesn’t have a decimal part</li>
+<li>Number.EPSILON helps figure out negligible differences between two numbers – e.g. 0.1 + 0.2 and 0.3</li>
+<li>Number.MAX_SAFE_INTEGER is the largest integer that can be safely and precisely represented in JavaScript</li>
+<li>Number.MIN_SAFE_INTEGER is the smallest integer that can be safely and precisely represented in JavaScript</li>
+<li>Number.isSafeInteger checks whether an integer is within those bounds, able to be represented safely and precisely</li>
+</ul>
+<h2 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h2><ul>
+<li><p>Array.prototype.copyWithin – copies a sequence of array elements into somewhere else in the array</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var items = [1, 2, 3, ,,,,,,,]</span><br><span class="line">// &lt;- [1, 2, 3, undefined x 7]</span><br><span class="line">items.copyWithin(6, 1, 3)</span><br><span class="line">// &lt;- [1, 2, 3, undefined × 3, 2, 3, undefined × 2]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Array.prototype.fill – fills all elements of an existing array with the provided value</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[&apos;a&apos;, &apos;b&apos;, &apos;c&apos;,,,].fill(0, 2)</span><br><span class="line">// &lt;- [&apos;a&apos;, &apos;b&apos;, 0, 0, 0]</span><br><span class="line">new Array(5).fill(0, 0, 3)</span><br><span class="line">// &lt;- [0, 0, 0, undefined x 2]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Array.prototype.find – returns the first item to satisfy a callback</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[1, 2, 3, 4, 5].find(item =&gt; item &gt; 2)</span><br><span class="line">// &lt;- 3</span><br><span class="line">[1, 2, 3, 4, 5].find((item, i) =&gt; i === 3)</span><br><span class="line">// &lt;- 4</span><br><span class="line">[1, 2, 3, 4, 5].find(item =&gt; item === Infinity)</span><br><span class="line">// &lt;- undefined</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Array.prototype.findIndex – returns the index of the first item to satisfy a callback</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[1, 2, 3, 4, 5].find(item =&gt; item &gt; 2)</span><br><span class="line">// &lt;- 2</span><br><span class="line">[1, 2, 3, 4, 5].find((item, i) =&gt; i === 3)</span><br><span class="line">// &lt;- 3</span><br><span class="line">[1, 2, 3, 4, 5].find(item =&gt; item === Infinity)</span><br><span class="line">// &lt;- -1</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Array.prototype.keys – returns an iterator that yields a sequence holding the keys for the array</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[1, 2, 3].keys()</span><br><span class="line">// &lt;- ArrayIterator &#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">for (let key of [1, 2, 3].keys()) &#123;</span><br><span class="line">console.log(key)</span><br><span class="line">// &lt;- 0</span><br><span class="line">// &lt;- 1</span><br><span class="line">// &lt;- 2</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[...new Array(3).keys()]</span><br><span class="line">// &lt;- [0, 1, 2]</span><br><span class="line">Object.keys(new Array(3))</span><br><span class="line">// &lt;- []</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Array.prototype.values – returns an iterator that yields a sequence holding the values for the array</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[1, 2, 3].values()</span><br><span class="line">// &lt;- ArrayIterator &#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[...[1, 2, 3].values()]</span><br><span class="line">// &lt;- [1, 2, 3]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Array.prototype.entries – returns an iterator that yields a sequence holding key value pairs for the array</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[&apos;a&apos;, &apos;b&apos;, &apos;c&apos;].entries()</span><br><span class="line">// &lt;- ArrayIterator &#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[...[&apos;a&apos;, &apos;b&apos;, &apos;c&apos;].entries()]</span><br><span class="line">// &lt;- [[0, &apos;a&apos;], [1, &apos;b&apos;], [2, &apos;c&apos;]]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Array.prototype[Symbol.iterator] – exactly the same as the Array.prototype.values method</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[...[&apos;a&apos;, &apos;b&apos;, &apos;c&apos;][Symbol.iterator]()]</span><br><span class="line">// &lt;- [&apos;a&apos;, &apos;b&apos;, &apos;c&apos;]</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="Object"><a href="#Object" class="headerlink" title="Object"></a>Object</h2><ul>
+<li><p>Object.assign – recursive shallow overwrite for properties from target, …objects</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Object.assign(&#123; a: 1, b: 2 &#125;, &#123; a: 3 &#125;, &#123; c: 4 &#125;)</span><br><span class="line">// &lt;- &#123; a: 3, b: 2, c: 4 &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Object.is – like using the === operator programmatically, except it’s true for NaN vs NaN and false for +0 vs -0</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Object.is(&apos;foo&apos;, &apos;foo&apos;)</span><br><span class="line">// &lt;- true</span><br><span class="line">Object.is(&#123;&#125;, &#123;&#125;)</span><br><span class="line">// &lt;- false</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Object.getOwnPropertySymbols – returns all own property symbols found on an object</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var a = &#123;</span><br><span class="line">  [Symbol(&apos;b&apos;)]: &apos;c&apos;,</span><br><span class="line">  [Symbol(&apos;d&apos;)]: &apos;e&apos;,</span><br><span class="line">  &apos;f&apos;: &apos;g&apos;,</span><br><span class="line">  &apos;h&apos;: &apos;i&apos;</span><br><span class="line">&#125;</span><br><span class="line">Object.getOwnPropertySymbols(a)</span><br><span class="line">// &lt;- [Symbol(b), Symbol(d)]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Object.setPrototypeOf – changes prototype.</p>
+</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Relearn/" rel="tag"><i class="fa fa-tag"></i> Relearn</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/11/22/leetcode7/" rel="next" title="LeetCode - Others">
+                <i class="fa fa-chevron-left"></i> LeetCode - Others
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/11/24/deep-clone/" rel="prev" title="Deep Clone">
+                Deep Clone <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Fanjia Kong</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:kfj0116@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i></a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Assignment-Destructuring"><span class="nav-number">1.</span> <span class="nav-text">Assignment Destructuring</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spread-Operator-and-Rest-Parameters"><span class="nav-number">2.</span> <span class="nav-text">Spread Operator and Rest Parameters</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Arrow-Functions"><span class="nav-number">3.</span> <span class="nav-text">Arrow Functions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Let-Const-and-the-“Temporal-Dead-Zone”-TDZ"><span class="nav-number">4.</span> <span class="nav-text">Let, Const and the “Temporal Dead Zone” (TDZ)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Symbols"><span class="nav-number">5.</span> <span class="nav-text">Symbols</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Map"><span class="nav-number">6.</span> <span class="nav-text">Map</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#WeakMaps"><span class="nav-number">6.1.</span> <span class="nav-text">WeakMaps</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Sets"><span class="nav-number">7.</span> <span class="nav-text">Sets</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#WeakSets"><span class="nav-number">7.1.</span> <span class="nav-text">WeakSets</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Number"><span class="nav-number">8.</span> <span class="nav-text">Number</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Array"><span class="nav-number">9.</span> <span class="nav-text">Array</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Object"><span class="nav-number">10.</span> <span class="nav-text">Object</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Fanjia Kong</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

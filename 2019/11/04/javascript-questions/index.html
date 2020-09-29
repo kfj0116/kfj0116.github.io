@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Questions,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Record some JavaScript questions.">
+<meta name="keywords" content="Questions">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Questions - JavaScript">
+<meta property="og:url" content="http://yoursite.com/2019/11/04/javascript-questions/index.html">
+<meta property="og:site_name" content="Fanjia Kong">
+<meta property="og:description" content="Record some JavaScript questions.">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-12-06T17:46:42.830Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Questions - JavaScript">
+<meta name="twitter:description" content="Record some JavaScript questions.">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/11/04/javascript-questions/">
+
+
+
+
+
+  <title>Questions - JavaScript | Fanjia Kong</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Fanjia Kong</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Frontend Developer</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/04/javascript-questions/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Fanjia Kong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Fanjia Kong">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Questions - JavaScript</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-04T20:00:24+02:00">
+                2019-11-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Record some JavaScript questions.</p>
+<a id="more"></a>
+
+<h2 id="Explain-event-delegation"><a href="#Explain-event-delegation" class="headerlink" title="Explain event delegation"></a>Explain event delegation</h2><p>Event delegation is a technique involving adding event listeners to a parent element instead of adding them to the descendant elements. The listener will fire whenever the event is triggered on the descendant elements due to event bubbling up the DOM. The benefits of this technique are:</p>
+<ul>
+<li>Memory footprint goes down because only one single handler is needed on the parent element, rather than having to attach event handlers on each descendant.</li>
+<li>There is no need to unbind the handler from elements that are removed and to bind the event for new elements.</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul id=&quot;list&quot;&gt;</span><br><span class="line">  &lt;li&gt;item 1&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;item 2&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;item 3&lt;/li&gt;</span><br><span class="line">  ......</span><br><span class="line">  &lt;li&gt;item n&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">document.getElementById(&apos;list&apos;).addEventListener(&apos;click&apos;, function (e) &#123;</span><br><span class="line">  var event = e || window.event;</span><br><span class="line">  var target = event.target || event.srcElement;</span><br><span class="line">  if (target.nodeName.toLocaleLowerCase === &apos;li&apos;) &#123;</span><br><span class="line">    console.log(&apos;the content is: &apos;, target.innerHTML);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h2 id="Explain-how-this-works-in-JavaScript"><a href="#Explain-how-this-works-in-JavaScript" class="headerlink" title="Explain how this works in JavaScript"></a>Explain how <code>this</code> works in JavaScript</h2><ul>
+<li><p>If the new keyword is used when calling the function, <code>this</code> inside the function is a brand new object.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">function showThis () &#123;</span><br><span class="line">  console.log(this)</span><br><span class="line">&#125;</span><br><span class="line">showThis() // window</span><br><span class="line">new showThis() // showThis</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>If <code>apply</code>, <code>call</code>, or <code>bind</code> are used to call/create a function, <code>this</code> inside the function is the object that is passed in as the argument.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">var a = &#123;</span><br><span class="line">    name : &quot;Demo&quot;,</span><br><span class="line"></span><br><span class="line">    func1: function () &#123;</span><br><span class="line">        console.log(this.name)</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    func2: function () &#123;</span><br><span class="line">        setTimeout(  function () &#123;</span><br><span class="line">            this.func1()</span><br><span class="line">        &#125;.apply(a),100);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">a.func2()            // Demo</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>If a function is called as a method, such as <code>obj.method()</code> — <code>this</code> is the object that the function is a property of.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var name = &quot;windowsName&quot;;</span><br><span class="line">var a = &#123;</span><br><span class="line">    name: &quot;Demo&quot;,</span><br><span class="line">    fn : function () &#123;</span><br><span class="line">        console.log(this.name);      // Demo</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">a.fn();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>If a function is invoked as a free function invocation, meaning it was invoked without any of the conditions present above, <code>this</code> is the global object. In a browser, it is the window object. If in strict mode (‘use strict’), <code>this</code> will be undefined instead of the global object.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">var name = &quot;windowsName&quot;;</span><br><span class="line"></span><br><span class="line">function fn() &#123;</span><br><span class="line">    var name = &apos;Demo&apos;;</span><br><span class="line">    innerFunction();</span><br><span class="line">    function innerFunction() &#123;</span><br><span class="line">        console.log(this.name);      // windowsName</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">fn()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>If multiple of the above rules apply, the rule that is higher wins and will set the <code>this</code> value.</p>
+</li>
+<li><p>If the function is an ES2015 arrow function, it ignores all the rules above and receives the <code>this</code> value of its surrounding scope at the time it is created.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">var name = &quot;windowsName&quot;;</span><br><span class="line"></span><br><span class="line">  var a = &#123;</span><br><span class="line">      name : &quot;Demo&quot;,</span><br><span class="line"></span><br><span class="line">      func1: function () &#123;</span><br><span class="line">          console.log(this.name)</span><br><span class="line">      &#125;,</span><br><span class="line"></span><br><span class="line">      func2: function () &#123;</span><br><span class="line">          setTimeout( () =&gt; &#123;</span><br><span class="line">              this.func1()</span><br><span class="line">          &#125;,100);</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  a.func2()     // Demo</span><br></pre></td></tr></table></figure>
+
+<p>One obvious benefit of arrow functions is to simplify the syntax needed to create functions, without a need for the function keyword. The this within arrow functions is also bound to the enclosing scope which is different compared to regular functions where the this is determined by the object calling it. Lexically-scoped this is useful when invoking callbacks, especially in React components.</p>
+</li>
+</ul>
+<h2 id="What-advantage-is-there-for-using-the-arrow-syntax-for-a-method-in-a-constructor"><a href="#What-advantage-is-there-for-using-the-arrow-syntax-for-a-method-in-a-constructor" class="headerlink" title="What advantage is there for using the arrow syntax for a method in a constructor?"></a>What advantage is there for using the arrow syntax for a method in a constructor?</h2><p>The value of <code>this</code> gets set at the time of the function creation and can’t change after that. So, when the constructor is used to create a new object, <code>this</code> will always refer to that object. For example, let’s say we have a Person constructor that takes a first name as an argument has two methods to <code>console.log</code> that name, one as a regular function and one as an arrow function:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">const Person = function(firstName) &#123;</span><br><span class="line">  this.firstName = firstName;</span><br><span class="line">  this.sayName1 = function() &#123; console.log(this.firstName); &#125;;</span><br><span class="line">  this.sayName2 = () =&gt; &#123; console.log(this.firstName); &#125;;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">const john = new Person(&apos;John&apos;);</span><br><span class="line">const dave = new Person(&apos;Dave&apos;);</span><br><span class="line"></span><br><span class="line">john.sayName1(); // John</span><br><span class="line">john.sayName2(); // John</span><br><span class="line"></span><br><span class="line">// The regular function can have its &apos;this&apos; value changed, but the arrow function cannot</span><br><span class="line">john.sayName1.call(dave); // Dave (because &quot;this&quot; is now the dave object)</span><br><span class="line">john.sayName2.call(dave); // John</span><br><span class="line"></span><br><span class="line">john.sayName1.apply(dave); // Dave (because &apos;this&apos; is now the dave object)</span><br><span class="line">john.sayName2.apply(dave); // John</span><br><span class="line"></span><br><span class="line">john.sayName1.bind(dave)(); // Dave (because &apos;this&apos; is now the dave object)</span><br><span class="line">john.sayName2.bind(dave)(); // John</span><br><span class="line"></span><br><span class="line">var sayNameFromWindow1 = john.sayName1;</span><br><span class="line">sayNameFromWindow1(); // undefined (because &apos;this&apos; is now the window object)</span><br><span class="line"></span><br><span class="line">var sayNameFromWindow2 = john.sayName2;</span><br><span class="line">sayNameFromWindow2(); // John</span><br></pre></td></tr></table></figure>
+
+<p>The main takeaway here is that <code>this</code> can be changed for a normal function, but the context always stays the same for an arrow function. So even if you are passing around your arrow function to different parts of your application, you wouldn’t have to worry about the context changes.<br>This can be particularly helpful in React class components. If you define a class method for something such as a click handler using a normal function, and then you pass that click handler down into a child component as a prop, you will need to also bind this in the constructor of the parent component. If you instead use an arrow function, there is no need to also bind “this”, as the method will automatically get its “this” value from its enclosing lexical context.</p>
+<h2 id="What’s-the-difference-between-call-and-apply"><a href="#What’s-the-difference-between-call-and-apply" class="headerlink" title="What’s the difference between .call and .apply?"></a>What’s the difference between <code>.call</code> and <code>.apply</code>?</h2><p>Both <code>.call</code> and <code>.apply</code> are used to invoke functions and the first parameter will be used as the value of this within the function. However, <code>.call</code> takes in comma-separated arguments as the next arguments while <code>.apply</code> takes in an array of arguments as the next argument. An easy way to remember this is C for call and comma-separated and A for apply and an array of arguments.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">function add(a, b) &#123;</span><br><span class="line">  return a + b;</span><br><span class="line">&#125;</span><br><span class="line">console.log(add.call(null, 1, 2)); // 3</span><br><span class="line">console.log(add.apply(null, [1, 2])); // 3</span><br></pre></td></tr></table></figure>
+
+<h2 id="Explain-how-prototypal-inheritance-works"><a href="#Explain-how-prototypal-inheritance-works" class="headerlink" title="Explain how prototypal inheritance works"></a>Explain how prototypal inheritance works</h2><p>All JavaScript objects have a prototype property, that is a reference to another object. When a property is accessed on an object and if the property is not found on that object, the JavaScript engine looks at the object’s prototype, and the prototype’s prototype and so on, until it finds the property defined on one of the prototypes or until it reaches the end of the prototype chain. This behavior simulates classical inheritance, but it is really more of delegation than inheritance.<br>Example of Prototypal Inheritance<br>We already have a build-in Object.create, but if you were to provide a polyfill for it, that might look like:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">if (typeof Object.create !== &apos;function&apos;) &#123;</span><br><span class="line">  Object.create = function (parent) &#123;</span><br><span class="line">    function Tmp() &#123;&#125;</span><br><span class="line">    Tmp.prototype = parent;</span><br><span class="line">    return new Tmp();</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line">const Parent = function() &#123;</span><br><span class="line">  this.name = &quot;Parent&quot;;</span><br><span class="line">&#125;</span><br><span class="line">Parent.prototype.greet = function() &#123; console.log(&quot;hello from Parent&quot;); &#125;</span><br><span class="line">const child = Object.create(Parent.prototype);</span><br><span class="line">child.cry = function() &#123;</span><br><span class="line">  console.log(&quot;waaaaaahhhh!&quot;);</span><br><span class="line">&#125;</span><br><span class="line">child.cry();</span><br><span class="line">// Outputs: waaaaaahhhh!</span><br><span class="line">child.greet();</span><br><span class="line">// Outputs: hello from Parent</span><br></pre></td></tr></table></figure>
+
+<p>Things to note are:<br>.greet is not defined on the child, so the engine goes up the prototype chain and finds .greet off the inherited from Parent.<br>We need to call Object.create in one of following ways for the prototype methods to be inherited:</p>
+<ul>
+<li>Object.create(Parent.prototype);</li>
+<li>Object.create(new Parent(null));</li>
+<li>Object.create(objLiteral);<br>Currently, child.constructor is pointing to the Parent:</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// child.constructor</span><br><span class="line">ƒ () &#123;</span><br><span class="line">  this.name = &quot;Parent&quot;;</span><br><span class="line">&#125;</span><br><span class="line">// child.constructor.name</span><br><span class="line">// &quot;Parent&quot;</span><br></pre></td></tr></table></figure>
+
+<p>If we’d like to correct this, one option would be to do:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">function Child() &#123;</span><br><span class="line">  Parent.call(this);</span><br><span class="line">  this.name = &apos;child&apos;;</span><br><span class="line">&#125;</span><br><span class="line">Child.prototype = Parent.prototype;</span><br><span class="line">Child.prototype.constructor = Child;</span><br><span class="line">const c = new Child();</span><br><span class="line">c.cry();</span><br><span class="line">// Outputs: waaaaaahhhh!</span><br><span class="line">c.greet();</span><br><span class="line">// Outputs: hello from Parent</span><br><span class="line">c.constructor.name;</span><br><span class="line">// Outputs: &quot;Child&quot;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Explain-the-Prototype-Design-Pattern"><a href="#Explain-the-Prototype-Design-Pattern" class="headerlink" title="Explain the Prototype Design Pattern"></a>Explain the Prototype Design Pattern</h2><p>The Prototype Pattern creates new objects, but rather than creating non-initialized objects it returns objects that are initialized with values it copied from a prototype - or sample - object. The Prototype pattern is also referred to as the Properties pattern.<br>An example of where the Prototype pattern is useful is the initialization of business objects with values that match the default values in the database. The prototype object holds the default values that are copied over into a newly created business object.<br>Classical languages rarely use the Prototype pattern, but JavaScript being a prototypal language uses this pattern in the construction of new objects and their prototypes.</p>
+<h3 id="JavaScript-is-a-object-based-language"><a href="#JavaScript-is-a-object-based-language" class="headerlink" title="JavaScript is a object-based language."></a>JavaScript is a object-based language.</h3><h3 id="Prototype"><a href="#Prototype" class="headerlink" title="Prototype"></a>Prototype</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">function Cat(name,color) &#123;</span><br><span class="line">  this.name = name;</span><br><span class="line">  this.color = color;</span><br><span class="line">&#125;</span><br><span class="line">　Cat.prototype.type = &quot;Cats&quot;;</span><br><span class="line">　Cat.prototype.eat = function()&#123;alert(&quot;eat mouse&quot;)&#125;;</span><br><span class="line"></span><br><span class="line">var cat1 = new Cat(&quot;One&quot;,&quot;yellow&quot;);</span><br><span class="line">var cat2 = new Cat(&quot;Two&quot;,&quot;black&quot;);</span><br><span class="line">　alert(cat1.type); // Cats</span><br><span class="line">　cat1.eat(); // eat mouse</span><br><span class="line">alert(cat1.eat == cat2.eat); //true</span><br></pre></td></tr></table></figure>
+
+<h3 id="constructor-inheritance"><a href="#constructor-inheritance" class="headerlink" title="constructor inheritance"></a>constructor inheritance</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function Animal()&#123;</span><br><span class="line">　  this.species = &quot;Animals&quot;;</span><br><span class="line">　&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>bind</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function Cat(name,color)&#123;</span><br><span class="line">  Animal.apply(this, arguments);</span><br><span class="line">  this.name = name;</span><br><span class="line">  　　 this.color = color;</span><br><span class="line">  　&#125;</span><br><span class="line">  　var cat1 = new Cat(&quot;One&quot;,&quot;yellow&quot;);</span><br><span class="line">  　alert(cat1.species); // Animals</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>prototype</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Cat.prototype = new Animal();</span><br><span class="line">Cat.prototype.constructor = Cat;</span><br><span class="line">var cat1 = new Cat(&quot;One&quot;,&quot;yellow&quot;);</span><br><span class="line">alert(cat1.species); // Animals</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>direct inherit prototype(save memory but change Animal.prototype.constructor)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">function Animal()&#123; &#125;</span><br><span class="line">Animal.prototype.species = &quot;Animals&quot;;</span><br><span class="line"></span><br><span class="line">Cat.prototype = Animal.prototype;</span><br><span class="line">Cat.prototype.constructor = Cat;</span><br><span class="line">var cat1 = new Cat(&quot;One&quot;,&quot;yellow&quot;);</span><br><span class="line">alert(cat1.species); // Animals</span><br><span class="line">alert(Animal.prototype.constructor); // Cat</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>use empty object as agent</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">var F = function()&#123;&#125;;</span><br><span class="line">F.prototype = Animal.prototype;</span><br><span class="line">Cat.prototype = new F();</span><br><span class="line">Cat.prototype.constructor = Cat;</span><br><span class="line"></span><br><span class="line">function extend(Child, Parent) &#123;</span><br><span class="line">  var F = function()&#123;&#125;;</span><br><span class="line">  F.prototype = Parent.prototype;</span><br><span class="line">  Child.prototype = new F();</span><br><span class="line">  Child.prototype.constructor = Child;</span><br><span class="line">  Child.uber = Parent.prototype;</span><br><span class="line">&#125;</span><br><span class="line">extend(Cat,Animal);</span><br><span class="line">var cat1 = new Cat(&quot;One&quot;,&quot;yellow&quot;);</span><br><span class="line">alert(cat1.species); // Animals</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>copy</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">function Animal()&#123;&#125;</span><br><span class="line">Animal.prototype.species = &quot;Animals&quot;;</span><br><span class="line"></span><br><span class="line">function extend2(Child, Parent) &#123;</span><br><span class="line">  var p = Parent.prototype;</span><br><span class="line">  var c = Child.prototype;</span><br><span class="line">  for (var i in p) &#123;</span><br><span class="line">    c[i] = p[i];</span><br><span class="line">  &#125;</span><br><span class="line">  c.uber = p;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">extend2(Cat, Animal);</span><br><span class="line">var cat1 = new Cat(&quot;One&quot;,&quot;yellow&quot;);</span><br><span class="line">alert(cat1.species); // Animals</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="none-constructor-inheritance"><a href="#none-constructor-inheritance" class="headerlink" title="none constructor inheritance"></a>none constructor inheritance</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var Chinese = &#123;</span><br><span class="line">  nation:&apos;China&apos;</span><br><span class="line">&#125;;</span><br><span class="line">var Doctor =&#123;</span><br><span class="line">  career:&apos;Doctor&apos;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>object() prototype chain</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">function object(o) &#123;</span><br><span class="line">  function F() &#123;&#125;</span><br><span class="line">  F.prototype = o;</span><br><span class="line"> return new F();</span><br><span class="line">&#125;</span><br><span class="line">var Doctor = object(Chinese);</span><br><span class="line">Doctor.career = &apos;Doctor&apos;;</span><br><span class="line">alert(Doctor.nation); //China</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>shallow copy (parent object can be changed)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">function extendCopy(p) &#123;</span><br><span class="line">  var c = &#123;&#125;;</span><br><span class="line">  for (var i in p) &#123;</span><br><span class="line">    c[i] = p[i];</span><br><span class="line">  &#125;</span><br><span class="line">  c.uber = p;</span><br><span class="line">  return c;</span><br><span class="line">&#125;</span><br><span class="line">var Doctor = extendCopy(Chinese);</span><br><span class="line">Doctor.career = &apos;Doctor&apos;;</span><br><span class="line">alert(Doctor.nation); // China</span><br><span class="line"></span><br><span class="line">Chinese.birthPlaces = [&apos;Beijing&apos;,&apos;Shanghai&apos;,&apos;HongKong&apos;];</span><br><span class="line">var Doctor = extendCopy(Chinese);</span><br><span class="line">Doctor.birthPlaces.push(&apos;Shenzhen&apos;);</span><br><span class="line">alert(Doctor.birthPlaces); //Beijing, Shanghai, HongKong, Shenzhen</span><br><span class="line">alert(Chinese.birthPlaces); //Beijing, Shanghai, HongKong, Shenzhen</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>deep copy</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">function deepCopy(p, c) &#123;</span><br><span class="line">  var c = c || &#123;&#125;;</span><br><span class="line">  for (var i in p) &#123;</span><br><span class="line">    if (typeof p[i] === &apos;object&apos;) &#123;</span><br><span class="line">      c[i] = (p[i].constructor === Array) ? [] : &#123;&#125;;</span><br><span class="line">      deepCopy(p[i], c[i]);</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">      c[i] = p[i];</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  return c;</span><br><span class="line">&#125;</span><br><span class="line">var Doctor = deepCopy(Chinese);</span><br><span class="line">Chinese.birthPlaces = [&apos;Beijing&apos;,&apos;Shanghai&apos;,&apos;HongKong&apos;];</span><br><span class="line">Doctor.birthPlaces.push(&apos;Shenzhen&apos;);</span><br><span class="line">alert(Doctor.birthPlaces); //Beijing, Shanghai, HongKong, Shenzhen</span><br><span class="line">alert(Chinese.birthPlaces); //Beijing, Shanghai, HongKong</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="What-are-the-differences-between-ES6-class-and-ES5-function-constructors"><a href="#What-are-the-differences-between-ES6-class-and-ES5-function-constructors" class="headerlink" title="What are the differences between ES6 class and ES5 function constructors?"></a>What are the differences between ES6 class and ES5 function constructors?</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// ES5 Function Constructor</span><br><span class="line">function Person(name) &#123;</span><br><span class="line">  this.name = name;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// ES6 Class</span><br><span class="line">class Person &#123;</span><br><span class="line">  constructor(name) &#123;</span><br><span class="line">    this.name = name;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>For simple constructors, they look pretty similar. The main difference in the constructor comes when using inheritance. If we want to create a Student class that subclasses Person and add a studentId field, this is what we have to do in addition to the above.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">// ES5 Function Constructor</span><br><span class="line">function Student(name, studentId) &#123;</span><br><span class="line">  // Call constructor of superclass to initialize superclass-derived members.</span><br><span class="line">  Person.call(this, name);</span><br><span class="line"></span><br><span class="line">  // Initialize subclass&apos;s own members.</span><br><span class="line">  this.studentId = studentId;</span><br><span class="line">&#125;</span><br><span class="line">Student.prototype = Object.create(Person.prototype);</span><br><span class="line">Student.prototype.constructor = Student;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// ES6 Class</span><br><span class="line">class Student extends Person &#123;</span><br><span class="line">  constructor(name, studentId) &#123;</span><br><span class="line">    super(name);</span><br><span class="line">    this.studentId = studentId;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="What-do-you-think-of-AMD-vs-CommonJS"><a href="#What-do-you-think-of-AMD-vs-CommonJS" class="headerlink" title="What do you think of AMD vs CommonJS?"></a>What do you think of AMD vs CommonJS?</h2><p>Both are ways to implement a module system, which was not natively present in JavaScript until ES2015 came along. CommonJS is synchronous while AMD (Asynchronous Module Definition) is asynchronous. CommonJS is designed with server-side development in mind while AMD, with its support for asynchronous loading of modules, is more intended for browsers.</p>
+<h3 id="CommonJS"><a href="#CommonJS" class="headerlink" title="CommonJS"></a>CommonJS</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">// math.js</span><br><span class="line">var basicNum = 0;</span><br><span class="line">function add(a, b) &#123;</span><br><span class="line">  return a + b;</span><br><span class="line">&#125;</span><br><span class="line">module.exports = &#123;</span><br><span class="line">  add: add,</span><br><span class="line">  basicNum: basicNum</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var math = require(&apos;./math&apos;);</span><br><span class="line">math.add(2, 5);</span><br></pre></td></tr></table></figure>
+
+<h3 id="AMD"><a href="#AMD" class="headerlink" title="AMD"></a>AMD</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">define([&apos;./a&apos;, &apos;./b&apos;], function(a, b) &#123; // require add at first</span><br><span class="line">  a.doSomething()</span><br><span class="line">  // 100 lines...</span><br><span class="line">  b.doSomething()</span><br><span class="line">  // ...</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="CMD-Common-Module-Definition-and-sea-js"><a href="#CMD-Common-Module-Definition-and-sea-js" class="headerlink" title="CMD (Common Module Definition) and sea.js"></a>CMD (Common Module Definition) and sea.js</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">define(function(require, exports, module) &#123;</span><br><span class="line">  var a = require(&apos;./a&apos;)</span><br><span class="line">  a.doSomething()</span><br><span class="line">  // 100 lines...</span><br><span class="line">  var b = require(&apos;./b&apos;) // require near the use</span><br><span class="line">  b.doSomething()</span><br><span class="line">  // ...</span><br><span class="line"> &#125;)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">/** sea.js **/</span><br><span class="line">// define math.js</span><br><span class="line">define(function(require, exports, module) &#123;</span><br><span class="line">    var $ = require(&apos;jquery.js&apos;);</span><br><span class="line">    var add = function(a,b)&#123;</span><br><span class="line">        return a+b;</span><br><span class="line">    &#125;</span><br><span class="line">    exports.add = add;</span><br><span class="line">&#125;);</span><br><span class="line">// use module</span><br><span class="line">seajs.use([&apos;math.js&apos;], function(math)&#123;</span><br><span class="line">    var sum = math.add(1+2);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h3 id="ES6-Module"><a href="#ES6-Module" class="headerlink" title="ES6 Module"></a>ES6 Module</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">/** define math.js **/</span><br><span class="line">var basicNum = 0;</span><br><span class="line">var add = function (a, b) &#123;</span><br><span class="line">    return a + b;</span><br><span class="line">&#125;;</span><br><span class="line">export &#123; basicNum, add &#125;;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">/** use module **/</span><br><span class="line">import &#123; basicNum, add &#125; from &apos;./math&apos;;</span><br><span class="line">function test(ele) &#123;</span><br><span class="line">    ele.textContent = add(99 + basicNum);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>default</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// export default</span><br><span class="line">export default &#123; basicNum, add &#125;;</span><br><span class="line"></span><br><span class="line">// import</span><br><span class="line">import math from &apos;./math&apos;;</span><br><span class="line">function test(ele) &#123;</span><br><span class="line">    ele.textContent = math.add(99 + math.basicNum);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="How-can-you-share-code-between-files"><a href="#How-can-you-share-code-between-files" class="headerlink" title="How can you share code between files?"></a>How can you share code between files?</h2><p>This depends on the JavaScript environment.</p>
+<ul>
+<li>On the client (browser environment), as long as the variables/functions are declared in the global scope (window), all scripts can refer to them. Alternatively, adopt the Asynchronous Module Definition (AMD) via RequireJS for a more modular approach.</li>
+<li>On the server (Node.js), the common way has been to use CommonJS. Each file is treated as a module and it can export variables and functions by attaching them to the module.exports object.</li>
+<li>ES2015 defines a module syntax which aims to replace both AMD and CommonJS. This will eventually be supported in both browser and Node environments.</li>
+</ul>
+<h2 id="What-is-IIFEs-Immediately-Invoked-Function-Expressions"><a href="#What-is-IIFEs-Immediately-Invoked-Function-Expressions" class="headerlink" title="What is IIFEs (Immediately Invoked Function Expressions)?"></a>What is IIFEs (Immediately Invoked Function Expressions)?</h2><p>It executes immediately after it’s created:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(function IIFE()&#123;</span><br><span class="line">    console.log( &quot;Hello!&quot; );</span><br><span class="line">&#125;)();</span><br><span class="line">// &quot;Hello!&quot;</span><br></pre></td></tr></table></figure>
+
+<p>This pattern is often used when trying to avoid polluting the global namespace, because all the variables used inside the IIFE are not visible outside its scope.</p>
+<h2 id="What’s-a-typical-use-case-for-anonymous-functions"><a href="#What’s-a-typical-use-case-for-anonymous-functions" class="headerlink" title="What’s a typical use case for anonymous functions?"></a>What’s a typical use case for anonymous functions?</h2><p>They can be used in IIFEs to encapsulate some code within a local scope so that variables declared in it do not leak to the global scope.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(function() &#123;</span><br><span class="line">  // Some code here.</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
+
+<p>As a callback that is used once and does not need to be used anywhere else. The code will seem more self-contained and readable when handlers are defined right inside the code calling them, rather than having to search elsewhere to find the function body.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">setTimeout(function() &#123;</span><br><span class="line">  console.log(&apos;Hello world!&apos;);</span><br><span class="line">&#125;, 1000);</span><br></pre></td></tr></table></figure>
+
+<h2 id="What’s-the-difference-between-a-variable-that-is-null-undefined-or-undeclared"><a href="#What’s-the-difference-between-a-variable-that-is-null-undefined-or-undeclared" class="headerlink" title="What’s the difference between a variable that is: null, undefined or undeclared?"></a>What’s the difference between a variable that is: null, undefined or undeclared?</h2><h3 id="undeclared"><a href="#undeclared" class="headerlink" title="undeclared"></a>undeclared</h3><p>Undeclared variables are created when you assign a value to an identifier that is not previously created using var, let or const. Undeclared variables will be defined globally, outside of the current scope. In strict mode, a ReferenceError will be thrown when you try to assign to an undeclared variable. Avoid them at all cost!</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">function foo() &#123;</span><br><span class="line">  x = 1; // Throws a ReferenceError in strict mode</span><br><span class="line">&#125;</span><br><span class="line">foo();</span><br><span class="line">console.log(x); // 1</span><br></pre></td></tr></table></figure>
+
+<h3 id="undefined"><a href="#undefined" class="headerlink" title="undefined"></a>undefined</h3><p>A variable that is undefined is a variable that has been declared, but not assigned a value. It is of type undefined. If a function does not return any value as the result of executing it is assigned to a variable, the variable also has the value of undefined. To check for it, compare using the strict equality (===) operator or typeof which will give the ‘undefined’ string.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var foo;</span><br><span class="line">console.log(foo); // undefined</span><br><span class="line">console.log(foo === undefined); // true</span><br><span class="line">console.log(typeof foo === &apos;undefined&apos;); // true</span><br><span class="line">console.log(foo == null); // true. Wrong, don&apos;t use this to check!</span><br><span class="line">function bar() &#123;&#125;</span><br><span class="line">var baz = bar();</span><br><span class="line">console.log(baz); // undefined</span><br></pre></td></tr></table></figure>
+
+<h3 id="null"><a href="#null" class="headerlink" title="null"></a>null</h3><p>A variable that is null will have been explicitly assigned to the null value. It represents no value and is different from undefined in the sense that it has been explicitly assigned.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var foo = null;</span><br><span class="line">console.log(foo === null); // true</span><br><span class="line">console.log(typeof foo === &apos;object&apos;); // true</span><br><span class="line">console.log(foo == undefined); // true. Wrong, don&apos;t use this to check!</span><br></pre></td></tr></table></figure>
+
+<h2 id="What-is-Scope-in-JavaScript"><a href="#What-is-Scope-in-JavaScript" class="headerlink" title="What is Scope in JavaScript?"></a>What is Scope in JavaScript?</h2><p>In JavaScript, each function gets its own scope. Scope is basically a collection of variables as well as the rules for how those variables are accessed by name. Only code inside that function can access that function’s scoped variables.<br>A variable name has to be unique within the same scope. A scope can be nested inside another scope. If one scope is nested inside another, code inside the innermost scope can access variables from either scope.</p>
+<h2 id="What-is-a-closure-and-how-why-would-you-use-one"><a href="#What-is-a-closure-and-how-why-would-you-use-one" class="headerlink" title="What is a closure, and how/why would you use one?"></a>What is a closure, and how/why would you use one?</h2><p>A closure is the combination of a function and the lexical environment within which that function was declared. The word “lexical” refers to the fact that lexical scoping uses the location where a variable is declared within the source code to determine where that variable is available. Closures are functions that have access to the outer (enclosing) function’s variables—scope chain even after the outer function has returned.</p>
+<p>A closure is a function defined inside another function (called parent function) and has access to the variable which is declared and defined in the parent function scope.<br>The closure has access to variable in three scopes:</p>
+<ul>
+<li>Variable declared in his own scope</li>
+<li>Variable declared in parent function scope</li>
+<li>Variable declared in global namespace</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">var globalVar = &quot;abc&quot;;</span><br><span class="line">// Parent self invoking function</span><br><span class="line">(function outerFunction (outerArg) &#123; // begin of scope outerFunction</span><br><span class="line">  // Variable declared in outerFunction function scope</span><br><span class="line">  var outerFuncVar = &apos;x&apos;;</span><br><span class="line">  // Closure self-invoking function</span><br><span class="line">  (function innerFunction (innerArg) &#123; // begin of scope innerFunction</span><br><span class="line">    // variable declared in innerFunction function scope</span><br><span class="line">    var innerFuncVar = &quot;y&quot;;</span><br><span class="line">    console.log(</span><br><span class="line">      &quot;outerArg = &quot; + outerArg + &quot;\n&quot; +</span><br><span class="line">      &quot;outerFuncVar = &quot; + outerFuncVar + &quot;\n&quot; +</span><br><span class="line">      &quot;innerArg = &quot; + innerArg + &quot;\n&quot; +</span><br><span class="line">      &quot;innerFuncVar = &quot; + innerFuncVar + &quot;\n&quot; +</span><br><span class="line">      &quot;globalVar = &quot; + globalVar);</span><br><span class="line">  // end of scope innerFunction</span><br><span class="line">  &#125;)(5); // Pass 5 as parameter</span><br><span class="line">// end of scope outerFunction</span><br><span class="line">&#125;)(7); // Pass 7 as parameter</span><br></pre></td></tr></table></figure>
+
+<p>innerFunction is closure which is defined inside outerFunction and has access to all variable which is declared and defined in outerFunction scope. In addition to this function defined inside function as closure has access to variable which is declared in global namespace.<br>Output of above code would be:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">outerArg = 7</span><br><span class="line">outerFuncVar = x</span><br><span class="line">innerArg = 5</span><br><span class="line">innerFuncVar = y</span><br><span class="line">globalVar = abc</span><br></pre></td></tr></table></figure>
+
+<h2 id="Can-you-describe-the-main-difference-between-a-forEach-loop-and-a-map-loop"><a href="#Can-you-describe-the-main-difference-between-a-forEach-loop-and-a-map-loop" class="headerlink" title="Can you describe the main difference between a .forEach loop and a .map() loop?"></a>Can you describe the main difference between a .forEach loop and a .map() loop?</h2><h3 id="forEach"><a href="#forEach" class="headerlink" title="forEach"></a>forEach</h3><p>Iterates through the elements in an array.Executes a callback for each element.Does not return a value.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const a = [1, 2, 3];</span><br><span class="line">const doubled = a.forEach((num, index) =&gt; &#123;</span><br><span class="line">  // Do something with num and/or index.</span><br><span class="line">&#125;);</span><br><span class="line">// doubled = undefined</span><br></pre></td></tr></table></figure>
+
+<h3 id="map"><a href="#map" class="headerlink" title="map"></a>map</h3><p>Iterates through the elements in an array.”Maps” each element to a new element by calling the function on each element, creating a new array as a result.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const a = [1, 2, 3];</span><br><span class="line">const doubled = a.map(num =&gt; &#123;</span><br><span class="line">  return num * 2;</span><br><span class="line">&#125;);</span><br><span class="line">// doubled = [2, 4, 6]</span><br></pre></td></tr></table></figure>
+
+<p>The main difference between .forEach and .map() is that .map() returns a new array. If you need the result, but do not wish to mutate the original array, .map() is the clear choice. If you simply need to iterate over an array, forEach is a fine choice.</p>
+<h2 id="Difference-between-function-Person-var-person-Person-and-var-person-new-Person"><a href="#Difference-between-function-Person-var-person-Person-and-var-person-new-Person" class="headerlink" title="Difference between: function Person(){}, var person = Person(), and var person = new Person()?"></a>Difference between: function Person(){}, var person = Person(), and var person = new Person()?</h2><ul>
+<li><p>Technically speaking, function Person(){} is just a normal function declaration. The convention is to use PascalCase for functions that are intended to be used as constructors.</p>
+</li>
+<li><p>var person = Person() invokes the Person as a function, and not as a constructor. Invoking as such is a common mistake if the function is intended to be used as a constructor. Typically, the constructor does not return anything, hence invoking the constructor like a normal function will return undefined and that gets assigned to the variable intended as the instance.</p>
+</li>
+<li><p>var person = new Person() creates an instance of the Person object using the new operator, which inherits from Person.prototype. An alternative would be to use Object.create, such as: Object.create(Person.prototype).</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">function Person(name) &#123;</span><br><span class="line">  this.name = name;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var person = Person(&apos;John&apos;);</span><br><span class="line">console.log(person); // undefined</span><br><span class="line">console.log(person.name); // Uncaught TypeError: Cannot read property &apos;name&apos; of undefined</span><br><span class="line"></span><br><span class="line">var person = new Person(&apos;John&apos;);</span><br><span class="line">console.log(person); // Person &#123; name: &quot;John&quot; &#125;</span><br><span class="line">console.log(person.name); // &quot;john&quot;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="What’s-the-difference-between-feature-detection-feature-inference-and-using-the-UA-string"><a href="#What’s-the-difference-between-feature-detection-feature-inference-and-using-the-UA-string" class="headerlink" title="What’s the difference between feature detection, feature inference, and using the UA string?"></a>What’s the difference between feature detection, feature inference, and using the UA string?</h2><h3 id="Feature-Detection"><a href="#Feature-Detection" class="headerlink" title="Feature Detection"></a>Feature Detection</h3><p>Feature detection involves working out whether a browser supports a certain block of code, and running different code depending on whether it does (or doesn’t), so that the browser can always provide a working experience rather crashing/erroring in some browsers. For example:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">if (&apos;geolocation&apos; in navigator) &#123;</span><br><span class="line">  // Can use navigator.geolocation</span><br><span class="line">&#125; else &#123;</span><br><span class="line">  // Handle lack of feature</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Feature-Inference"><a href="#Feature-Inference" class="headerlink" title="Feature Inference"></a>Feature Inference</h3><p>Feature inference checks for a feature just like feature detection, but uses another function because it assumes it will also exist, e.g.:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">if (document.getElementsByTagName) &#123;</span><br><span class="line">  element = document.getElementById(id);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>This is not really recommended. Feature detection is more foolproof.</p>
+<h3 id="UA-String"><a href="#UA-String" class="headerlink" title="UA String"></a>UA String</h3><p>This is a browser-reported string that allows the network protocol peers to identify the application type, operating system, software vendor or software version of the requesting software user agent. It can be accessed via navigator.userAgent. However, the string is tricky to parse and can be spoofed. For example, Chrome reports both as Chrome and Safari. So to detect Safari you have to check for the Safari string and the absence of the Chrome string. Avoid this method.</p>
+<h2 id="Explain-Ajax"><a href="#Explain-Ajax" class="headerlink" title="Explain Ajax"></a>Explain Ajax</h2><p>Ajax (asynchronous JavaScript and XML) is a set of web development techniques using many web technologies on the client side to create asynchronous web applications. With Ajax, web applications can send data to and retrieve from a server asynchronously without interfering with the display and behavior of the existing page. By decoupling the data interchange layer from the presentation layer, Ajax allows for web pages, and by extension web applications, to change content dynamically without the need to reload the entire page. In practice, modern implementations commonly substitute use JSON instead of XML, due to the advantages of JSON being native to JavaScript.<br>The XMLHttpRequest API is frequently used for the asynchronous communication or these days, the fetch API.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">var request = new XMLHttpRequest();</span><br><span class="line"></span><br><span class="line">request.onreadystatechange = function () &#123;</span><br><span class="line">    if (request.readyState === 4) &#123; // request ready</span><br><span class="line">        if (request.status === 200) &#123;</span><br><span class="line">            // success get responseText</span><br><span class="line">            return request.responseText;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            // fail get error code</span><br><span class="line">            return request.status;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        // keep request...</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// send request:</span><br><span class="line">request.open(&apos;GET&apos;, &apos;/api/xxx&apos;);</span><br><span class="line">request.send();</span><br></pre></td></tr></table></figure>
+
+<h3 id="Advantages"><a href="#Advantages" class="headerlink" title="Advantages"></a>Advantages</h3><ul>
+<li>Better interactivity. New content from the server can be changed dynamically without the need to reload the entire page.</li>
+<li>Reduce connections to the server since scripts and stylesheets only have to be requested once.</li>
+<li>State can be maintained on a page. JavaScript variables and DOM state will persist because the main container page was not reloaded.</li>
+</ul>
+<h3 id="Disadvantages"><a href="#Disadvantages" class="headerlink" title="Disadvantages"></a>Disadvantages</h3><ul>
+<li>Dynamic webpages are harder to bookmark.</li>
+<li>Does not work if JavaScript has been disabled in the browser.</li>
+<li>Some web crawlers do not execute JavaScript and would not see content that has been loaded by JavaScript.</li>
+</ul>
+<h2 id="Explain-how-JSONP-works"><a href="#Explain-how-JSONP-works" class="headerlink" title="Explain how JSONP works."></a>Explain how JSONP works.</h2><p>JSONP (JSON with Padding) is a method commonly used to bypass the cross-domain policies in web browsers because Ajax requests from the current page to a cross-origin domain is not allowed.<br>JSONP works by making a request to a cross-origin domain via a <code>&lt;script&gt;</code> tag and usually with a callback query parameter, for example:<code>https://example.com?callback=printData</code>. The server will then wrap the data within a function called printData and return it to the client.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- https://mydomain.com --&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">function printData(data) &#123;</span><br><span class="line">  console.log(`My name is $&#123;data.name&#125;!`);</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;script src=&quot;https://example.com?callback=printData&quot;&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">// File loaded from https://example.com?callback=printData</span><br><span class="line">printData(&#123; name: &apos;xxx&apos; &#125;);</span><br></pre></td></tr></table></figure>
+
+<p>The client has to have the printData function in its global scope and the function will be executed by the client when the response from the cross-origin domain is received.<br>JSONP can be unsafe and has some security implications. As JSONP is really JavaScript, it can do everything else JavaScript can do, so you need to trust the provider of the JSONP data.</p>
+<h2 id="Explain-“hoisting”"><a href="#Explain-“hoisting”" class="headerlink" title="Explain “hoisting”."></a>Explain “hoisting”.</h2><p>Hoisting is a term used to explain the behavior of variable declarations in your code. Variables declared or initialized with the var keyword will have their declaration “moved” up to the top of the current scope, which we refer to as hoisting.<br>Note that the declaration is not actually moved - the JavaScript engine parses the declarations during compilation and becomes aware of declarations and their scopes.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// var declarations are hoisted.</span><br><span class="line">console.log(foo); // undefined</span><br><span class="line">var foo = 1;</span><br><span class="line">console.log(foo); // 1</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// let/const declarations are NOT hoisted.</span><br><span class="line">console.log(bar); // ReferenceError: bar is not defined</span><br><span class="line">let bar = 2;</span><br><span class="line">console.log(bar); // 2</span><br></pre></td></tr></table></figure>
+
+<p>Function declarations have the body hoisted while the function expressions (written in the form of variable declarations) only has the variable declaration hoisted.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// Function Declaration</span><br><span class="line">console.log(foo); // [Function: foo]</span><br><span class="line">foo(); // &apos;FOOOOO&apos;</span><br><span class="line">function foo() &#123;</span><br><span class="line">  console.log(&apos;FOOOOO&apos;);</span><br><span class="line">&#125;</span><br><span class="line">console.log(foo); // [Function: foo]</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// Function Expression</span><br><span class="line">console.log(bar); // undefined</span><br><span class="line">bar(); // Uncaught TypeError: bar is not a function</span><br><span class="line">var bar = function() &#123;</span><br><span class="line">  console.log(&apos;BARRRR&apos;);</span><br><span class="line">&#125;;</span><br><span class="line">console.log(bar); // [Function: bar]</span><br></pre></td></tr></table></figure>
+
+<h2 id="What-are-the-differences-between-variables-created-using-let-var-or-const"><a href="#What-are-the-differences-between-variables-created-using-let-var-or-const" class="headerlink" title="What are the differences between variables created using let, var or const?"></a>What are the differences between variables created using let, var or const?</h2><p>Variables declared using the var keyword are scoped to the function in which they are created, or if created outside of any function, to the global object. let and const are block scoped, meaning they are only accessible within the nearest set of curly braces (function, if-else block, or for-loop).</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">function foo() &#123;</span><br><span class="line">  // All variables are accessible within functions.</span><br><span class="line">  var bar = &apos;bar&apos;;</span><br><span class="line">  let baz = &apos;baz&apos;;</span><br><span class="line">  const qux = &apos;qux&apos;;</span><br><span class="line"></span><br><span class="line">  console.log(bar); // bar</span><br><span class="line">  console.log(baz); // baz</span><br><span class="line">  console.log(qux); // qux</span><br><span class="line">&#125;</span><br><span class="line">console.log(bar); // ReferenceError: bar is not defined</span><br><span class="line">console.log(baz); // ReferenceError: baz is not defined</span><br><span class="line">console.log(qux); // ReferenceError: qux is not defined</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">if (true) &#123;</span><br><span class="line">  var bar = &apos;bar&apos;;</span><br><span class="line">  let baz = &apos;baz&apos;;</span><br><span class="line">  const qux = &apos;qux&apos;;</span><br><span class="line">&#125;</span><br><span class="line">// var declared variables are accessible anywhere in the function scope.</span><br><span class="line">console.log(bar); // bar</span><br><span class="line">// let and const defined variables are not accessible outside of the block they were defined in.</span><br><span class="line">console.log(baz); // ReferenceError: baz is not defined</span><br><span class="line">console.log(qux); // ReferenceError: qux is not defined</span><br></pre></td></tr></table></figure>
+
+<p>var allows variables to be hoisted, meaning they can be referenced in code before they are declared. let and const will not allow this, instead throwing an error.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">console.log(foo); // undefined</span><br><span class="line">var foo = &apos;foo&apos;;</span><br><span class="line">console.log(baz); // ReferenceError: can&apos;t access lexical declaration &apos;baz&apos; before initialization</span><br><span class="line">let baz = &apos;baz&apos;;</span><br><span class="line">console.log(bar); // ReferenceError: can&apos;t access lexical declaration &apos;bar&apos; before initialization</span><br><span class="line">const bar = &apos;bar&apos;;</span><br></pre></td></tr></table></figure>
+
+<p>Redeclaring a variable with var will not throw an error, but ‘let’ and ‘const’ will.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var foo = &apos;foo&apos;;</span><br><span class="line">var foo = &apos;bar&apos;;</span><br><span class="line">console.log(foo); // &quot;bar&quot;</span><br><span class="line">let baz = &apos;baz&apos;;</span><br><span class="line">let baz = &apos;qux&apos;; // Uncaught SyntaxError: Identifier &apos;baz&apos; has already been declared</span><br></pre></td></tr></table></figure>
+
+<p>let and const differ in that let allows reassigning the variable’s value while const does not.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// This is fine.</span><br><span class="line">let foo = &apos;foo&apos;;</span><br><span class="line">foo = &apos;bar&apos;;</span><br><span class="line">// This causes an exception.</span><br><span class="line">const baz = &apos;baz&apos;;</span><br><span class="line">baz = &apos;qux&apos;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="What’s-the-difference-between-an-“attribute”-and-a-“property”"><a href="#What’s-the-difference-between-an-“attribute”-and-a-“property”" class="headerlink" title="What’s the difference between an “attribute” and a “property”?"></a>What’s the difference between an “attribute” and a “property”?</h2><p>Attributes are defined on the HTML markup but properties are defined on the DOM. To illustrate the difference, imagine we have this text field in our HTML: <code>&lt;input type=&quot;text&quot; value=&quot;Hello&quot;&gt;</code>.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const input = document.querySelector(&apos;input&apos;);</span><br><span class="line">console.log(input.getAttribute(&apos;value&apos;)); // Hello</span><br><span class="line">console.log(input.value); // Hello</span><br></pre></td></tr></table></figure>
+
+<p>But after you change the value of the text field by adding “World!” to it, this becomes:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">console.log(input.getAttribute(&apos;value&apos;)); // Hello</span><br><span class="line">console.log(input.value); // Hello World!</span><br></pre></td></tr></table></figure>
+
+<h2 id="What-is-the-difference-between-and"><a href="#What-is-the-difference-between-and" class="headerlink" title="What is the difference between == and ===?"></a>What is the difference between == and ===?</h2><p>== is the abstract equality operator while === is the strict equality operator. The == operator will compare for equality after doing any necessary type conversions. The === operator will not do type conversion, so if two values are not the same type === will simply return false. When using ==, funky things can happen, such as:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1 == &apos;1&apos;; // true</span><br><span class="line">1 == [1]; // true</span><br><span class="line">1 == true; // true</span><br><span class="line">0 == &apos;&apos;; // true</span><br><span class="line">0 == &apos;0&apos;; // true</span><br><span class="line">0 == false; // true</span><br></pre></td></tr></table></figure>
+
+<p>My advice is never to use the == operator, except for convenience when comparing against null or undefined, where a == null will return true if a is null or undefined.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a = null;</span><br><span class="line">console.log(a == null); // true</span><br><span class="line">console.log(a == undefined); // true</span><br></pre></td></tr></table></figure>
+
+<h2 id="What-is-“use-strict”"><a href="#What-is-“use-strict”" class="headerlink" title="What is “use strict”?"></a>What is “use strict”?</h2><p>‘use strict’ is a statement used to enable strict mode to entire scripts or individual functions. Strict mode is a way to opt into a restricted variant of JavaScript.</p>
+<h3 id="Advantages-1"><a href="#Advantages-1" class="headerlink" title="Advantages"></a>Advantages</h3><ul>
+<li>Makes assignments which would otherwise silently fail to throw an exception.</li>
+<li>Makes it impossible to accidentally create global variables.</li>
+<li>Makes attempts to delete undetectable properties throw (where before the attempt would simply have no effect).</li>
+<li>Requires that function parameter names be unique.</li>
+<li><code>this</code> is undefined in the global context.</li>
+<li>It catches some common coding bloopers, throwing exceptions.</li>
+<li>It disables features that are confusing or poorly thought out.</li>
+</ul>
+<h3 id="Disadvantages-1"><a href="#Disadvantages-1" class="headerlink" title="Disadvantages:"></a>Disadvantages:</h3><ul>
+<li>Many missing features that some developers might be used to.</li>
+<li>No more access to function.caller and function.arguments.</li>
+<li>Concatenation of scripts written in different strict modes might cause issues.</li>
+</ul>
+<h2 id="Explain-what-a-single-page-app-is-and-how-to-make-one-SEO-friendly"><a href="#Explain-what-a-single-page-app-is-and-how-to-make-one-SEO-friendly" class="headerlink" title="Explain what a single page app is and how to make one SEO-friendly."></a>Explain what a single page app is and how to make one SEO-friendly.</h2><p>Traditionally, the browser receives HTML from the server and renders it. When the user navigates to another URL, a full-page refresh is required and the server sends fresh new HTML to the new page. This is called server-side rendering.<br>However, in modern SPAs, client-side rendering is used instead. The browser loads the initial page from the server, along with the scripts and stylesheets required for the whole app. When the user navigates to other pages, a page refresh is not triggered. The URL of the page is updated via the HTML5 History API. New data required for the new page, usually in JSON format, is retrieved by the browser via AJAX requests to the server. The SPA then dynamically updates the page with the data via JavaScript, which it has already downloaded in the initial page load. This model is similar to how native mobile apps work.</p>
+<h3 id="Advantages-2"><a href="#Advantages-2" class="headerlink" title="Advantages"></a>Advantages</h3><ul>
+<li>The app feels more responsive and users do not see the flash between page navigation due to full-page refreshes.</li>
+<li>Fewer HTTP requests are made to the server, as the same assets do not have to be downloaded again for each page load.</li>
+<li>Clear separation of the concerns between the client and the server; you can easily build new clients for different platforms without having to modify the server code. You can also modify the technology stack on the client and server independently, as long as the API contract is not broken.</li>
+</ul>
+<h3 id="Disadvantages-2"><a href="#Disadvantages-2" class="headerlink" title="Disadvantages"></a>Disadvantages</h3><ul>
+<li>Heavier initial page load due to the loading of framework, app code, and assets required for multiple pages.</li>
+<li>There’s an additional step to be done on your server which is to configure it to route all requests to a single entry point and allow client-side routing to take over from there.</li>
+<li>SPAs are reliant on JavaScript to render content, but not all search engines execute JavaScript during crawling, and they may see empty content on your page. This inadvertently hurts the Search Engine Optimization (SEO) of your app. However, most of the time, when you are building apps, SEO is not the most important factor, as not all the content needs to be indexable by search engines. To overcome this, you can either server-side render your app or use services such as Prerender to “render your javascript in a browser, save the static HTML, and return that to the crawlers”.</li>
+</ul>
+<h2 id="What-are-the-pros-and-cons-of-using-Promises-instead-of-callbacks"><a href="#What-are-the-pros-and-cons-of-using-Promises-instead-of-callbacks" class="headerlink" title="What are the pros and cons of using Promises instead of callbacks?"></a>What are the pros and cons of using Promises instead of callbacks?</h2><h3 id="Pros"><a href="#Pros" class="headerlink" title="Pros"></a>Pros</h3><ul>
+<li>Avoid callback hell which can be unreadable.</li>
+<li>Makes it easy to write sequential asynchronous code that is readable with .then().</li>
+<li>Makes it easy to write parallel asynchronous code with Promise.all().</li>
+<li>With promises, these scenarios which are present in callbacks-only coding, will not happen:<ul>
+<li>Call the callback too early</li>
+<li>Call the callback too late (or never)</li>
+<li>Call the callback too few or too many times</li>
+<li>Fail to pass along any necessary environment/parameters</li>
+<li>Swallow any errors/exceptions that may happen</li>
+</ul>
+</li>
+</ul>
+<h3 id="Cons"><a href="#Cons" class="headerlink" title="Cons"></a>Cons</h3><ul>
+<li>Slightly more complex code (debatable).</li>
+<li>In older browsers where ES2015 is not supported, you need to load a polyfill in order to use it.</li>
+</ul>
+<h3 id="Callback-Hell"><a href="#Callback-Hell" class="headerlink" title="Callback Hell"></a>Callback Hell</h3><p>The asynchronous function requires callbacks as a return parameter. When multiple asynchronous functions are chained together then callback hell situation comes up.<br>How can you avoid callback hells?</p>
+<ul>
+<li>break callbacks into independent functions</li>
+<li>use Promises</li>
+<li>use yield with Generators</li>
+</ul>
+<h2 id="What-language-constructions-do-you-use-for-iterating-over-object-properties-and-array-items"><a href="#What-language-constructions-do-you-use-for-iterating-over-object-properties-and-array-items" class="headerlink" title="What language constructions do you use for iterating over object properties and array items?"></a>What language constructions do you use for iterating over object properties and array items?</h2><h3 id="For-objects"><a href="#For-objects" class="headerlink" title="For objects"></a>For objects</h3><ul>
+<li><p>for-in loops</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for (var property in obj) &#123;</span><br><span class="line">  console.log(property);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>However, this will also iterate through its inherited properties, and you will add an obj.hasOwnProperty(property) check before using it.</p>
+</li>
+<li><p>Object.keys()</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Object.keys(obj).forEach(</span><br><span class="line">  function (property) &#123; ... &#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<p>Object.keys() is a static method that will lists all enumerable properties of the object that you pass it.</p>
+</li>
+<li><p>Object.getOwnPropertyNames()</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Object.getOwnPropertyNames(obj).forEach(</span><br><span class="line">  function (property) &#123; ... &#125;</span><br><span class="line">)</span><br><span class="line">Object.getOwnPropertyNames() is a static method that will lists all enumerable and non-enumerable properties of the object that you pass it.</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="For-arrays"><a href="#For-arrays" class="headerlink" title="For arrays"></a>For arrays</h3><ul>
+<li>for loops - <code>for (let i = 0; i &lt; arr.length; i++)</code></li>
+<li>forEach - <code>arr.forEach(function (el, index) { ... })</code></li>
+<li>for-of loops - <code>for (let elem of arr) { ... }</code> ES6 introduces a new loop, the for-of loop, that allows you to loop over objects that conform to the iterable protocol such as String, Array, Map, Set, etc. The advantage of the for loop is that you can break from it, and the advantage of forEach() is that it is more concise than the for loop because you don’t need a counter variable. With the for-of loop, you get both the ability to break from a loop and a more concise syntax.<br>Also, when using the for-of loop, if you need to access both the index and value of each array element, you can do so with the ES6 Array entries() method and destructuring:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">const arr = [&apos;a&apos;, &apos;b&apos;, &apos;c&apos;];</span><br><span class="line">for (let [index, elem] of arr.entries()) &#123;</span><br><span class="line">  console.log(index, &apos;: &apos;, elem);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="What-is-the-definition-of-a-higher-order-function"><a href="#What-is-the-definition-of-a-higher-order-function" class="headerlink" title="What is the definition of a higher-order function?"></a>What is the definition of a higher-order function?</h2><p>A higher-order function is any function that takes one or more functions as arguments, which it uses to operate on some data, or returns a function as a result. Higher-order functions are meant to abstract some operation that is performed repeatedly. The classic example of this is map, which takes an array and a function as arguments. map then uses this function to transform each item in the array, returning a new array with the transformed data. Other popular examples in JavaScript are forEach, filter, and reduce. A higher-order function doesn’t just need to be manipulating arrays as there are many use cases for returning a function from another function. Function.prototype.bind is one such example in JavaScript.</p>
+<h3 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h3><p>Let say we have an array of names which we need to transform each string to uppercase.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const names = [&apos;irish&apos;, &apos;daisy&apos;, &apos;anna&apos;];</span><br></pre></td></tr></table></figure>
+
+<p>The original way will be as such:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">const transformNamesToUppercase = function(names) &#123;</span><br><span class="line">  const results = [];</span><br><span class="line">  for (let i = 0; i &lt; names.length; i++) &#123;</span><br><span class="line">    results.push(names[i].toUpperCase());</span><br><span class="line">  &#125;</span><br><span class="line">  return results;</span><br><span class="line">&#125;;</span><br><span class="line">transformNamesToUppercase(names); // [&apos;IRISH&apos;, &apos;DAISY&apos;, &apos;ANNA&apos;]</span><br></pre></td></tr></table></figure>
+
+<p>Use .map(transformerFn) makes the code shorter and more declarative.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">const transformNamesToUppercase = function(names) &#123;</span><br><span class="line">  return names.map(name =&gt; name.toUpperCase());</span><br><span class="line">&#125;;</span><br><span class="line">transformNamesToUppercase(names); // [&apos;IRISH&apos;, &apos;DAISY&apos;, &apos;ANNA&apos;]</span><br></pre></td></tr></table></figure>
+
+<h2 id="Can-you-give-an-example-for-destructuring-an-object-or-an-array"><a href="#Can-you-give-an-example-for-destructuring-an-object-or-an-array" class="headerlink" title="Can you give an example for destructuring an object or an array?"></a>Can you give an example for destructuring an object or an array?</h2><p>Destructuring is an expression available in ES6 which enables a convenient way to extract values of Objects or Arrays and place them into distinct variables.</p>
+<h3 id="Array-destructuring"><a href="#Array-destructuring" class="headerlink" title="Array destructuring"></a>Array destructuring</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// Variable assignment</span><br><span class="line">const foo = [&apos;one&apos;, &apos;two&apos;, &apos;three&apos;];</span><br><span class="line">const [one, two, three] = foo;</span><br><span class="line">console.log(one); // &quot;one&quot;</span><br><span class="line">console.log(two); // &quot;two&quot;</span><br><span class="line">console.log(three); // &quot;three&quot;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// Swapping variables</span><br><span class="line">let a = 1;</span><br><span class="line">let b = 3;</span><br><span class="line">[a, b] = [b, a];</span><br><span class="line">console.log(a); // 3</span><br><span class="line">console.log(b); // 1</span><br></pre></td></tr></table></figure>
+
+<h3 id="Object-destructuring"><a href="#Object-destructuring" class="headerlink" title="Object destructuring"></a>Object destructuring</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// Variable assignment</span><br><span class="line">const o = &#123; p: 42, q: true &#125;;</span><br><span class="line">const &#123; p, q &#125; = o;</span><br><span class="line">console.log(p); // 42</span><br><span class="line">console.log(q); // true</span><br></pre></td></tr></table></figure>
+
+<h2 id="What-are-the-benefits-of-using-spread-syntax-and-how-is-it-different-from-rest-syntax"><a href="#What-are-the-benefits-of-using-spread-syntax-and-how-is-it-different-from-rest-syntax" class="headerlink" title="What are the benefits of using spread syntax and how is it different from rest syntax?"></a>What are the benefits of using spread syntax and how is it different from rest syntax?</h2><p>ES6’s spread syntax is very useful when coding in a functional paradigm as we can easily create copies of arrays or objects without resorting to Object.create, slice, or a library function.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function putDookieInAnyArray(arr) &#123;</span><br><span class="line">  return [...arr, &apos;dookie&apos;];</span><br><span class="line">&#125;</span><br><span class="line">const result = putDookieInAnyArray([&apos;I&apos;, &apos;really&apos;, &quot;don&apos;t&quot;, &apos;like&apos;]); // [&quot;I&quot;, &quot;really&quot;, &quot;don&apos;t&quot;, &quot;like&quot;, &quot;dookie&quot;]</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const person = &#123;</span><br><span class="line">  name: &apos;Todd&apos;,</span><br><span class="line">  age: 29,</span><br><span class="line">&#125;;</span><br><span class="line">const copyOfTodd = &#123; ...person &#125;;</span><br></pre></td></tr></table></figure>
+
+<p>ES6’s rest syntax offers a shorthand for including an arbitrary number of arguments to be passed to a function. It is like an inverse of the spread syntax, taking data and stuffing it into an array rather than unpacking an array of data, and it works in function arguments, as well as in array and object destructuring assignments.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">function addFiveToABunchOfNumbers(...numbers) &#123;</span><br><span class="line">  return numbers.map(x =&gt; x + 5);</span><br><span class="line">&#125;</span><br><span class="line">const result = addFiveToABunchOfNumbers(4, 5, 6, 7, 8, 9, 10); // [9, 10, 11, 12, 13, 14, 15]</span><br><span class="line">const [a, b, ...rest] = [1, 2, 3, 4]; // a: 1, b: 2, rest: [3, 4]</span><br><span class="line">const &#123; e, f, ...others &#125; = &#123;</span><br><span class="line">  e: 1,</span><br><span class="line">  f: 2,</span><br><span class="line">  g: 3,</span><br><span class="line">  h: 4,</span><br><span class="line">&#125;; // e: 1, f: 2, others: &#123; g: 3, h: 4 &#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Questions/" rel="tag"><i class="fa fa-tag"></i> Questions</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/11/03/css-questions/" rel="next" title="Questions - CSS">
+                <i class="fa fa-chevron-left"></i> Questions - CSS
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/11/07/react-questions/" rel="prev" title="Questions - React">
+                Questions - React <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Fanjia Kong</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:kfj0116@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i></a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Explain-event-delegation"><span class="nav-number">1.</span> <span class="nav-text">Explain event delegation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Explain-how-this-works-in-JavaScript"><span class="nav-number">2.</span> <span class="nav-text">Explain how this works in JavaScript</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-advantage-is-there-for-using-the-arrow-syntax-for-a-method-in-a-constructor"><span class="nav-number">3.</span> <span class="nav-text">What advantage is there for using the arrow syntax for a method in a constructor?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What’s-the-difference-between-call-and-apply"><span class="nav-number">4.</span> <span class="nav-text">What’s the difference between .call and .apply?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Explain-how-prototypal-inheritance-works"><span class="nav-number">5.</span> <span class="nav-text">Explain how prototypal inheritance works</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Explain-the-Prototype-Design-Pattern"><span class="nav-number">6.</span> <span class="nav-text">Explain the Prototype Design Pattern</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#JavaScript-is-a-object-based-language"><span class="nav-number">6.1.</span> <span class="nav-text">JavaScript is a object-based language.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Prototype"><span class="nav-number">6.2.</span> <span class="nav-text">Prototype</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#constructor-inheritance"><span class="nav-number">6.3.</span> <span class="nav-text">constructor inheritance</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#none-constructor-inheritance"><span class="nav-number">6.4.</span> <span class="nav-text">none constructor inheritance</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-are-the-differences-between-ES6-class-and-ES5-function-constructors"><span class="nav-number">7.</span> <span class="nav-text">What are the differences between ES6 class and ES5 function constructors?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-do-you-think-of-AMD-vs-CommonJS"><span class="nav-number">8.</span> <span class="nav-text">What do you think of AMD vs CommonJS?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#CommonJS"><span class="nav-number">8.1.</span> <span class="nav-text">CommonJS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AMD"><span class="nav-number">8.2.</span> <span class="nav-text">AMD</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CMD-Common-Module-Definition-and-sea-js"><span class="nav-number">8.3.</span> <span class="nav-text">CMD (Common Module Definition) and sea.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ES6-Module"><span class="nav-number">8.4.</span> <span class="nav-text">ES6 Module</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#How-can-you-share-code-between-files"><span class="nav-number">9.</span> <span class="nav-text">How can you share code between files?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-is-IIFEs-Immediately-Invoked-Function-Expressions"><span class="nav-number">10.</span> <span class="nav-text">What is IIFEs (Immediately Invoked Function Expressions)?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What’s-a-typical-use-case-for-anonymous-functions"><span class="nav-number">11.</span> <span class="nav-text">What’s a typical use case for anonymous functions?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What’s-the-difference-between-a-variable-that-is-null-undefined-or-undeclared"><span class="nav-number">12.</span> <span class="nav-text">What’s the difference between a variable that is: null, undefined or undeclared?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undeclared"><span class="nav-number">12.1.</span> <span class="nav-text">undeclared</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">12.2.</span> <span class="nav-text">undefined</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">12.3.</span> <span class="nav-text">null</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-is-Scope-in-JavaScript"><span class="nav-number">13.</span> <span class="nav-text">What is Scope in JavaScript?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-is-a-closure-and-how-why-would-you-use-one"><span class="nav-number">14.</span> <span class="nav-text">What is a closure, and how/why would you use one?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Can-you-describe-the-main-difference-between-a-forEach-loop-and-a-map-loop"><span class="nav-number">15.</span> <span class="nav-text">Can you describe the main difference between a .forEach loop and a .map() loop?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#forEach"><span class="nav-number">15.1.</span> <span class="nav-text">forEach</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#map"><span class="nav-number">15.2.</span> <span class="nav-text">map</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Difference-between-function-Person-var-person-Person-and-var-person-new-Person"><span class="nav-number">16.</span> <span class="nav-text">Difference between: function Person(){}, var person = Person(), and var person = new Person()?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What’s-the-difference-between-feature-detection-feature-inference-and-using-the-UA-string"><span class="nav-number">17.</span> <span class="nav-text">What’s the difference between feature detection, feature inference, and using the UA string?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Feature-Detection"><span class="nav-number">17.1.</span> <span class="nav-text">Feature Detection</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Feature-Inference"><span class="nav-number">17.2.</span> <span class="nav-text">Feature Inference</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#UA-String"><span class="nav-number">17.3.</span> <span class="nav-text">UA String</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Explain-Ajax"><span class="nav-number">18.</span> <span class="nav-text">Explain Ajax</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Advantages"><span class="nav-number">18.1.</span> <span class="nav-text">Advantages</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Disadvantages"><span class="nav-number">18.2.</span> <span class="nav-text">Disadvantages</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Explain-how-JSONP-works"><span class="nav-number">19.</span> <span class="nav-text">Explain how JSONP works.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Explain-“hoisting”"><span class="nav-number">20.</span> <span class="nav-text">Explain “hoisting”.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-are-the-differences-between-variables-created-using-let-var-or-const"><span class="nav-number">21.</span> <span class="nav-text">What are the differences between variables created using let, var or const?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What’s-the-difference-between-an-“attribute”-and-a-“property”"><span class="nav-number">22.</span> <span class="nav-text">What’s the difference between an “attribute” and a “property”?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-is-the-difference-between-and"><span class="nav-number">23.</span> <span class="nav-text">What is the difference between == and ===?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-is-“use-strict”"><span class="nav-number">24.</span> <span class="nav-text">What is “use strict”?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Advantages-1"><span class="nav-number">24.1.</span> <span class="nav-text">Advantages</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Disadvantages-1"><span class="nav-number">24.2.</span> <span class="nav-text">Disadvantages:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Explain-what-a-single-page-app-is-and-how-to-make-one-SEO-friendly"><span class="nav-number">25.</span> <span class="nav-text">Explain what a single page app is and how to make one SEO-friendly.</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Advantages-2"><span class="nav-number">25.1.</span> <span class="nav-text">Advantages</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Disadvantages-2"><span class="nav-number">25.2.</span> <span class="nav-text">Disadvantages</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-are-the-pros-and-cons-of-using-Promises-instead-of-callbacks"><span class="nav-number">26.</span> <span class="nav-text">What are the pros and cons of using Promises instead of callbacks?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Pros"><span class="nav-number">26.1.</span> <span class="nav-text">Pros</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Cons"><span class="nav-number">26.2.</span> <span class="nav-text">Cons</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Callback-Hell"><span class="nav-number">26.3.</span> <span class="nav-text">Callback Hell</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-language-constructions-do-you-use-for-iterating-over-object-properties-and-array-items"><span class="nav-number">27.</span> <span class="nav-text">What language constructions do you use for iterating over object properties and array items?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#For-objects"><span class="nav-number">27.1.</span> <span class="nav-text">For objects</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#For-arrays"><span class="nav-number">27.2.</span> <span class="nav-text">For arrays</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-is-the-definition-of-a-higher-order-function"><span class="nav-number">28.</span> <span class="nav-text">What is the definition of a higher-order function?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Map"><span class="nav-number">28.1.</span> <span class="nav-text">Map</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Can-you-give-an-example-for-destructuring-an-object-or-an-array"><span class="nav-number">29.</span> <span class="nav-text">Can you give an example for destructuring an object or an array?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Array-destructuring"><span class="nav-number">29.1.</span> <span class="nav-text">Array destructuring</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Object-destructuring"><span class="nav-number">29.2.</span> <span class="nav-text">Object destructuring</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-are-the-benefits-of-using-spread-syntax-and-how-is-it-different-from-rest-syntax"><span class="nav-number">30.</span> <span class="nav-text">What are the benefits of using spread syntax and how is it different from rest syntax?</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Fanjia Kong</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

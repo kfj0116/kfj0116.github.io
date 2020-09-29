@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Relearn,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Unit Test is a level of software testing where individual units / components of a software are tested. The purpose is to validate that each unit of the software performs as designed.">
+<meta name="keywords" content="Relearn">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Unit Test">
+<meta property="og:url" content="http://yoursite.com/2020/02/26/unit-test/index.html">
+<meta property="og:site_name" content="Fanjia Kong">
+<meta property="og:description" content="Unit Test is a level of software testing where individual units / components of a software are tested. The purpose is to validate that each unit of the software performs as designed.">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2020-02-27T08:44:17.100Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Unit Test">
+<meta name="twitter:description" content="Unit Test is a level of software testing where individual units / components of a software are tested. The purpose is to validate that each unit of the software performs as designed.">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2020/02/26/unit-test/">
+
+
+
+
+
+  <title>Unit Test | Fanjia Kong</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Fanjia Kong</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Frontend Developer</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/26/unit-test/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Fanjia Kong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Fanjia Kong">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Unit Test</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-26T20:35:06+02:00">
+                2020-02-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/React/" itemprop="url" rel="index">
+                    <span itemprop="name">React</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Test/" itemprop="url" rel="index">
+                    <span itemprop="name">Test</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Unit Test is a level of software testing where individual units / components of a software are tested. The purpose is to validate that each unit of the software performs as designed.</p>
+<a id="more"></a>
+
+<h2 id="React-Recommended-Tools"><a href="#React-Recommended-Tools" class="headerlink" title="React Recommended Tools"></a>React Recommended Tools</h2><h3 id="Jest"><a href="#Jest" class="headerlink" title="Jest"></a>Jest</h3><p>Jest is a JavaScript test runner that lets you access the DOM via jsdom. While jsdom is only an approximation of how the browser works, it is often good enough for testing React components. Jest provides a great iteration speed combined with powerful features like mocking modules and timers so you can have more control over how the code executes.</p>
+<h3 id="React-Testing-Library"><a href="#React-Testing-Library" class="headerlink" title="React Testing Library"></a>React Testing Library</h3><p>React Testing Library is a set of helpers that let you test React components without relying on their implementation details. This approach makes refactoring a breeze and also nudges you towards best practices for accessibility. Although it doesn’t provide a way to “shallowly” render a component without its children, a test runner like Jest lets you do this by mocking.</p>
+<h3 id="Why-Jest-and-React-Testing-Library"><a href="#Why-Jest-and-React-Testing-Library" class="headerlink" title="Why Jest and React Testing Library?"></a>Why Jest and React Testing Library?</h3><p>Jest:</p>
+<ul>
+<li>Very fast.</li>
+<li>Interactive watch mode that only runs tests which are relevant to your changes.</li>
+<li>Helpful failure messages.</li>
+<li>Simple configuration, or even zero configuration.</li>
+<li>Mocks and spies.</li>
+<li>Coverage reports.</li>
+<li>Rich matchers API.</li>
+</ul>
+<p>React Testing Library:</p>
+<ul>
+<li>Much simpler API.</li>
+<li>Convenient queries (form label, image alt, ARIA role).</li>
+<li>Async queries and utilities.</li>
+<li>Better error messages.</li>
+<li>Easier setup.</li>
+<li>Recommended by React team.</li>
+</ul>
+<h2 id="Testing-structure"><a href="#Testing-structure" class="headerlink" title="Testing structure"></a>Testing structure</h2><h3 id="beforeAll-afterAll"><a href="#beforeAll-afterAll" class="headerlink" title="beforeAll / afterAll"></a>beforeAll / afterAll</h3><p>Run functions after the tests are completed in the current test file or before your test starts. You can clean up your resources and mock data created on the database by using the afterAll function, or you can set up your configurations in beforeAll.</p>
+<h3 id="beforeEach-afterEach"><a href="#beforeEach-afterEach" class="headerlink" title="beforeEach / afterEach"></a>beforeEach / afterEach</h3><p>Unlike afterAll and beforeAll, these functions are called for each test case in your test file. By using beforeEach, you can create a connection to your database before each test case start to run. As a best practice, you should use afterAll to remove your created DOM elements after each test case run.</p>
+<h3 id="describe"><a href="#describe" class="headerlink" title="describe"></a>describe</h3><p>This command allows you to group related tests to produce a cleaner output.</p>
+<h3 id="Snapshot-testing"><a href="#Snapshot-testing" class="headerlink" title="Snapshot testing"></a>Snapshot testing</h3><p>A snapshot test generates an HTML-like output so you can see how your component is structured. Avoid snapshot testing unless you’re testing very short output with clear intent, like class names or error messages, or when you really want to verify that the output is the same.</p>
+<h3 id="Selecting-DOM-elements-for-tests"><a href="#Selecting-DOM-elements-for-tests" class="headerlink" title="Selecting DOM elements for tests"></a>Selecting DOM elements for tests</h3><p>React Testing Library has methods for all good queries.</p>
+<ul>
+<li>getBy*() returns the first matching element and throws when an element not found or more than one element found;</li>
+<li>queryBy*() returns the first matching element but doesn’t throw;</li>
+<li>findBy*() returns a promise that resolves with a matching element, or rejects when an element not found after a default timeout or more than one element found;</li>
+<li>getAllBy<em>(), queryAllBy</em>(), findAllBy*(): same as above but return all found elements, not just the first one.</li>
+</ul>
+<p>And the queries are:</p>
+<ul>
+<li>getByLabelText() finds a form element by its <label>;</label></li>
+<li>getByPlaceholderText() finds a form element by its placeholder text;</li>
+<li>getByText() finds an element by its text content;</li>
+<li>getByAltText() finds an image by its alt text;</li>
+<li>getByTitle() finds an element by its title attribute;</li>
+<li>getByDisplayValue() finds a form element by its value;</li>
+<li>getByRole() finds an element by its ARIA role;</li>
+<li>getByTestId() finds an element by its test ID.</li>
+</ul>
+<h3 id="Testing-event-handlers"><a href="#Testing-event-handlers" class="headerlink" title="Testing event handlers"></a>Testing event handlers</h3><p>When you unit test a single component, event handlers are often defined in the parent component, and there are no visible changes as a reaction to these events. They also define the API of a component that you want to test.</p>
+<p>jest.fn() creates a mock function, or a spy, that allows you to check how many times it was called and with which parameters.</p>
+<h3 id="Mocking-functions"><a href="#Mocking-functions" class="headerlink" title="Mocking functions"></a>Mocking functions</h3><p>Mocking while testing is one of the core features you will need to implement. Jest is great for mocking not only your functions but also your modules. With jest.mock() you can mock any JavaScript module.</p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://reactjs.org/docs/testing.html" target="_blank" rel="noopener">Testing Overview</a><br><a href="https://blog.sapegin.me/all/react-testing-3-jest-and-react-testing-library/" target="_blank" rel="noopener">Modern React testing, part 3: Jest and React Testing Library</a><br><a href="https://blog.logrocket.com/comparing-react-testing-libraries/" target="_blank" rel="noopener">Comparing React testing libraries</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Relearn/" rel="tag"><i class="fa fa-tag"></i> Relearn</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/02/20/redux/" rel="next" title="Redux">
+                <i class="fa fa-chevron-left"></i> Redux
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Fanjia Kong</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:kfj0116@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i></a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#React-Recommended-Tools"><span class="nav-number">1.</span> <span class="nav-text">React Recommended Tools</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Jest"><span class="nav-number">1.1.</span> <span class="nav-text">Jest</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#React-Testing-Library"><span class="nav-number">1.2.</span> <span class="nav-text">React Testing Library</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Why-Jest-and-React-Testing-Library"><span class="nav-number">1.3.</span> <span class="nav-text">Why Jest and React Testing Library?</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Testing-structure"><span class="nav-number">2.</span> <span class="nav-text">Testing structure</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#beforeAll-afterAll"><span class="nav-number">2.1.</span> <span class="nav-text">beforeAll / afterAll</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#beforeEach-afterEach"><span class="nav-number">2.2.</span> <span class="nav-text">beforeEach / afterEach</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#describe"><span class="nav-number">2.3.</span> <span class="nav-text">describe</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Snapshot-testing"><span class="nav-number">2.4.</span> <span class="nav-text">Snapshot testing</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Selecting-DOM-elements-for-tests"><span class="nav-number">2.5.</span> <span class="nav-text">Selecting DOM elements for tests</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Testing-event-handlers"><span class="nav-number">2.6.</span> <span class="nav-text">Testing event handlers</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mocking-functions"><span class="nav-number">2.7.</span> <span class="nav-text">Mocking functions</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">3.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Fanjia Kong</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

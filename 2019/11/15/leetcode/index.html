@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="LeetCode,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Record the Array topic algorithm problems.">
+<meta name="keywords" content="LeetCode">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LeetCode - Array">
+<meta property="og:url" content="http://yoursite.com/2019/11/15/leetcode/index.html">
+<meta property="og:site_name" content="Fanjia Kong">
+<meta property="og:description" content="Record the Array topic algorithm problems.">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2020-09-28T18:52:43.494Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="LeetCode - Array">
+<meta name="twitter:description" content="Record the Array topic algorithm problems.">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/11/15/leetcode/">
+
+
+
+
+
+  <title>LeetCode - Array | Fanjia Kong</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Fanjia Kong</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Frontend Developer</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/15/leetcode/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Fanjia Kong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Fanjia Kong">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">LeetCode - Array</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-15T13:55:30+02:00">
+                2019-11-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Algorithm/" itemprop="url" rel="index">
+                    <span itemprop="name">Algorithm</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Record the Array topic algorithm problems.</p>
+<a id="more"></a>
+
+<h2 id="0001-Two-Sum"><a href="#0001-Two-Sum" class="headerlink" title="0001. Two Sum"></a>0001. Two Sum</h2><p>Given an array of integers, return indices of the two numbers such that they add up to a specific target.<br>You may assume that each input would have exactly one solution, and you may not use the same element twice.<br>Example:<br>Given nums = [2, 7, 11, 15], target = 9,<br>Because nums[0] + nums[1] = 2 + 7 = 9,<br>return [0, 1].</p>
+<h3 id="solution-1-Brute-Force"><a href="#solution-1-Brute-Force" class="headerlink" title="solution 1: Brute Force"></a>solution 1: Brute Force</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">const twoSum = (nums, target) =&gt; &#123;</span><br><span class="line">    for(let i = 0; i &lt; nums.length; i++) &#123;</span><br><span class="line">        for (let j = i+1; j &lt; nums.length; j++) &#123;</span><br><span class="line">            if(nums[i] + nums[j] === target) &#123;</span><br><span class="line">                return [i,j]</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 112 ms<br>Memory Usage: 34.9 MB</p>
+<h3 id="solution-2-Hash"><a href="#solution-2-Hash" class="headerlink" title="solution 2: Hash"></a>solution 2: Hash</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">const twoSum = (nums, target) =&gt; &#123;</span><br><span class="line">    let hash = &#123;&#125;</span><br><span class="line">    for(let i = 0; i &lt; nums.length; i++) &#123;</span><br><span class="line">        if (hash[target-nums[i]] !== undefined)</span><br><span class="line">            return [hash[target-nums[i]],i];</span><br><span class="line">        else</span><br><span class="line">            hash[nums[i]] = i;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 60 ms<br>Memory Usage: 34.7 MB</p>
+<h3 id="solution-3-Map"><a href="#solution-3-Map" class="headerlink" title="solution 3: Map"></a>solution 3: Map</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">const twoSum = (nums, target) =&gt; &#123;</span><br><span class="line">    const numsMap = new Map();</span><br><span class="line">    for (let i = 0; i &lt; nums.length; i++) &#123;</span><br><span class="line">        if(numsMap.has(target - nums[i]) ) &#123;</span><br><span class="line">            return [numsMap.get(target - nums[i]), i];</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            numsMap.set(nums[i], i);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 56 ms<br>Memory Usage: 35.4 MB</p>
+<h2 id="0004-Median-of-Two-Sorted-Arrays"><a href="#0004-Median-of-Two-Sorted-Arrays" class="headerlink" title="0004. Median of Two Sorted Arrays"></a>0004. Median of Two Sorted Arrays</h2><p>Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.</p>
+<p>Follow up: The overall run time complexity should be O(log (m+n)).</p>
+<p>Example 1:<br>Input: nums1 = [1,3], nums2 = [2]<br>Output: 2.00000<br>Explanation: merged array = [1,2,3] and median is 2.<br>Example 2:<br>Input: nums1 = [1,2], nums2 = [3,4]<br>Output: 2.50000<br>Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.<br>Example 3:<br>Input: nums1 = [0,0], nums2 = [0,0]<br>Output: 0.00000<br>Example 4:<br>Input: nums1 = [], nums2 = [1]<br>Output: 1.00000<br>Example 5:<br>Input: nums1 = [2], nums2 = []<br>Output: 2.00000</p>
+<h3 id="solution1"><a href="#solution1" class="headerlink" title="solution1:"></a>solution1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">const findMedianSortedArrays = (nums1, nums2) =&gt; &#123;</span><br><span class="line">    let nums = nums1.concat(nums2);</span><br><span class="line">    </span><br><span class="line">    function quickSort(arr)&#123;</span><br><span class="line">        if(arr.length&lt;=1)&#123;return arr;&#125;</span><br><span class="line">        const pivotIndex=Math.floor(arr.length/2);</span><br><span class="line">        const pivot=arr.splice(pivotIndex,1)[0];</span><br><span class="line">        const left=[];</span><br><span class="line">        const right=[];</span><br><span class="line">        for(let i=0;i&lt;arr.length;i++)&#123;</span><br><span class="line">            if(arr[i]&lt;=pivot)&#123;</span><br><span class="line">                left.push(arr[i]);</span><br><span class="line">            &#125;else&#123;</span><br><span class="line">                right.push(arr[i]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return quickSort(left).concat([pivot],quickSort(right));</span><br><span class="line">    &#125;</span><br><span class="line">    nums = quickSort(nums);   </span><br><span class="line">    const numLength = nums.length;    </span><br><span class="line">    if(numLength % 2 === 0)&#123;</span><br><span class="line">        let len = numLength/2;</span><br><span class="line">        return (nums[len-1]+nums[len])/2;</span><br><span class="line">    &#125;else&#123;</span><br><span class="line">        let len1 = (numLength/2)-0.5;</span><br><span class="line">        return nums[len1];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 188 ms<br>Memory Usage: 57.9 MB</p>
+<h3 id="solution2"><a href="#solution2" class="headerlink" title="solution2:"></a>solution2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">const findMedianSortedArrays = (nums1, nums2) =&gt; &#123;</span><br><span class="line">    if(nums1.length &gt; nums2.length) return findMedianSortedArrays(nums2, nums1);</span><br><span class="line">    let x = nums1.length;</span><br><span class="line">    let y = nums2.length;</span><br><span class="line">    let low = 0, high = x;</span><br><span class="line">    while(low &lt;= high) &#123;</span><br><span class="line">        const partitionX = (high + low) &gt;&gt; 1;</span><br><span class="line">        const partitionY = ((x + y + 1) &gt;&gt; 1) - partitionX;</span><br><span class="line">        </span><br><span class="line">        const maxX = partitionX == 0 ? Number.NEGATIVE_INFINITY : nums1[partitionX - 1];</span><br><span class="line">        const maxY = partitionY == 0 ? Number.NEGATIVE_INFINITY : nums2[partitionY - 1];</span><br><span class="line">        </span><br><span class="line">        const minX = partitionX == nums1.length ? Number.POSITIVE_INFINITY : nums1[partitionX];</span><br><span class="line">        const minY = partitionY == nums2.length ? Number.POSITIVE_INFINITY : nums2[partitionY];</span><br><span class="line">        </span><br><span class="line">        if(maxX &lt;= minY &amp;&amp; maxY &lt;= minX) &#123;</span><br><span class="line">            const lowMax = Math.max(maxX, maxY);</span><br><span class="line">            if( (x + y) % 2 == 1) return lowMax;</span><br><span class="line">            return (lowMax + Math.min(minX, minY)) / 2;</span><br><span class="line">        &#125; else if(maxX &lt; minY) &#123;</span><br><span class="line">            low = partitionX + 1;</span><br><span class="line">        &#125; else </span><br><span class="line">            high = partitionX - 1;</span><br><span class="line">    &#125;  </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 132 ms<br>Memory Usage: 43.3 MB</p>
+<h3 id="solution3"><a href="#solution3" class="headerlink" title="solution3:"></a>solution3:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">const findMedianSortedArrays = (nums1, nums2) =&gt; &#123;</span><br><span class="line">    let totalLen = nums1.length + nums2.length;</span><br><span class="line">  let idx1 = 0;</span><br><span class="line">  let idx2 = 0;</span><br><span class="line">  let curr;</span><br><span class="line">  let last;</span><br><span class="line"></span><br><span class="line">  while (idx1 + idx2 &lt;= totalLen/2) &#123;</span><br><span class="line">    if (curr !== undefined) &#123;</span><br><span class="line">      last = curr;</span><br><span class="line">    &#125;</span><br><span class="line">    let elOne = nums1[idx1];</span><br><span class="line">    let elTwo = nums2[idx2];</span><br><span class="line">    if (elOne === undefined) &#123;</span><br><span class="line">      curr = elTwo;</span><br><span class="line">      idx2++;</span><br><span class="line">    &#125; else if (elTwo === undefined) &#123;</span><br><span class="line">      curr = elOne;</span><br><span class="line">      idx1++;</span><br><span class="line">    &#125; else if (elOne &lt; elTwo) &#123;</span><br><span class="line">      curr = elOne;</span><br><span class="line">      idx1++;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">      curr = elTwo;</span><br><span class="line">      idx2++;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  return totalLen % 2 === 0 ? (last + curr) / 2 : curr; </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 144 m<br>Memory Usage: 43.3 MB</p>
+<h2 id="0011-Container-With-Most-Water"><a href="#0011-Container-With-Most-Water" class="headerlink" title="0011. Container With Most Water"></a>0011. Container With Most Water</h2><p>Given n non-negative integers a1, a2, …, an , where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water.<br>Note: You may not slant the container and n is at least 2.</p>
+<p>Example:<br>Input: [1,8,6,2,5,4,8,3,7]<br>Output: 49</p>
+<h3 id="solution"><a href="#solution" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">const maxArea = (height) =&gt; &#123;</span><br><span class="line">    let maxArea = 0;</span><br><span class="line">    let start = 0, end = height.length - 1;</span><br><span class="line">    while (end - start &gt; 0)&#123;</span><br><span class="line">        var area = Math.min(height[start], height[end]) * (end - start);</span><br><span class="line">        maxArea = Math.max(maxArea, area);</span><br><span class="line">        if (height[start] &gt; height[end])&#123;</span><br><span class="line">            end--;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            start++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return maxArea;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 56 ms<br>Memory Usage: 35.7 MB</p>
+<h2 id="0015-3Sum"><a href="#0015-3Sum" class="headerlink" title="0015. 3Sum"></a>0015. 3Sum</h2><p>Given an array nums of n integers, are there elements a, b, c in nums such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.<br>Note:The solution set must not contain duplicate triplets.<br>Example:<br>Given array nums = [-1, 0, 1, 2, -1, -4],<br>A solution set is:<br>[<br>[-1, 0, 1],<br>[-1, -1, 2]<br>]</p>
+<h3 id="solution-1"><a href="#solution-1" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">const threeSum = (nums) =&gt; &#123;</span><br><span class="line">    const results = [];</span><br><span class="line">    if (nums.length &lt; 3) &#123;</span><br><span class="line">        return results;</span><br><span class="line">    &#125;</span><br><span class="line">    nums = nums.sort((a, b) =&gt; a - b);</span><br><span class="line">    for (let i = 0; i &lt; nums.length - 2; i++) &#123;</span><br><span class="line">        if (nums[i] &gt; 0) &#123;</span><br><span class="line">            break;</span><br><span class="line">        &#125;</span><br><span class="line">        if (i &gt; 0 &amp;&amp; nums[i] === nums[i - 1]) &#123;</span><br><span class="line">            continue;</span><br><span class="line">        &#125;</span><br><span class="line">        let j = i + 1;</span><br><span class="line">        let k = nums.length - 1;</span><br><span class="line">        while (j &lt; k) &#123;</span><br><span class="line">            let sum = nums[i] + nums[j] + nums[k];</span><br><span class="line">            if (sum === 0) &#123;</span><br><span class="line">                results.push([nums[i], nums[j], nums[k]]);</span><br><span class="line">                while (nums[j] === nums[j + 1]) &#123;</span><br><span class="line">                    j++;</span><br><span class="line">                &#125;</span><br><span class="line">                while (nums[k] === nums[k - 1]) &#123;</span><br><span class="line">                    k--;</span><br><span class="line">                &#125;</span><br><span class="line">                j++;</span><br><span class="line">                k--;</span><br><span class="line">            &#125; else if (sum &lt; 0) &#123;</span><br><span class="line">                j++;</span><br><span class="line">            &#125; else &#123;</span><br><span class="line">                k--;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return results;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 152 ms<br>Memory Usage: 46.5 MB</p>
+<h2 id="0026-Remove-Duplicates-from-Sorted-Array"><a href="#0026-Remove-Duplicates-from-Sorted-Array" class="headerlink" title="0026. Remove Duplicates from Sorted Array"></a>0026. Remove Duplicates from Sorted Array</h2><p>Given a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length.<br>Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.<br>Example 1:<br>Given nums = [1,1,2],<br>Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively.<br>It doesn’t matter what you leave beyond the returned length.<br>Example 2:<br>Given nums = [0,0,1,1,1,2,2,3,3,4],<br>Your function should return length = 5, with the first five elements of nums being modified to 0, 1, 2, 3, and 4 respectively.<br>It doesn’t matter what values are set beyond the returned length.</p>
+<h3 id="solution-1"><a href="#solution-1" class="headerlink" title="solution 1"></a>solution 1</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">const removeDuplicates = (nums) =&gt; &#123;</span><br><span class="line">    for(let i = 0; i &lt; nums.length; i++) &#123;</span><br><span class="line">        if(nums.indexOf(nums[i]) !== i) &#123;</span><br><span class="line">            nums.splice(i,1);</span><br><span class="line">            i--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return nums.length</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 204 ms<br>Memory Usage: 37.5 MB</p>
+<h3 id="solution-2"><a href="#solution-2" class="headerlink" title="solution 2"></a>solution 2</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">const removeDuplicates = (nums) =&gt; &#123;</span><br><span class="line">    nums.forEach((n, index) =&gt; &#123;</span><br><span class="line">        while(n == nums[index +1])&#123;</span><br><span class="line">            nums.splice(index +1, 1);</span><br><span class="line">        &#125;</span><br><span class="line">     &#125;);</span><br><span class="line">    return nums.length;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 92 ms<br>Memory Usage: 37.5 MB</p>
+<h3 id="solution-3"><a href="#solution-3" class="headerlink" title="solution 3"></a>solution 3</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">const removeDuplicates = (nums) =&gt; &#123;</span><br><span class="line">    let firstP = 0,</span><br><span class="line">        secondP = 0;</span><br><span class="line">    while(secondP &lt; nums.length)&#123;</span><br><span class="line">        if(nums[secondP] &gt; nums[firstP])&#123;</span><br><span class="line">            firstP++;</span><br><span class="line">            nums[firstP] = nums[secondP];</span><br><span class="line">        &#125;</span><br><span class="line">        secondP++;</span><br><span class="line">    &#125;</span><br><span class="line">    return firstP + 1;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 60 ms<br>Memory Usage: 36.6 MB</p>
+<h2 id="0031-Next-Permutation"><a href="#0031-Next-Permutation" class="headerlink" title="0031. Next Permutation"></a>0031. Next Permutation</h2><p>Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.<br>If such arrangement is not possible, it must rearrange it as the lowest possible order (ie, sorted in ascending order).<br>The replacement must be in-place and use only constant extra memory.<br>Here are some examples. Inputs are in the left-hand column and its corresponding outputs are in the right-hand column.<br>1,2,3 → 1,3,2<br>3,2,1 → 1,2,3<br>1,1,5 → 1,5,1</p>
+<h3 id="solution-2"><a href="#solution-2" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">const nextPermutation = (nums) =&gt; &#123;</span><br><span class="line">    const len = nums.length;</span><br><span class="line">    // find the first descending element nums[i-1]</span><br><span class="line">    let i = len - 1;</span><br><span class="line">    while (i &gt; 0) &#123;</span><br><span class="line">        if (nums[i-1] &gt;= nums[i]) &#123;</span><br><span class="line">            i--;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            break;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    // swap nums[i-1] with the smallest element between nums[i] and nums[length-1] that is larger than nums[i-1]</span><br><span class="line">	let j = len - 1;</span><br><span class="line">    while (j &gt; i) &#123;</span><br><span class="line">        if (nums[j] &lt;= nums[i-1]) &#123;</span><br><span class="line">            j--;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            break;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    if (i !== 0) &#123;</span><br><span class="line">        [nums[i-1],nums[j]] = [nums[j],nums[i-1]]</span><br><span class="line">    &#125;</span><br><span class="line">	// reverse the part between nums[i] and nums[length-1]</span><br><span class="line">	let mid = Math.floor((i+len)/2);</span><br><span class="line">    for (let k = i; k &lt; mid; k++) &#123;</span><br><span class="line">        [nums[k],nums[len - k + i - 1]] = [nums[len - k + i - 1],nums[k]]</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 64 ms<br>Memory Usage: 35.4 MB</p>
+<h2 id="0033-Search-in-Rotated-Sorted-Array"><a href="#0033-Search-in-Rotated-Sorted-Array" class="headerlink" title="0033. Search in Rotated Sorted Array"></a>0033. Search in Rotated Sorted Array</h2><p>Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.<br>(i.e., [0,1,2,4,5,6,7] might become [4,5,6,7,0,1,2]).<br>You are given a target value to search. If found in the array return its index, otherwise return -1.<br>You may assume no duplicate exists in the array.<br>Your algorithm’s runtime complexity must be in the order of O(log n).<br>Example 1:<br>Input: nums = [4,5,6,7,0,1,2], target = 0<br>Output: 4<br>Example 2:<br>Input: nums = [4,5,6,7,0,1,2], target = 3<br>Output: -1</p>
+<h3 id="solution-3"><a href="#solution-3" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">const search = (nums, target) =&gt; &#123;</span><br><span class="line">    let left = 0;</span><br><span class="line">    let right = nums.length - 1;</span><br><span class="line">    while (left &lt;= right) &#123;</span><br><span class="line">        let mid = Math.floor((left + right) / 2);</span><br><span class="line">        if (nums[mid] === target) &#123;</span><br><span class="line">            return mid;</span><br><span class="line">        &#125;</span><br><span class="line">        // When dividing the roated array into two halves, one must be sorted.</span><br><span class="line">        if (nums[left] &lt;= nums[mid]) &#123;</span><br><span class="line">            // left is sorted</span><br><span class="line">            if (nums[left] &lt;= target &amp;&amp; target &lt;= nums[mid]) &#123;</span><br><span class="line">                // target is in this side</span><br><span class="line">                right = mid - 1;</span><br><span class="line">            &#125; else &#123;</span><br><span class="line">                // target is in the other side</span><br><span class="line">                left = mid + 1;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            // right is sorted</span><br><span class="line">            if (nums[mid] &lt;= target &amp;&amp; target &lt;= nums[right]) &#123;</span><br><span class="line">                // target is in this side</span><br><span class="line">                left = mid + 1;</span><br><span class="line">            &#125; else &#123;</span><br><span class="line">                // target is in the other side</span><br><span class="line">                right = mid - 1;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return -1;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 60 ms<br>Memory Usage: 34.1 MB</p>
+<h2 id="0034-Find-First-and-Last-Position-of-Element-in-Sorted-Array"><a href="#0034-Find-First-and-Last-Position-of-Element-in-Sorted-Array" class="headerlink" title="0034. Find First and Last Position of Element in Sorted Array"></a>0034. Find First and Last Position of Element in Sorted Array</h2><p>Given an array of integers nums sorted in ascending order, find the starting and ending position of a given target value.<br>Your algorithm’s runtime complexity must be in the order of O(log n).<br>If the target is not found in the array, return [-1, -1].<br>Example 1:<br>Input: nums = [5,7,7,8,8,10], target = 8<br>Output: [3,4]<br>Example 2:<br>Input: nums = [5,7,7,8,8,10], target = 6<br>Output: [-1,-1]</p>
+<h3 id="solution-4"><a href="#solution-4" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">const searchRange = (nums, target) =&gt; &#123;</span><br><span class="line">  let res = [-1, -1];</span><br><span class="line">  let l = 0;</span><br><span class="line">  let r = nums.length - 1;</span><br><span class="line">  // find the left</span><br><span class="line">  while (l &lt; r) &#123;</span><br><span class="line">    const mid = Math.floor((l + r) / 2);</span><br><span class="line">    if (nums[mid] &lt; target) &#123;</span><br><span class="line">        l = mid + 1;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        r = mid;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  if (nums[l] !== target) &#123;</span><br><span class="line">      return res;</span><br><span class="line">  &#125; else &#123;</span><br><span class="line">      res[0] = l;</span><br><span class="line">  &#125;</span><br><span class="line">  // find the right</span><br><span class="line">  r = nums.length - 1;</span><br><span class="line">  while (l &lt; r) &#123;</span><br><span class="line">    const mid = Math.ceil((l + r) / 2);</span><br><span class="line">    if (nums[mid] &gt; target) &#123;</span><br><span class="line">        r = mid - 1;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        l = mid;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  res[1] = r;</span><br><span class="line">  return res;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 60 ms<br>Memory Usage: 34.9 MB</p>
+<h2 id="0039-Combination-Sum"><a href="#0039-Combination-Sum" class="headerlink" title="0039. Combination Sum"></a>0039. Combination Sum</h2><p>Given a set of candidate numbers (candidates) (without duplicates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target.<br>The same repeated number may be chosen from candidates unlimited number of times.<br>Note:<br>All numbers (including target) will be positive integers.<br>The solution set must not contain duplicate combinations.<br>Example 1:<br>Input: candidates = [2,3,6,7], target = 7,<br>A solution set is:<br>[<br>[7],<br>[2,2,3]<br>]<br>Example 2:<br>Input: candidates = [2,3,5], target = 8,<br>A solution set is:<br>[<br>[2,2,2,2],<br>[2,3,3],<br>[3,5]<br>]</p>
+<h3 id="solution-5"><a href="#solution-5" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">const combinationSum = (candidates, target) =&gt; &#123;</span><br><span class="line">    if (!candidates) &#123;</span><br><span class="line">        return [];</span><br><span class="line">    &#125;</span><br><span class="line">    if (target === 0) &#123;</span><br><span class="line">        return [[]];</span><br><span class="line">    &#125;</span><br><span class="line">    candidates.sort((a,b) =&gt; &#123; return a - b&#125;);</span><br><span class="line">    let result = [];</span><br><span class="line">    let len = candidates.length;</span><br><span class="line">    function find(t, p, i) &#123;</span><br><span class="line">        if (t === 0) &#123;</span><br><span class="line">            result.push(p);</span><br><span class="line">            return;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            while (i &lt; len &amp;&amp; t - candidates[i] &gt;= 0) &#123;</span><br><span class="line">                find(t - candidates[i], [...p, candidates[i]], i)</span><br><span class="line">                i++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    find (target, [], 0);</span><br><span class="line">    return result;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 80 ms<br>Memory Usage: 37.4 MB</p>
+<h2 id="0048-Rotate-Image"><a href="#0048-Rotate-Image" class="headerlink" title="0048. Rotate Image"></a>0048. Rotate Image</h2><p>You are given an n x n 2D matrix representing an image.<br>Rotate the image by 90 degrees (clockwise).<br>Note:<br>You have to rotate the image in-place, which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation.<br>Example 1:<br>Given input matrix =<br>[<br>[1,2,3],<br>[4,5,6],<br>[7,8,9]<br>],<br>rotate the input matrix in-place such that it becomes:<br>[<br>[7,4,1],<br>[8,5,2],<br>[9,6,3]<br>]<br>Example 2:<br>Given input matrix =<br>[<br>[ 5, 1, 9,11],<br>[ 2, 4, 8,10],<br>[13, 3, 6, 7],<br>[15,14,12,16]<br>],<br>rotate the input matrix in-place such that it becomes:<br>[<br>[15,13, 2, 5],<br>[14, 3, 4, 1],<br>[12, 6, 8, 9],<br>[16, 7,10,11]<br>]</p>
+<h3 id="solution-6"><a href="#solution-6" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">const rotate = (matrix) =&gt; &#123;</span><br><span class="line">    // reverse up to down</span><br><span class="line">    matrix = matrix.reverse()</span><br><span class="line">    for(let i in matrix) &#123;</span><br><span class="line">        for(let j = 0; j &lt; i; j++) &#123;</span><br><span class="line">            // swap the symmetry</span><br><span class="line">            [matrix[i][j], matrix[j][i]] = [matrix[j][i], matrix[i][j]]</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return matrix</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 64 ms<br>Memory Usage: 34 MB</p>
+<h2 id="0053-Maximum-Subarray"><a href="#0053-Maximum-Subarray" class="headerlink" title="0053. Maximum Subarray"></a>0053. Maximum Subarray</h2><p>Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.<br>Example:<br>Input: [-2,1,-3,4,-1,2,1,-5,4],<br>Output: 6<br>Explanation: [4,-1,2,1] has the largest sum = 6.</p>
+<h3 id="solution-7"><a href="#solution-7" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">const maxSubArray = (nums) =&gt; &#123;</span><br><span class="line">    for (let i = 1; i &lt; nums.length; i++)&#123;</span><br><span class="line">        nums[i] = Math.max(nums[i], nums[i] + nums[i - 1]);</span><br><span class="line">    &#125;</span><br><span class="line">    return Math.max(...nums);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 68 ms<br>Memory Usage: 35.5 MB</p>
+<h2 id="0055-Jump-Game"><a href="#0055-Jump-Game" class="headerlink" title="0055. Jump Game"></a>0055. Jump Game</h2><p>Given an array of non-negative integers, you are initially positioned at the first index of the array.<br>Each element in the array represents your maximum jump length at that position.<br>Determine if you are able to reach the last index.<br>Example 1:<br>Input: [2,3,1,1,4]<br>Output: true<br>Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index.<br>Example 2:<br>Input: [3,2,1,0,4]<br>Output: false<br>Explanation: You will always arrive at index 3 no matter what. Its maximum<br>jump length is 0, which makes it impossible to reach the last index.</p>
+<h3 id="solution-1-1"><a href="#solution-1-1" class="headerlink" title="solution 1:"></a>solution 1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">const canJump = (nums) =&gt; &#123;</span><br><span class="line">    let max = nums[0];</span><br><span class="line">    for (let i = 1; i &lt; nums.length; i++) &#123;</span><br><span class="line">        if (max &lt; i) &#123;</span><br><span class="line">            return false;</span><br><span class="line">        &#125;</span><br><span class="line">        max = Math.max(nums[i] + i, max);</span><br><span class="line">    &#125;</span><br><span class="line">    return true;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 60 ms<br>Memory Usage: 35.8 MB</p>
+<h3 id="solution-2-1"><a href="#solution-2-1" class="headerlink" title="solution 2:"></a>solution 2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">const canJump = (nums) =&gt; &#123;</span><br><span class="line">    let idx = 0;</span><br><span class="line">    let max = 0;</span><br><span class="line">    let len = nums.length;</span><br><span class="line">    while(idx &lt; len) &#123;</span><br><span class="line">        max = Math.max(max, idx + nums[idx]);</span><br><span class="line">        if (max &gt;= len - 1) &#123;</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line">        if (max &lt;= idx &amp;&amp; nums[idx] === 0) &#123;</span><br><span class="line">            return false;</span><br><span class="line">        &#125;</span><br><span class="line">        idx++;</span><br><span class="line">    &#125;</span><br><span class="line">    return false;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 52 ms<br>Memory Usage: 35.8 MB</p>
+<h2 id="0056-Merge-Intervals"><a href="#0056-Merge-Intervals" class="headerlink" title="0056. Merge Intervals"></a>0056. Merge Intervals</h2><p>Given a collection of intervals, merge all overlapping intervals.<br>Example 1:<br>Input: [[1,3],[2,6],[8,10],[15,18]]<br>Output: [[1,6],[8,10],[15,18]]<br>Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6].<br>Example 2:<br>Input: [[1,4],[4,5]]<br>Output: [[1,5]]<br>Explanation: Intervals [1,4] and [4,5] are considered overlapping.</p>
+<h3 id="solution-8"><a href="#solution-8" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">const merge = (intervals) =&gt; &#123;</span><br><span class="line">    if (!intervals.length) &#123;</span><br><span class="line">        return intervals;</span><br><span class="line">    &#125;</span><br><span class="line">    intervals.sort((a, b) =&gt; a[0] !== b[0] ? a[0] - b[0] : a[1] - b[1]);</span><br><span class="line">    let prev = intervals[0];</span><br><span class="line">    let res = [prev];</span><br><span class="line">    for (let curr of intervals) &#123;</span><br><span class="line">        if (curr[0] &lt;= prev[1]) &#123;</span><br><span class="line">          prev[1] = Math.max(prev[1], curr[1]);</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">          res.push(curr);</span><br><span class="line">          prev = curr;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return res;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 72 ms<br>Memory Usage: 37.1 MB</p>
+<h2 id="0066-Plus-One"><a href="#0066-Plus-One" class="headerlink" title="0066. Plus One"></a>0066. Plus One</h2><p>Given a non-empty array of digits representing a non-negative integer, plus one to the integer.</p>
+<p>The digits are stored such that the most significant digit is at the head of the list, and each element in the array contain a single digit.</p>
+<p>You may assume the integer does not contain any leading zero, except the number 0 itself.</p>
+<p>Example 1:<br>Input: [1,2,3]<br>Output: [1,2,4]<br>Explanation: The array represents the integer 123.<br>Example 2:<br>Input:[6,1,4,5,3,9,0,1,9,5,1,8,6,7,0,5,5,4,3]<br>Output:[6,1,4,5,3,9,0,1,9,5,1,8,6,7,0,5,5,4,4]<br>Explanation: The array represents the integer 6145390195186705543.</p>
+<h3 id="solution-1-2"><a href="#solution-1-2" class="headerlink" title="solution 1:"></a>solution 1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">const plusOne = (digits) =&gt; &#123;</span><br><span class="line">    for(let i = digits.length - 1; i &gt;= 0; i --)&#123;</span><br><span class="line">        if(digits[i] === 9)&#123;</span><br><span class="line">          digits[i] = 0;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">          digits[i]++;</span><br><span class="line">          return digits;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return [1, ...digits];</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 60 ms<br>Memory Usage: 33.7 MB</p>
+<h3 id="solution-2-2"><a href="#solution-2-2" class="headerlink" title="solution 2:"></a>solution 2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const plusOne = (digits) =&gt; &#123;</span><br><span class="line">    return String(BigInt(digits.join(&apos;&apos;)) + 1n).split(&apos;&apos;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 48 ms<br>Memory Usage: 33.8 MB</p>
+<h2 id="0075-Sort-Colors"><a href="#0075-Sort-Colors" class="headerlink" title="0075. Sort Colors"></a>0075. Sort Colors</h2><p>Given an array with n objects colored red, white or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white and blue.<br>Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue respectively.<br>Note: You are not suppose to use the library’s sort function for this problem.<br>Example:<br>Input: [2,0,2,1,1,0]<br>Output: [0,0,1,1,2,2]<br>Follow up:<br>A rather straight forward solution is a two-pass algorithm using counting sort.<br>First, iterate the array counting number of 0’s, 1’s, and 2’s, then overwrite array with total number of 0’s, then 1’s and followed by 2’s.<br>Could you come up with a one-pass algorithm using only constant space?</p>
+<h3 id="solution-1-3"><a href="#solution-1-3" class="headerlink" title="solution 1:"></a>solution 1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">const sortColors = (nums) =&gt; &#123;</span><br><span class="line">    let count0 = 0;</span><br><span class="line">    let count1 = 0;</span><br><span class="line">    let count2 = 0;</span><br><span class="line">    for (let i = 0; i &lt; nums.length; i++) &#123;</span><br><span class="line">        if (nums[i] === 0) &#123;</span><br><span class="line">            count0++;</span><br><span class="line">        &#125; else if (nums[i] === 1) &#123;</span><br><span class="line">            count1++;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            count2++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    for (let i = 0; i &lt; nums.length; i++) &#123;</span><br><span class="line">        if (i &lt; count0) &#123;</span><br><span class="line">            nums[i] = 0;</span><br><span class="line">        &#125; else if (i &lt; count0 + count1) &#123;</span><br><span class="line">            nums[i] = 1;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            nums[i] = 2;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return nums;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 52 ms<br>Memory Usage: 33.8 MB</p>
+<h3 id="solution-2-3"><a href="#solution-2-3" class="headerlink" title="solution 2:"></a>solution 2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">const sortColors = (nums) =&gt; &#123;</span><br><span class="line">    let low = 0, high = nums.length - 1</span><br><span class="line">    for (let i = 0; i &lt;= high;i++) &#123;</span><br><span class="line">        if (nums[i] === 0) &#123;</span><br><span class="line">            [nums[i], nums[low]] = [nums[low], nums[i]]</span><br><span class="line">            low++;</span><br><span class="line">        &#125; else if (nums[i] == 2) &#123;</span><br><span class="line">            [nums[i], nums[high]] = [nums[high], nums[i]]</span><br><span class="line">            high--;</span><br><span class="line">            i--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 48 ms<br>Memory Usage: 33.9 MB</p>
+<h2 id="0078-Subsets"><a href="#0078-Subsets" class="headerlink" title="0078. Subsets"></a>0078. Subsets</h2><p>Given a set of distinct integers, nums, return all possible subsets (the power set).<br>Note: The solution set must not contain duplicate subsets.<br>Example:<br>Input: nums = [1,2,3]<br>Output:<br>[<br>[3],<br>[1],<br>[2],<br>[1,2,3],<br>[1,3],<br>[2,3],<br>[1,2],<br>[]<br>]</p>
+<h3 id="solution-9"><a href="#solution-9" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">const subsets = (nums) =&gt; &#123;</span><br><span class="line">    let result = [];</span><br><span class="line">    dfs([], 0);</span><br><span class="line">    function dfs(current, index) &#123;</span><br><span class="line">        result.push(current);</span><br><span class="line">        for(let i = index; i &lt; nums.length; i++) &#123;</span><br><span class="line">            dfs(current.concat(nums[i]), i + 1);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return result;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 52 ms<br>Memory Usage: 34.9 MB</p>
+<h2 id="0079-Word-Search"><a href="#0079-Word-Search" class="headerlink" title="0079. Word Search"></a>0079. Word Search</h2><p>Given a 2D board and a word, find if the word exists in the grid.<br>The word can be constructed from letters of sequentially adjacent cell, where “adjacent” cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once.<br>Example:<br>board =<br>[<br>[‘A’,’B’,’C’,’E’],<br>[‘S’,’F’,’C’,’S’],<br>[‘A’,’D’,’E’,’E’]<br>]<br>Given word = “ABCCED”, return true.<br>Given word = “SEE”, return true.<br>Given word = “ABCB”, return false.</p>
+<h3 id="solution-10"><a href="#solution-10" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">const exist = (board, word) =&gt; &#123;</span><br><span class="line">    let wordLength = word.length;</span><br><span class="line">    word = word.split(&quot;&quot;);</span><br><span class="line"></span><br><span class="line">    function verify(row, col, matrix, path) &#123;</span><br><span class="line">        if(row &lt; 0 || col &lt; 0 || row &gt;= matrix.length || col &gt;= matrix[0].length || matrix[row][col] != word[path] || path &gt; wordLength) &#123;</span><br><span class="line">            return false;</span><br><span class="line">        &#125;</span><br><span class="line">        path++;</span><br><span class="line">        matrix[row][col] = &apos;#&apos;;</span><br><span class="line">        if(path === wordLength) &#123;</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line">        if(verify(row - 1, col, matrix, path)) &#123;</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line">        if(verify(row, col + 1, matrix, path)) &#123;</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line">        if(verify(row + 1, col, matrix, path)) &#123;</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line">        if(verify(row, col - 1, matrix, path)) &#123;</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line">        matrix[row][col] = word[--path];</span><br><span class="line">        return false;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    for(let i = 0; i &lt; board.length; i++) &#123;</span><br><span class="line">        for(let j = 0; j &lt; board[i].length; j++) &#123;</span><br><span class="line">            if(verify(i, j, board, 0))</span><br><span class="line">                return true;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return false;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 80 ms<br>Memory Usage: 38.1 MB</p>
+<h2 id="0088-Merge-Sorted-Array"><a href="#0088-Merge-Sorted-Array" class="headerlink" title="0088. Merge Sorted Array"></a>0088. Merge Sorted Array</h2><p>Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as one sorted array.<br>Note:<br>The number of elements initialized in nums1 and nums2 are m and n respectively.<br>You may assume that nums1 has enough space (size that is greater or equal to m + n) to hold additional elements from nums2.<br>Example:<br>Input:<br>nums1 = [1,2,3,0,0,0], m = 3<br>nums2 = [2,5,6], n = 3<br>Output: [1,2,2,3,5,6]</p>
+<h3 id="solution-1-4"><a href="#solution-1-4" class="headerlink" title="solution 1:"></a>solution 1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">const merge = function(nums1, m, nums2, n) &#123;</span><br><span class="line">    for(let i = m; i &lt; nums1.length; i++ )&#123;</span><br><span class="line">       nums1[i] = nums2[i-m];</span><br><span class="line">    &#125;</span><br><span class="line">    nums1.sort((a,b) =&gt; a &gt; b ? 1 :-1);</span><br><span class="line">    return nums1;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 64 ms<br>Memory Usage: 35.1 MB</p>
+<h3 id="solution-2-4"><a href="#solution-2-4" class="headerlink" title="solution 2:"></a>solution 2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const merge = function(nums1, m, nums2, n) &#123;</span><br><span class="line">    const nums = nums1.slice(0, m).concat(nums2.slice(0, n));</span><br><span class="line">    nums.sort((a, b) =&gt; a - b);</span><br><span class="line">    nums.forEach((_n, i) =&gt; nums1[i] = _n);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 60 ms<br>Memory Usage: 35 MB</p>
+<h3 id="solution-3-1"><a href="#solution-3-1" class="headerlink" title="solution 3:"></a>solution 3:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">const merge = function(nums1, m, nums2, n) &#123;</span><br><span class="line">    let len = m + n;</span><br><span class="line">    m--;</span><br><span class="line">    n--;</span><br><span class="line"></span><br><span class="line">    while (n &gt;= 0) &#123;</span><br><span class="line">        len--;</span><br><span class="line">        if (nums1[m] &gt; nums2[n]) &#123;</span><br><span class="line">            nums1[len] = nums1[m--];</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            nums1[len] = nums2[n--];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 52 ms<br>Memory Usage: 34 MB</p>
+<h2 id="0118-Pascal’s-Triangle"><a href="#0118-Pascal’s-Triangle" class="headerlink" title="0118. Pascal’s Triangle"></a>0118. Pascal’s Triangle</h2><p>Given a non-negative integer numRows, generate the first numRows of Pascal’s triangle.<br>In Pascal’s triangle, each number is the sum of the two numbers directly above it.<br>Example:<br>Input: 5<br>Output:<br>[<br>[1],<br>[1,1],<br>[1,2,1],<br>[1,3,3,1],<br>[1,4,6,4,1]<br>]</p>
+<h3 id="solution-1-5"><a href="#solution-1-5" class="headerlink" title="solution 1:"></a>solution 1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">const generate = (numRows) =&gt; &#123;</span><br><span class="line">    if(!numRows) &#123;</span><br><span class="line">        return [];</span><br><span class="line">    &#125;</span><br><span class="line">    let result = [[1]];</span><br><span class="line">    for(let i = 1; i &lt; numRows; i++) &#123;</span><br><span class="line">        result[i] = [];</span><br><span class="line">        for(let j = 0; j &lt; i + 1;j++) &#123;</span><br><span class="line">            result[i][j] = (result[i - 1][j - 1] || 0) + (result[i - 1][j] || 0) ;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return result;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 56 ms<br>Memory Usage: 33.8 MB</p>
+<h3 id="solution-2-5"><a href="#solution-2-5" class="headerlink" title="solution 2:"></a>solution 2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">const generate = (numRows) =&gt; &#123;</span><br><span class="line">    if(!numRows) &#123;</span><br><span class="line">        return [];</span><br><span class="line">    &#125;</span><br><span class="line">    let result = [[1]];</span><br><span class="line">    for (let i = 1; i &lt; numRows; i++) &#123;</span><br><span class="line">        const prevRow = result[result.length - 1];</span><br><span class="line">        const shiftLeft = [...prevRow, 0];</span><br><span class="line">        const shiftRight = [0, ...prevRow];</span><br><span class="line"></span><br><span class="line">        const currentRow = shiftLeft.map((r, i) =&gt; r + shiftRight[i]);</span><br><span class="line">        result.push(currentRow);</span><br><span class="line">    &#125;</span><br><span class="line">    return result;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 52 ms<br>Memory Usage: 33.6 MB</p>
+<h2 id="0121-Best-Time-to-Buy-and-Sell-Stock"><a href="#0121-Best-Time-to-Buy-and-Sell-Stock" class="headerlink" title="0121. Best Time to Buy and Sell Stock"></a>0121. Best Time to Buy and Sell Stock</h2><p>Say you have an array for which the ith element is the price of a given stock on day i.<br>If you were only permitted to complete at most one transaction (i.e., buy one and sell one share of the stock), design an algorithm to find the maximum profit.<br>Note that you cannot sell a stock before you buy one.<br>Example 1:<br>Input: [7,1,5,3,6,4]<br>Output: 5<br>Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.<br>Not 7-1 = 6, as selling price needs to be larger than buying price.<br>Example 2:<br>Input: [7,6,4,3,1]<br>Output: 0<br>Explanation: In this case, no transaction is done, i.e. max profit = 0.</p>
+<h3 id="solution-1-6"><a href="#solution-1-6" class="headerlink" title="solution 1:"></a>solution 1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">const maxProfit = (prices) =&gt; &#123;</span><br><span class="line">    let maxCur = 0, maxSoFar = 0;</span><br><span class="line">    for(let i = 1; i &lt; prices.length; i++) &#123;</span><br><span class="line">        maxCur = Math.max(0, maxCur += prices[i] - prices[i-1]);</span><br><span class="line">        maxSoFar = Math.max(maxCur, maxSoFar);</span><br><span class="line">    &#125;</span><br><span class="line">    return maxSoFar;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 52 ms<br>Memory Usage: 35.5 MB</p>
+<p>Suppose we have original array:<br>[a0, a1, a2, a3, a4, a5, a6]<br>what we are given here is:<br>[b0, b1, b2, b3, b4, b5, b6]<br>where,b[i] = 0, when i == 0<br>b[i] = a[i] - a[i - 1], when i != 0<br>suppose if a2 and a6 are the points that give us the max difference (a2 &lt; a6)<br>then in our given array, we need to find the sum of sub array from b3 to b6.<br>b3 = a3 - a2<br>b4 = a4 - a3<br>b5 = a5 - a4<br>b6 = a6 - a5<br>adding all these, all the middle terms will cancel out except two<br>b3 + b4 + b5 + b6 = a6 - a2<br>a6 - a2 is the required solution.<br>so we need to find the largest sub array sum to get the most profit</p>
+<h3 id="solution-2-6"><a href="#solution-2-6" class="headerlink" title="solution 2:"></a>solution 2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">const maxProfit = (prices) =&gt; &#123;</span><br><span class="line">    let min = Number.MAX_SAFE_INTEGER;</span><br><span class="line">    let max = 0;</span><br><span class="line">    for (let i = 0; i &lt; prices.length; i++) &#123;</span><br><span class="line">        min = Math.min(min, prices[i]);</span><br><span class="line">        max = Math.max(max, prices[i] - min);</span><br><span class="line">    &#125;</span><br><span class="line">    return max;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 56 ms<br>Memory Usage: 35.5 MB</p>
+<h2 id="0122-Best-Time-to-Buy-and-Sell-Stock-II"><a href="#0122-Best-Time-to-Buy-and-Sell-Stock-II" class="headerlink" title="0122. Best Time to Buy and Sell Stock II"></a>0122. Best Time to Buy and Sell Stock II</h2><p>Say you have an array for which the ith element is the price of a given stock on day i.<br>Design an algorithm to find the maximum profit. You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times).<br>Note: You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).<br>Example 1:<br>Input: [7,1,5,3,6,4]<br>Output: 7<br>Explanation: Buy on day 2 (price = 1) and sell on day 3 (price = 5), profit = 5-1 = 4.<br>Then buy on day 4 (price = 3) and sell on day 5 (price = 6), profit = 6-3 = 3.<br>Example 2:<br>Input: [1,2,3,4,5]<br>Output: 4<br>Explanation: Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-1 = 4.<br>Note that you cannot buy on day 1, buy on day 2 and sell them later, as you are<br>engaging multiple transactions at the same time. You must sell before buying again.<br>Example 3:<br>Input: [7,6,4,3,1]<br>Output: 0<br>Explanation: In this case, no transaction is done, i.e. max profit = 0.</p>
+<h3 id="solution-1-7"><a href="#solution-1-7" class="headerlink" title="solution 1:"></a>solution 1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">const maxProfit = (prices) =&gt; &#123;</span><br><span class="line">    if(!prices.length) &#123;</span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br><span class="line">    let result = 0;</span><br><span class="line">    for(let i = 1; i &lt; prices.length; i++) &#123;</span><br><span class="line">        result += Math.max(0, prices[i] - prices[i-1]);</span><br><span class="line">    &#125;</span><br><span class="line">    return result;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 48 ms<br>Memory Usage: 35.7 MB</p>
+<h3 id="solution-2-7"><a href="#solution-2-7" class="headerlink" title="solution 2:"></a>solution 2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">const maxProfit = (prices) =&gt; &#123;</span><br><span class="line">    let diff = 0</span><br><span class="line">    if (prices.length &gt; 0) &#123;</span><br><span class="line">        prices.reduce((acc, next) =&gt; &#123;</span><br><span class="line">            if (next &gt; acc) &#123;</span><br><span class="line">                diff += next - acc</span><br><span class="line">            &#125;</span><br><span class="line">            return next</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">    return diff</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 60 ms<br>Memory Usage: 35.2 MB</p>
+<h2 id="0169-Majority-Element"><a href="#0169-Majority-Element" class="headerlink" title="0169. Majority Element"></a>0169. Majority Element</h2><p>Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times.<br>You may assume that the array is non-empty and the majority element always exist in the array.<br>Example 1:<br>Input: [3,2,3]<br>Output: 3<br>Example 2:<br>Input: [2,2,1,1,1,2,2]<br>Output: 2</p>
+<h3 id="solution-1-8"><a href="#solution-1-8" class="headerlink" title="solution 1:"></a>solution 1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">const majorityElement = (nums) =&gt; &#123;</span><br><span class="line">    if (nums.length === 1) &#123;</span><br><span class="line">        return nums[0]</span><br><span class="line">    &#125;</span><br><span class="line">    let count = &#123;&#125;</span><br><span class="line">    for (let i = 0; i &lt; nums.length; i++) &#123;</span><br><span class="line">        let num = nums[i]</span><br><span class="line">        if (count[num] === undefined) &#123;</span><br><span class="line">            count[num] = 1;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            count[num] += 1;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    let max = 0;</span><br><span class="line">    let result = 0;</span><br><span class="line">    for (let key in count) &#123;</span><br><span class="line">        if (count[key] &gt; max) &#123;</span><br><span class="line">            max = count[key]</span><br><span class="line">            result = key</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return result</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 68 ms<br>Memory Usage: 37.7 MB</p>
+<h3 id="solution-2-8"><a href="#solution-2-8" class="headerlink" title="solution 2:"></a>solution 2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">const majorityElement = (nums) =&gt; &#123;</span><br><span class="line">    let len = nums.length;</span><br><span class="line">    if (len === 1) &#123;</span><br><span class="line">        return nums[0]</span><br><span class="line">    &#125;</span><br><span class="line">    let count = &#123;&#125;</span><br><span class="line">    for (let i = 0; i &lt; len; i++) &#123;</span><br><span class="line">        let num = nums[i]</span><br><span class="line">        if (count[num] === undefined) &#123;</span><br><span class="line">            count[num] = 1;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            count[num] += 1;</span><br><span class="line">        &#125;</span><br><span class="line">        if (count[num] &gt; len / 2) &#123;</span><br><span class="line">            return num;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 60 ms<br>Memory Usage: 37.3 MB</p>
+<h3 id="solution-3-2"><a href="#solution-3-2" class="headerlink" title="solution 3:"></a>solution 3:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">const majorityElement = (nums) =&gt; &#123;</span><br><span class="line">    let len = nums.length;</span><br><span class="line">    if (len === 1) &#123;</span><br><span class="line">        return nums[0]</span><br><span class="line">    &#125;</span><br><span class="line">    // sort the array and the middle is the majority</span><br><span class="line">    nums.sort((a,b) =&gt; a - b);</span><br><span class="line">    return nums[Math.floor(len/2)];</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 76 ms<br>Memory Usage: 37.7 MB</p>
+<h2 id="0189-Rotate-Array"><a href="#0189-Rotate-Array" class="headerlink" title="0189. Rotate Array"></a>0189. Rotate Array</h2><p>Given an array, rotate the array to the right by k steps, where k is non-negative.<br>Example 1:<br>Input: [1,2,3,4,5,6,7] and k = 3<br>Output: [5,6,7,1,2,3,4]<br>Explanation:<br>rotate 1 steps to the right: [7,1,2,3,4,5,6]<br>rotate 2 steps to the right: [6,7,1,2,3,4,5]<br>rotate 3 steps to the right: [5,6,7,1,2,3,4]<br>Example 2:<br>Input: [-1,-100,3,99] and k = 2<br>Output: [3,99,-1,-100]<br>Explanation:<br>rotate 1 steps to the right: [99,-1,-100,3]<br>rotate 2 steps to the right: [3,99,-1,-100]</p>
+<h3 id="solution-1-9"><a href="#solution-1-9" class="headerlink" title="solution 1:"></a>solution 1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">const rotate = (nums, k) =&gt; &#123;</span><br><span class="line">    let x = 0</span><br><span class="line">    while(x &lt; k) &#123;</span><br><span class="line">        nums.unshift(nums.pop());</span><br><span class="line">        x++;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 128 ms<br>Memory Usage: 35.3 MB</p>
+<h3 id="solution-2-9"><a href="#solution-2-9" class="headerlink" title="solution 2:"></a>solution 2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const rotate = (nums, k) =&gt; &#123;</span><br><span class="line">    nums.unshift(...nums.splice(nums.length - k));</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 60 ms<br>Memory Usage: 35 MB</p>
+<h2 id="0217-Contains-Duplicate"><a href="#0217-Contains-Duplicate" class="headerlink" title="0217. Contains Duplicate"></a>0217. Contains Duplicate</h2><p>Given an array of integers, find if the array contains any duplicates.<br>Your function should return true if any value appears at least twice in the array, and it should return false if every element is distinct.<br>Example 1:<br>Input: [1,2,3,1]<br>Output: true<br>Example 2:<br>Input: [1,2,3,4]<br>Output: false<br>Example 3:<br>Input: [1,1,1,3,3,4,3,2,4,2]<br>Output: true</p>
+<h3 id="solution-1-10"><a href="#solution-1-10" class="headerlink" title="solution 1:"></a>solution 1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const containsDuplicate = (nums) =&gt; &#123;</span><br><span class="line">    return (new Set(nums).size !== nums.length);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 64 ms<br>Memory Usage: 40 MB</p>
+<h3 id="solution-2-10"><a href="#solution-2-10" class="headerlink" title="solution 2:"></a>solution 2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">const containsDuplicate = (nums) =&gt; &#123;</span><br><span class="line">    let obj = &#123;&#125;;</span><br><span class="line">    for(let i = 0; i &lt; nums.length; i++)&#123;</span><br><span class="line">        if (obj[nums[i]] === undefined) &#123;</span><br><span class="line">            obj[nums[i]] = 1;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return false;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="0238-Product-of-Array-Except-Self"><a href="#0238-Product-of-Array-Except-Self" class="headerlink" title="0238. Product of Array Except Self"></a>0238. Product of Array Except Self</h2><p>Given an array nums of n integers where n &gt; 1, return an array output such that output[i] is equal to the product of all the elements of nums except nums[i].<br>Example:<br>Input: [1,2,3,4]<br>Output: [24,12,8,6]<br>Note: Please solve it without division and in O(n).</p>
+<h3 id="solution-11"><a href="#solution-11" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">const productExceptSelf = (nums) =&gt; &#123;</span><br><span class="line">    let output = [];</span><br><span class="line">    let leftMult = 1;</span><br><span class="line">    let rightMult = 1;</span><br><span class="line">    for (let i = nums.length - 1; i &gt;= 0; i--) &#123;</span><br><span class="line">        output[i] = rightMult;</span><br><span class="line">        rightMult *= nums[i];</span><br><span class="line">    &#125;</span><br><span class="line">    for (let j = 0; j &lt; nums.length; j++) &#123;</span><br><span class="line">        output[j] *= leftMult;</span><br><span class="line">        leftMult *= nums[j];</span><br><span class="line">    &#125;</span><br><span class="line">    return output;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 88 ms<br>Memory Usage: 41.9 MB</p>
+<h2 id="0268-Missing-Number"><a href="#0268-Missing-Number" class="headerlink" title="0268. Missing Number"></a>0268. Missing Number</h2><p>Given an array containing n distinct numbers taken from 0, 1, 2, …, n, find the one that is missing from the array.<br>Example 1:<br>Input: [3,0,1]<br>Output: 2<br>Example 2:<br>Input: [9,6,4,2,3,5,7,0,1]<br>Output: 8</p>
+<h3 id="solution-1-11"><a href="#solution-1-11" class="headerlink" title="solution 1:"></a>solution 1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">const missingNumber = (nums) =&gt; &#123;</span><br><span class="line">    const n = nums.length;</span><br><span class="line">    const expectedSum = (1 + n) * n / 2;</span><br><span class="line">    let sum = 0;</span><br><span class="line">    for(let i = 0; i &lt; n; i++)&#123;</span><br><span class="line">        sum += nums[i];</span><br><span class="line">    &#125;</span><br><span class="line">    return expectedSum - sum;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 128 ms<br>Memory Usage: 36.4 MB</p>
+<h3 id="solution-2-11"><a href="#solution-2-11" class="headerlink" title="solution 2:"></a>solution 2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">const missingNumber = (nums) =&gt; &#123;</span><br><span class="line">    let sum = 0, total = 0</span><br><span class="line">    for(let i = 0; i &lt; nums.length; i++) &#123;</span><br><span class="line">        sum += nums[i]</span><br><span class="line">        total += i + 1</span><br><span class="line">    &#125;</span><br><span class="line">    return total - sum</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 80 ms<br>Memory Usage: 36.2 MB</p>
+<h3 id="solution-3-3"><a href="#solution-3-3" class="headerlink" title="solution 3:"></a>solution 3:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const missingNumber = (nums) =&gt; &#123;</span><br><span class="line">    let sum = (nums.length * ( nums.length+1 ) ) / 2;</span><br><span class="line">    let sum2 = nums.reduce((a, c) =&gt; a + c);</span><br><span class="line">    return sum - sum2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 56 ms<br>Memory Usage: 35.8 MB</p>
+<h2 id="0283-Move-Zeroes"><a href="#0283-Move-Zeroes" class="headerlink" title="0283. Move Zeroes"></a>0283. Move Zeroes</h2><p>Given an array nums, write a function to move all 0’s to the end of it while maintaining the relative order of the non-zero elements.<br>Example:<br>Input: [0,1,0,3,12]<br>Output: [1,3,12,0,0]<br>Note:<br>You must do this in-place without making a copy of the array.<br>Minimize the total number of operations.</p>
+<h3 id="solution-1-12"><a href="#solution-1-12" class="headerlink" title="solution 1:"></a>solution 1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">const moveZeroes = (nums) =&gt; &#123;</span><br><span class="line">    let pointer = 0;</span><br><span class="line">    for(let i = 0; i &lt; nums.length; i++)&#123;</span><br><span class="line">        if(nums[i] !== 0) &#123;</span><br><span class="line">            nums[pointer] = nums[i];</span><br><span class="line">            pointer++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    for(let j = pointer; j &lt; nums.length; j++) &#123;</span><br><span class="line">        nums[j] = 0;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 56 ms<br>Memory Usage: 35.6 MB</p>
+<h3 id="solution-2-12"><a href="#solution-2-12" class="headerlink" title="solution 2:"></a>solution 2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">const moveZeroes = (nums) =&gt; &#123;</span><br><span class="line">    for(let i = nums.length - 1; i &gt;= 0; i--) &#123;</span><br><span class="line">        if(nums[i] === 0)&#123;</span><br><span class="line">            nums.splice(i,1);</span><br><span class="line">            nums.push(0);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 76 ms<br>Memory Usage: 36.1 MB</p>
+<h2 id="0287-Find-the-Duplicate-Number"><a href="#0287-Find-the-Duplicate-Number" class="headerlink" title="0287. Find the Duplicate Number"></a>0287. Find the Duplicate Number</h2><p>Given an array nums containing n + 1 integers where each integer is between 1 and n (inclusive), prove that at least one duplicate number must exist. Assume that there is only one duplicate number, find the duplicate one.<br>Example 1:<br>Input: [1,3,4,2,2]<br>Output: 2<br>Example 2:<br>Input: [3,1,3,4,2]<br>Output: 3</p>
+<h3 id="solution-12"><a href="#solution-12" class="headerlink" title="solution"></a>solution</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">const findDuplicate = (nums) =&gt; &#123;</span><br><span class="line">    if(nums.length === 1) &#123;</span><br><span class="line">        return nums;</span><br><span class="line">    &#125;</span><br><span class="line">    const letterObj = &#123;&#125;;</span><br><span class="line">    for(let i = 0; i &lt; nums.length; i++) &#123;</span><br><span class="line">        if(letterObj[nums[i]] === undefined) &#123;</span><br><span class="line">            letterObj[nums[i]] = 1;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            letterObj[nums[i]]++;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    for(let key in letterObj) &#123;</span><br><span class="line">        if(letterObj[key] &gt; 1) &#123;</span><br><span class="line">            return key</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 52 ms.<br>Memory Usage: 37.9 MB.</p>
+<h2 id="0448-Find-All-Numbers-Disappeared-in-an-Array"><a href="#0448-Find-All-Numbers-Disappeared-in-an-Array" class="headerlink" title="0448. Find All Numbers Disappeared in an Array"></a>0448. Find All Numbers Disappeared in an Array</h2><p>Given an array of integers where 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and others appear once.<br>Find all the elements of [1, n] inclusive that do not appear in this array.<br>Could you do it without extra space and in O(n) runtime? You may assume the returned list does not count as extra space.<br>Example:<br>Input:<br>[4,3,2,7,8,2,3,1]<br>Output:<br>[5,6]</p>
+<h3 id="solution-1-13"><a href="#solution-1-13" class="headerlink" title="solution 1:"></a>solution 1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">const findDisappearedNumbers = (nums) =&gt; &#123;</span><br><span class="line">    let arr = []</span><br><span class="line">    for (let i = 0; i &lt; nums.length; i++) &#123;</span><br><span class="line">        arr[i] = i+1</span><br><span class="line">    &#125;</span><br><span class="line">    for (v of nums) &#123;</span><br><span class="line">        arr[v-1] = -1</span><br><span class="line">    &#125;</span><br><span class="line">    return arr.filter( i =&gt; (i &gt; 0) )</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 176 ms<br>Memory Usage: 45.5 MB</p>
+<h3 id="solution-2-13"><a href="#solution-2-13" class="headerlink" title="solution 2:"></a>solution 2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">const findDisappearedNumbers = (nums) =&gt; &#123;</span><br><span class="line">    for(let i = 0 ; i &lt; nums.length; i++) &#123;</span><br><span class="line">        let val = nums[i];</span><br><span class="line">        while(nums[val - 1] !== val) &#123;</span><br><span class="line">            [nums[val - 1] ,val] = [val, nums[val - 1]]</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    let res = [];</span><br><span class="line">    for(let i = 0 ; i &lt; nums.length; i++ )&#123;</span><br><span class="line">        if(nums[i] !== i + 1) &#123;</span><br><span class="line">            res.push(i + 1);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return res;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 132 ms<br>Memory Usage: 43.9 MB</p>
+<h2 id="0560-Subarray-Sum-Equals-K"><a href="#0560-Subarray-Sum-Equals-K" class="headerlink" title="0560. Subarray Sum Equals K"></a>0560. Subarray Sum Equals K</h2><p>Given an array of integers and an integer k, you need to find the total number of continuous subarrays whose sum equals to k.<br>Example 1:<br>Input:nums = [1,1,1], k = 2<br>Output: 2<br>Note:<br>The length of the array is in range [1, 20,000].<br>The range of numbers in the array is [-1000, 1000] and the range of the integer k is [-1e7, 1e7].</p>
+<h3 id="solution-1-14"><a href="#solution-1-14" class="headerlink" title="solution 1:"></a>solution 1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">const subarraySum = (nums, k) =&gt; &#123;</span><br><span class="line">    let counter = 0;</span><br><span class="line">    for (let i = 0; i &lt; nums.length; i++) &#123;</span><br><span class="line">        let base = 0;</span><br><span class="line">        for (let j = i; j &lt; nums.length; j++) &#123;</span><br><span class="line">            base += nums[j];</span><br><span class="line">            if (base === k) &#123;</span><br><span class="line">                counter++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return counter;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 288 ms<br>Memory Usage: 35.8 MB</p>
+<h3 id="solution-2-14"><a href="#solution-2-14" class="headerlink" title="solution 2:"></a>solution 2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">const subarraySum = (nums, k) =&gt; &#123;</span><br><span class="line">    let map = new Map();</span><br><span class="line">    let sum = 0;</span><br><span class="line">    let count = 0;</span><br><span class="line">    map.set(0,1);</span><br><span class="line">    for (let i = 0; i &lt; nums.length; i++) &#123;</span><br><span class="line">        sum += nums[i];</span><br><span class="line">        if (map.has(sum - k)) &#123;</span><br><span class="line">            count += map.get(sum - k);</span><br><span class="line">        &#125;</span><br><span class="line">        if (map.has(sum)) &#123;</span><br><span class="line">            map.set(sum, map.get(sum) + 1);</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            map.set(sum, 1);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return count;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 88 ms<br>Memory Usage: 38.7 MB</p>
+<h2 id="0581-Shortest-Unsorted-Continuous-Subarray"><a href="#0581-Shortest-Unsorted-Continuous-Subarray" class="headerlink" title="0581. Shortest Unsorted Continuous Subarray"></a>0581. Shortest Unsorted Continuous Subarray</h2><p>Given an integer array, you need to find one continuous subarray that if you only sort this subarray in ascending order, then the whole array will be sorted in ascending order, too.<br>You need to find the shortest such subarray and output its length.<br>Example 1:<br>Input: [2, 6, 4, 8, 10, 9, 15]<br>Output: 5<br>Explanation: You need to sort [6, 4, 8, 10, 9] in ascending order to make the whole array sorted in ascending order.</p>
+<h3 id="solution-13"><a href="#solution-13" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">const findUnsortedSubarray = (nums) =&gt; &#123;</span><br><span class="line">    const length = nums.length;</span><br><span class="line">let min = nums[length-1];</span><br><span class="line">let max = nums[0];</span><br><span class="line">let l = 0;</span><br><span class="line">    let r = length - 1;</span><br><span class="line"></span><br><span class="line">for (let i = 1; i &lt;= length - 2; i++)</span><br><span class="line">&#123;</span><br><span class="line">if(nums[i] &gt;= nums[i-1] &amp;&amp; nums[i] &gt;= nums[i+1]) &#123;</span><br><span class="line">            max = Math.max(max, nums[i]);</span><br><span class="line">        &#125;</span><br><span class="line">if(nums[i] &lt;= nums[i-1] &amp;&amp; nums[i] &lt;= nums[i+1]) &#123;</span><br><span class="line">            min = Math.min(min, nums[i]);</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line">while (nums[l] &lt;= min) &#123;</span><br><span class="line">        l++;</span><br><span class="line">    &#125;</span><br><span class="line">if(l === r + 1) &#123;</span><br><span class="line">        return 0</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">while (nums[r] &gt;= max) &#123;</span><br><span class="line">        r--;</span><br><span class="line">    &#125;</span><br><span class="line">return r - l + 1;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 68 ms<br>Memory Usage: 36.9 MB</p>
+<h2 id="0621-Task-Scheduler"><a href="#0621-Task-Scheduler" class="headerlink" title="0621. Task Scheduler"></a>0621. Task Scheduler</h2><p>Given a char array representing tasks CPU need to do. It contains capital letters A to Z where different letters represent different tasks. Tasks could be done without original order. Each task could be done in one interval. For each interval, CPU could finish one task or just be idle.<br>However, there is a non-negative cooling interval n that means between two same tasks, there must be at least n intervals that CPU are doing different tasks or just be idle.<br>You need to return the least number of intervals the CPU will take to finish all the given tasks.<br>Example:<br>Input: tasks = [“A”,”A”,”A”,”B”,”B”,”B”], n = 2<br>Output: 8<br>Explanation: A -&gt; B -&gt; idle -&gt; A -&gt; B -&gt; idle -&gt; A -&gt; B.<br>Note:<br>The number of tasks is in the range [1, 10000].<br>The integer n is in the range [0, 100].</p>
+<h3 id="solution-14"><a href="#solution-14" class="headerlink" title="solution:"></a>solution:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">const leastInterval = (tasks, n) =&gt; &#123;</span><br><span class="line">  if (n === 0) &#123;</span><br><span class="line">      return tasks.length;</span><br><span class="line">  &#125;</span><br><span class="line">  let map = &#123;&#125;;</span><br><span class="line">  for (let key of tasks) &#123;</span><br><span class="line">    map[key] = map[key] ? map[key] + 1 : 1;</span><br><span class="line">  &#125;</span><br><span class="line">  let max = 0, count = 0;</span><br><span class="line">  Object.keys(map).forEach(key =&gt; &#123;</span><br><span class="line">    if (map[key] &gt; max) &#123;</span><br><span class="line">      max = map[key];</span><br><span class="line">      count = 1;</span><br><span class="line">    &#125; else if (map[key] === max) &#123;</span><br><span class="line">      count++;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">  return Math.max((max-1)*(n+1) + count, tasks.length)</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 100 ms<br>Memory Usage: 41 MB</p>
+<h2 id="0912-Sort-an-Array"><a href="#0912-Sort-an-Array" class="headerlink" title="0912. Sort an Array"></a>0912. Sort an Array</h2><p>Given an array of integers nums, sort the array in ascending order.<br>Example 1:<br>Input: nums = [5,2,3,1]<br>Output: [1,2,3,5]<br>Example 2:<br>Input: nums = [5,1,1,2,0,0]<br>Output: [0,0,1,1,2,5]</p>
+<h3 id="solution-1-Bubble"><a href="#solution-1-Bubble" class="headerlink" title="solution 1: Bubble"></a>solution 1: Bubble</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">const sortArray = (nums) =&gt; &#123;</span><br><span class="line">    for(let i = 0; i &lt; nums.length; i++) &#123;</span><br><span class="line">        for(let j = 0; j &lt; nums.length - i -1; j ++) &#123;</span><br><span class="line">            if(nums[j] &gt; nums[j + 1])&#123;</span><br><span class="line">                [nums[j], nums[j + 1]] = [nums[j + 1], nums[j]]</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return nums;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 6624 ms<br>Memory Usage: 39.2 MB</p>
+<h3 id="solution-2-Selection"><a href="#solution-2-Selection" class="headerlink" title="solution 2: Selection"></a>solution 2: Selection</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">const sortArray = (nums) =&gt; &#123;</span><br><span class="line">    const len = nums.length;</span><br><span class="line">    for(let i = 0; i &lt; len; i++) &#123;</span><br><span class="line">        let min = i;</span><br><span class="line">        for(let j = i; j &lt; len; j++) &#123;</span><br><span class="line">            if(nums[j] &lt; nums[min]) &#123;</span><br><span class="line">                min = j;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        if(min !== i) &#123;</span><br><span class="line">            [nums[min], nums[i]] = [nums[i], nums[min]];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return nums;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 1360 ms<br>Memory Usage: 40.6 MB</p>
+<h3 id="solution-3-Insertion"><a href="#solution-3-Insertion" class="headerlink" title="solution 3: Insertion"></a>solution 3: Insertion</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">const sortArray = (nums) =&gt; &#123;</span><br><span class="line">    for(let i = 1; i &lt; nums.length; i++) &#123;</span><br><span class="line">        let key = nums[i];</span><br><span class="line">        let j = i - 1;</span><br><span class="line">        while ( nums[j] &gt; key) &#123;</span><br><span class="line">            nums[j + 1] = nums[j];</span><br><span class="line">            j--;</span><br><span class="line">        &#125;</span><br><span class="line">        nums[j + 1] = key;</span><br><span class="line">    &#125;</span><br><span class="line">    return nums;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 5988 ms<br>Memory Usage: 39.2 MB</p>
+<h3 id="solution-4-Bisection"><a href="#solution-4-Bisection" class="headerlink" title="solution 4: Bisection"></a>solution 4: Bisection</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">const sortArray = (nums) =&gt; &#123;</span><br><span class="line">    for (let i = 1; i &lt; nums.length; i++) &#123;</span><br><span class="line">        let key = nums[i], left = 0, right = i - 1;</span><br><span class="line">        while (left &lt;= right) &#123;</span><br><span class="line">            let middle = parseInt((left + right) / 2);</span><br><span class="line">            if (key &lt; nums[middle]) &#123;</span><br><span class="line">                right = middle - 1;</span><br><span class="line">            &#125; else &#123;</span><br><span class="line">                left = middle + 1;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        for (let j = i - 1; j &gt;= left; j--) &#123;</span><br><span class="line">             nums[j + 1] = nums[j];</span><br><span class="line">        &#125;</span><br><span class="line">        nums[left] = key;</span><br><span class="line">    &#125;</span><br><span class="line">    return nums;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 608 ms<br>Memory Usage: 42.6 MB</p>
+<h3 id="solution-5-Quick"><a href="#solution-5-Quick" class="headerlink" title="solution 5: Quick"></a>solution 5: Quick</h3><figure class="highlight plain"><figcaption><span>sortArray </span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">    if(nums.length &lt;= 1) &#123;</span><br><span class="line">        return nums;</span><br><span class="line">    &#125;</span><br><span class="line">    let referValue = nums[0];</span><br><span class="line">    let leftArr = [];</span><br><span class="line">    let rightArr = [];</span><br><span class="line">    for(let i = 1; i &lt; nums.length; i++) &#123;</span><br><span class="line">        if(nums[i] &lt; referValue) &#123;</span><br><span class="line">            leftArr.push(nums[i]);</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            rightArr.push(nums[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return sortArray(leftArr).concat([referValue], sortArray(rightArr));</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 116 ms<br>Memory Usage: 54.6 MB</p>
+<h3 id="solution-6-Shell"><a href="#solution-6-Shell" class="headerlink" title="solution 6: Shell"></a>solution 6: Shell</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">const sortArray = (nums) =&gt; &#123;</span><br><span class="line">    const len = nums.length;</span><br><span class="line">    let temp = 1, gap = 1;</span><br><span class="line">    while(gap &lt; len / 5) &#123;</span><br><span class="line">        gap =gap * 5 + 1;</span><br><span class="line">    &#125;</span><br><span class="line">    for (gap; gap &gt; 0; gap = Math.floor(gap / 5)) &#123;</span><br><span class="line">        for (let i = gap; i &lt; len; i++) &#123;</span><br><span class="line">            temp = nums[i];</span><br><span class="line">            for (var j = i - gap; j &gt;= 0 &amp;&amp; nums[j] &gt; temp; j -= gap) &#123;</span><br><span class="line">                nums[j + gap] = nums[j];</span><br><span class="line">            &#125;</span><br><span class="line">            nums[j + gap] = temp;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return nums;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Runtime: 96 ms<br>Memory Usage: 40.5 MB</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/LeetCode/" rel="tag"><i class="fa fa-tag"></i> LeetCode</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/11/11/git/" rel="next" title="Questions - Git">
+                <i class="fa fa-chevron-left"></i> Questions - Git
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/11/17/leetcode2/" rel="prev" title="LeetCode - Dynamic Programming">
+                LeetCode - Dynamic Programming <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Fanjia Kong</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:kfj0116@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i></a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#0001-Two-Sum"><span class="nav-number">1.</span> <span class="nav-text">0001. Two Sum</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1-Brute-Force"><span class="nav-number">1.1.</span> <span class="nav-text">solution 1: Brute Force</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2-Hash"><span class="nav-number">1.2.</span> <span class="nav-text">solution 2: Hash</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-3-Map"><span class="nav-number">1.3.</span> <span class="nav-text">solution 3: Map</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0004-Median-of-Two-Sorted-Arrays"><span class="nav-number">2.</span> <span class="nav-text">0004. Median of Two Sorted Arrays</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution1"><span class="nav-number">2.1.</span> <span class="nav-text">solution1:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution2"><span class="nav-number">2.2.</span> <span class="nav-text">solution2:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution3"><span class="nav-number">2.3.</span> <span class="nav-text">solution3:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0011-Container-With-Most-Water"><span class="nav-number">3.</span> <span class="nav-text">0011. Container With Most Water</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution"><span class="nav-number">3.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0015-3Sum"><span class="nav-number">4.</span> <span class="nav-text">0015. 3Sum</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1"><span class="nav-number">4.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0026-Remove-Duplicates-from-Sorted-Array"><span class="nav-number">5.</span> <span class="nav-text">0026. Remove Duplicates from Sorted Array</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1"><span class="nav-number">5.1.</span> <span class="nav-text">solution 1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2"><span class="nav-number">5.2.</span> <span class="nav-text">solution 2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-3"><span class="nav-number">5.3.</span> <span class="nav-text">solution 3</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0031-Next-Permutation"><span class="nav-number">6.</span> <span class="nav-text">0031. Next Permutation</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2"><span class="nav-number">6.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0033-Search-in-Rotated-Sorted-Array"><span class="nav-number">7.</span> <span class="nav-text">0033. Search in Rotated Sorted Array</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-3"><span class="nav-number">7.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0034-Find-First-and-Last-Position-of-Element-in-Sorted-Array"><span class="nav-number">8.</span> <span class="nav-text">0034. Find First and Last Position of Element in Sorted Array</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-4"><span class="nav-number">8.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0039-Combination-Sum"><span class="nav-number">9.</span> <span class="nav-text">0039. Combination Sum</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-5"><span class="nav-number">9.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0048-Rotate-Image"><span class="nav-number">10.</span> <span class="nav-text">0048. Rotate Image</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-6"><span class="nav-number">10.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0053-Maximum-Subarray"><span class="nav-number">11.</span> <span class="nav-text">0053. Maximum Subarray</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-7"><span class="nav-number">11.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0055-Jump-Game"><span class="nav-number">12.</span> <span class="nav-text">0055. Jump Game</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1-1"><span class="nav-number">12.1.</span> <span class="nav-text">solution 1:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2-1"><span class="nav-number">12.2.</span> <span class="nav-text">solution 2:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0056-Merge-Intervals"><span class="nav-number">13.</span> <span class="nav-text">0056. Merge Intervals</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-8"><span class="nav-number">13.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0066-Plus-One"><span class="nav-number">14.</span> <span class="nav-text">0066. Plus One</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1-2"><span class="nav-number">14.1.</span> <span class="nav-text">solution 1:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2-2"><span class="nav-number">14.2.</span> <span class="nav-text">solution 2:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0075-Sort-Colors"><span class="nav-number">15.</span> <span class="nav-text">0075. Sort Colors</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1-3"><span class="nav-number">15.1.</span> <span class="nav-text">solution 1:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2-3"><span class="nav-number">15.2.</span> <span class="nav-text">solution 2:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0078-Subsets"><span class="nav-number">16.</span> <span class="nav-text">0078. Subsets</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-9"><span class="nav-number">16.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0079-Word-Search"><span class="nav-number">17.</span> <span class="nav-text">0079. Word Search</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-10"><span class="nav-number">17.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0088-Merge-Sorted-Array"><span class="nav-number">18.</span> <span class="nav-text">0088. Merge Sorted Array</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1-4"><span class="nav-number">18.1.</span> <span class="nav-text">solution 1:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2-4"><span class="nav-number">18.2.</span> <span class="nav-text">solution 2:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-3-1"><span class="nav-number">18.3.</span> <span class="nav-text">solution 3:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0118-Pascal’s-Triangle"><span class="nav-number">19.</span> <span class="nav-text">0118. Pascal’s Triangle</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1-5"><span class="nav-number">19.1.</span> <span class="nav-text">solution 1:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2-5"><span class="nav-number">19.2.</span> <span class="nav-text">solution 2:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0121-Best-Time-to-Buy-and-Sell-Stock"><span class="nav-number">20.</span> <span class="nav-text">0121. Best Time to Buy and Sell Stock</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1-6"><span class="nav-number">20.1.</span> <span class="nav-text">solution 1:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2-6"><span class="nav-number">20.2.</span> <span class="nav-text">solution 2:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0122-Best-Time-to-Buy-and-Sell-Stock-II"><span class="nav-number">21.</span> <span class="nav-text">0122. Best Time to Buy and Sell Stock II</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1-7"><span class="nav-number">21.1.</span> <span class="nav-text">solution 1:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2-7"><span class="nav-number">21.2.</span> <span class="nav-text">solution 2:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0169-Majority-Element"><span class="nav-number">22.</span> <span class="nav-text">0169. Majority Element</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1-8"><span class="nav-number">22.1.</span> <span class="nav-text">solution 1:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2-8"><span class="nav-number">22.2.</span> <span class="nav-text">solution 2:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-3-2"><span class="nav-number">22.3.</span> <span class="nav-text">solution 3:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0189-Rotate-Array"><span class="nav-number">23.</span> <span class="nav-text">0189. Rotate Array</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1-9"><span class="nav-number">23.1.</span> <span class="nav-text">solution 1:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2-9"><span class="nav-number">23.2.</span> <span class="nav-text">solution 2:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0217-Contains-Duplicate"><span class="nav-number">24.</span> <span class="nav-text">0217. Contains Duplicate</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1-10"><span class="nav-number">24.1.</span> <span class="nav-text">solution 1:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2-10"><span class="nav-number">24.2.</span> <span class="nav-text">solution 2:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0238-Product-of-Array-Except-Self"><span class="nav-number">25.</span> <span class="nav-text">0238. Product of Array Except Self</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-11"><span class="nav-number">25.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0268-Missing-Number"><span class="nav-number">26.</span> <span class="nav-text">0268. Missing Number</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1-11"><span class="nav-number">26.1.</span> <span class="nav-text">solution 1:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2-11"><span class="nav-number">26.2.</span> <span class="nav-text">solution 2:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-3-3"><span class="nav-number">26.3.</span> <span class="nav-text">solution 3:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0283-Move-Zeroes"><span class="nav-number">27.</span> <span class="nav-text">0283. Move Zeroes</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1-12"><span class="nav-number">27.1.</span> <span class="nav-text">solution 1:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2-12"><span class="nav-number">27.2.</span> <span class="nav-text">solution 2:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0287-Find-the-Duplicate-Number"><span class="nav-number">28.</span> <span class="nav-text">0287. Find the Duplicate Number</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-12"><span class="nav-number">28.1.</span> <span class="nav-text">solution</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0448-Find-All-Numbers-Disappeared-in-an-Array"><span class="nav-number">29.</span> <span class="nav-text">0448. Find All Numbers Disappeared in an Array</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1-13"><span class="nav-number">29.1.</span> <span class="nav-text">solution 1:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2-13"><span class="nav-number">29.2.</span> <span class="nav-text">solution 2:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0560-Subarray-Sum-Equals-K"><span class="nav-number">30.</span> <span class="nav-text">0560. Subarray Sum Equals K</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1-14"><span class="nav-number">30.1.</span> <span class="nav-text">solution 1:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2-14"><span class="nav-number">30.2.</span> <span class="nav-text">solution 2:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0581-Shortest-Unsorted-Continuous-Subarray"><span class="nav-number">31.</span> <span class="nav-text">0581. Shortest Unsorted Continuous Subarray</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-13"><span class="nav-number">31.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0621-Task-Scheduler"><span class="nav-number">32.</span> <span class="nav-text">0621. Task Scheduler</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-14"><span class="nav-number">32.1.</span> <span class="nav-text">solution:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0912-Sort-an-Array"><span class="nav-number">33.</span> <span class="nav-text">0912. Sort an Array</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-1-Bubble"><span class="nav-number">33.1.</span> <span class="nav-text">solution 1: Bubble</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-2-Selection"><span class="nav-number">33.2.</span> <span class="nav-text">solution 2: Selection</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-3-Insertion"><span class="nav-number">33.3.</span> <span class="nav-text">solution 3: Insertion</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-4-Bisection"><span class="nav-number">33.4.</span> <span class="nav-text">solution 4: Bisection</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-5-Quick"><span class="nav-number">33.5.</span> <span class="nav-text">solution 5: Quick</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solution-6-Shell"><span class="nav-number">33.6.</span> <span class="nav-text">solution 6: Shell</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Fanjia Kong</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
